@@ -158,7 +158,37 @@ Donde $\sigma^{A-M}$ es la tensión para inducir la transformación; $T$ la temp
 \end{figure}
 
 \subsubsection{Termodinámica de la transformación}
-\towrite{To Do}
+Las transformaciones martensíticas son transformaciones de fase de primer orden sin difusión. Por no tener difusión, no hay cambios de composición y entonces el sistema termodinámico es un sistema monocomponente con dos fases sólidas de diferente estructura.\cite{Santamarta}
+
+Se denomina termoelástica a una transformación martensítica cuando la deformacion que produce la transformación es absorbida en forma elástica por la matriz ($A$, en este caso particular la austenita) que rodea a la martensita (M), de forma que existe un equilibrio termoelástico entre una energía de origen químico y una de origen elástico que controla el avance de la transformación. La fuerza motriz de la transformación es la diferencia de energías libres quiímicas o estructurales de las fases matriz y martensita.
+\begin{equation}
+	\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q
+\end{equation}
+
+Cuando la fase matriz es estable, esto es a altas temperaturas, el delta de energía es positivo. Cuando es estable la fase martensita, a bajas temperaturas el delta es negativo. En un caso ideal, la transformación sucedería a una temperatura $T_0$ en la cual sucedería $\Delta G^{A \rightarrow M}_q = 0$. Sin embargo, la transformación comienza en $M_s < T_0$ y se extiende en un intervalo de temperaturas hasta $M_f < M_s$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son la deformación eslástica entre la fase matriz y martensita, la cual se alamcena durante la transformación, y un término disipativo que se manifiesta experimentalmente por la presencia de histéresis. El término elástico proveien de la acomodacion de los cambios de forma y volumen asociados a la transformación. El término disipativo incluye energías de fricción en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos.
+
+\begin{figure}
+	\label{Gibbs}
+	\includegraphics[scale=0.5]{img/Gibbs.png}
+	\caption{Energía de la austenita y martensita en función de la temperatura.}
+\end{figure}
+
+
+Mencionadas entonces las fuerzas de origen no químico, la situación de equilibrio para la transformación directa puede expresarse mediante las siguientes ecuaciones, en las cuales los términos están expresados en valor absoluto y los signos se marcan en forma explícita. Para la transformación directa ($A \rightarrow M$):
+\begin{equation}\label{GibbsEq1}
+	- \Delta G^{A \rightarrow M}_q + \Delta E^{A \rightarrow M}_e + E^{A \rightarrow M}_d = 0 
+\end{equation}
+Mientras que para la transformación inversa ($M \rightarrow A$)
+\begin{equation}
+	\Delta G^{M \rightarrow A}_q - \Delta E^{M \rightarrow A}_e + E^{M \rightarrow A}_d = 0 \;\;\;\;\;\;\; T<T_0
+\end{equation}
+\begin{equation}
+	- \Delta G^{M \rightarrow A}_q - \Delta E^{M \rightarrow A}_e + E^{M \rightarrow A}_d = 0 \;\;\;\;\;\;\; T>T_0
+\end{equation}
+
+Este conjunto de ecuaciones muestra como cada término influye en las transformaciones directa e inversa. El término elástico se opone a la transformación directa, como indica el signo positivo en \ref{GibbsEq1} y queda almacenado hasta que es recuperado en la inversa, promoviendo de esta manera la retransformación, hecho marcado por el signo negativo en las dos ecuaciones restantes. Si este término es suficientemente grande, la transformación inversa puede comenzar incluso en temperaturas inferiores a $T_0$. El término disipativo siempre se opone al cambio de fase, por este motivo siempre tiene un signo positivo y es el responsable del efecto de histéresis en la transformación.
+
+\todo{Puedo agregar como es la cinética de la transformación en general y Clausus-Clapyeron para tener en cuenta la tensión. ¿Lo hago?}
 
 \subsubsection{Efectos de memoria de forma y superelasticidad como consecuencias de la transformación}
 
