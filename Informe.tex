@@ -110,7 +110,6 @@ forma de alta temperatura Ni-Ti-Zr mediante sputtering.}
 
 \newpage
 \section{Introducción}
-\towrite{set all margins, font and line interspacing}
 
 \subsection{Motivación}
 
@@ -288,8 +287,25 @@ Fase ortorrombica, se observa cuando al diagrama de NiTi se le agrega Zr o Hf. S
 
 Los parámetros de estas fases son altamente similares, por lo cual son díficiles de distinguir entre sí. La fase $Ti_2Ni$ aparece cuando el contenido de titanio en la matriz es mayor que el de níquel. Su estructura es una fcc.
 
-\subsection{NiZr}
+\subsubsection{NiZr}
 ???
+
+\subsection{Diagrama de fases NiTiZr}
+\towrite{No encontré mucho de momento}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/NiTiZrDiagram800.png}
+	\caption{Diagrama de fases de NiTiZr a $800 ^\circ C$}
+	\label{NiTiZr800}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/NiTiZrDiagramNiPoor.png}
+	\caption{Diagrama de fases de NiTiZr a $700 ^\circ C$}
+	\label{NiTiZr700}
+\end{figure}
 
 \subsection{Magnetrón sputtering}
 La deposición física por sputtering es una deposición física de vapor usada para generar partículas delgadas. Esta implica emitir material desde el blanco para depositarlo sobre un sustrato. 
@@ -300,7 +316,7 @@ Para generar el estado de plasma es necesario alto vacío $\approx 0.5 mTorr$ y 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{img/diagram-dc-magnatron.png}
+	\includegraphics[scale=1]{img/diagram-dc-magnatron.png}
 	\caption{Esquema del magnetrón sputtering}
 	\label{sputter}
 \end{figure}
@@ -519,15 +535,15 @@ Para realizar la deposición se usaron 3 magnetrones modelo Meivac MAK-130-V. To
 
 La deposición fue hecha dentro de una cámara de acero inoxidable, la cual se muestra en la figura \ref{camara}. La cámara posee una ventana de cuarzo para poder ver en su interior, sin embargo al avanzar la deposición dicha ventana se contamina y no puede seguir viéndose dentro.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{img/camara.jpg}
+	\includegraphics[scale=0.1]{img/camara.jpg}
 	\caption{Cámara empleada para realizar las deposiciones}
 	\label{camara}
 \end{figure}
 
 \subsubsection{Atmósfera dentro de la cámara}
-La atmósfera dentro de la cámara era de argón a 3mTorr. Se eligió Ar como gas ya que al ser inerte no hay posibilidad que reaccione con alguno de los metales a ser depositados. Para llegar al nivel de vacío requerido, se usó \todo{misma bomba?} una bomba turbomolecular Varian V70 que alcanza un vacío base de $1,5x10^{-10}Torr$. Esta bomba requiere un vacío previo\todo{vacío mínimo?}, para lo cual primeramente se realizó vacío con una bomba mecánica capaz de reducir la presión hasta $10^{-4}Torr$. Para reducir el caudal durante la deposición y así lograr una atmósfera más estable, se colocó una válvula plato entre la bomba turbomolecular y la cámara.
+La atmósfera dentro de la cámara era de argón a 3mTorr. Se eligió Ar como gas ya que al ser inerte no hay posibilidad que reaccione con alguno de los metales a ser depositados. Para llegar al nivel de vacío requerido, se usó una bomba turbomolecular Varian V70 que alcanza un vacío base de $1,5x10^{-10}Torr$. Esta bomba requiere un vacío previo, para lo cual primeramente se realizó vacío con una bomba mecánica capaz de reducir la presión hasta $10^{-4}Torr$. Para reducir el caudal durante la deposición y así lograr una atmósfera más estable, se colocó una válvula plato entre la bomba turbomolecular y la cámara.
 
 La medición de vacío se realizó con \todo{ver que medidores eran y que medían}
 
@@ -615,7 +631,7 @@ La lente condensadora permite producir un haz de electrones colimado incidente s
 
 \subsubsection{Preparación de las muestras}
 
-Para que las muestras sean lo suficientemente finas para el TEM, es necesario realizarlas algún tipo de tratamiento. Normalmente se realiza un pulido electrolítico. Esto es, se establece una celda eletrolítica donde la muestra es el ánodo y se aplica un voltaje para disolverla en forma controlada hasta obtener el espesor deseado. En el presente trabajo, al ser las muestras demasiado frágiles se opto por el método de adelgazamiento iónico. \todo{Hay algún mejor nombre?}
+Para que las muestras sean lo suficientemente finas para el TEM, es necesario realizarlas algún tipo de tratamiento. Normalmente se realiza un pulido electrolítico. Esto es, se establece una celda eletrolítica donde la muestra es el ánodo y se aplica un voltaje para disolverla en forma controlada hasta obtener el espesor deseado. En el presente trabajo, al ser las muestras demasiado frágiles se opto por el método de adelgazamiento iónico.
 
 Este proceso consiste en acelear iones de un determinado gas, en este caso y normalmente Ar, en un alto vacío en la dirección del sustrato. Este choque de iones va liberando moléculas de la capa superior de la muestra, proceso que se mantiene hasta que se obtiene el espesor deseado. En el caso de muestras cristalinas, se produce la amorfización de las capas cercanas a la superficie (unos pocos nanómetros). Sin embargo, la estructura cristalina original permanece dentro de la muestra y las capas amorfas no interfieren con la observación.
 
@@ -727,7 +743,7 @@ Debido a que el error relativo de $T_p^{-1}$ es mucho mayor que $ln(\frac{\alpha
 	T_p^{-1}=-\frac{R}{E_c}ln(\frac{\alpha}{T_p-T_0})+cte
 \end{equation}
 
-Con un ajuste lineal realizado con la función $curve\_fit$ de la librería SciPy se obtuvo el valor de $E_c$ a través de la pendiente en cada modelo. Los puntos calculados a partir de los medidos junto con los ajuste lineales se muestran en las figuras \ref{Kiss} y \ref{AugBen}.
+Con un ajuste lineal realizado con la función $curve\_fit$ de la librería SciPy se obtuvo el valor de $E_c$ a través de la pendiente en cada modelo. Los puntos calculados a partir de los medidos junto con los ajuste lineales se muestran en las figuras \ref{Kiss} y \ref{AugBen}. A través del método de Kissinger el valor obtenido para la energía de activación fue de $420 \pm 30 kJ$ mientras que por Augis-Bennet el valor obtenido fue de $410 \pm 30 kJ$.
 
 
 \begin{figure}[H]
@@ -757,9 +773,9 @@ Las láminas obtenidas resultaron quebradizas, con lo cual su manipulación resu
 En la figura \ref{RXNiRich} se muestran los difractogramas de las láminas con los distintos tratamientos térmicos. En las gráficas obtenidas se aplico un logaritmo a toda la curva para que todos los picos pudiesen ser mejor apreciados (de no aplicar esta transformación, o bien deberían haber sido recortados los picos más grandes, o no se podrían haber visto los más chicos). La identificación de las distintas fases se hizo con ayuda del programa PowderCell.
 
 \begin{figure}[H]
-\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_500.png}} \\
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_500.png}}
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_600.png}} \\
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_700.png}} \\
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_700.png}} 
 \subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_800.png}} 
 \caption{Patrones de difracción para las muestras ricas en Ni}
 \label{RXNiRich}
@@ -786,6 +802,7 @@ Este análisis sólo se logro en la muestra tratada a $700 ^\circ C$, que puede 
 En las otras muestras, no fue posible definir dichas temperaturas. En la figura \ref{Failures} se muestran estos resultados. Puede verse que en la muestras tratadas a $500 ^\circ C$ y a $800 ^\circ C$ las curvas en enfriamiento y en calentamiento permanecen casi siempre pegadas. Una leve diferencia se aprecia en la de  $500 ^\circ C$ entre aproximadamente $-70 ^\circ C$ y $20 ^\circ C$, pero no es suficiente para asegurar son fases distintas. Por otra parte, en la lámina tratada a $600 ^\circ C$ hay un salto abrupto cerca de  $-45 ^\circ C$ y las curvas de calentamiento y enfrimianto lentamente se acercan llegando a $150 ^\circ C$. En este caso, es probable que estemos ante la presencia de dos fases distintas a pesar que no sea posible definir las temperaturas de comienzo y final de la transformación martensítica y su inversa. 
 
 \begin{figure}[H]
+\centering
 \subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_500.png}} \\
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_600.png}}\\
 \subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_800.png}} 
@@ -800,29 +817,43 @@ Dichas curvas se muestran en la figura \ref{NiRich}. En ninguna de las curvas, n
 
 \begin{figure}[H]
 \noindent\makebox[\linewidth][c]{
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiRich/Cooling500NiRich}}
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiRich/Heating500NiRich}}}\\
+	\subfloat[Enfriamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiRich/Cooling500NiRich}}
+	\subfloat[Calentamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiRich/Heating500NiRich}}}\\
 \noindent\makebox[\linewidth][c]{
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiRich/Cooling600NiRich}}
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiRich/Heating600NiRich}}}\\
+	\subfloat[Enfriamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiRich/Cooling600NiRich}}
+	\subfloat[Calentamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiRich/Heating600NiRich}}}\\
 \noindent\makebox[\linewidth][c]{
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiRich/Cooling700NiRich}}
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiRich/Heating700NiRich}}}
+	\subfloat[Enfriamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiRich/Cooling700NiRich}}
+	\subfloat[Calentamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiRich/Heating700NiRich}}}
 	
 	\label{NiRich}
 \end{figure}
 
 \subsubsection{Imágenes obtenidas por TEM}
 
+En la figura \ref{TEMNiRich} se muestran las imágenes obtenidas por TEM para las diferentes muestras de esta diposición. Sobre las fotos hay supuerpuesta una grilla, cuyos vertices consecutivos se encuentran a una distancia de 50 nm, para facilitar la dimensionalización de los tamaños. 
+
+Puede verse un ligero aumento del tamaño de grano a medida que aumenta la temperatura del tratamiento térmico. De esta manera, en la muestra tratada a menor temperatura se ven granos que cuyos diámetros se enmarcan en su mayoría entre los 50 y los 100 nanómetros. En la muestra tratada a $600 ^\circ C$ se aprecian al menos dos fases bien diferenciadas, de granos cuyos diámetros rondan los 50 nm y otros cuyos diámetros rondan los 100, para finalmente verse en la muestra tratada a $700 ^\circ C$ que la mayor parte de los granos tienen alrededor de 100 nm de diámetro. \todo{ver que onda la de 800}
+
+\begin{figure}[H]
+\centering
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_500.png}} 
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600.png}} \\
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600_2.png}}
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_700.png}}
+\caption{Imágenes de TEM para las muestras ricas en Ni}
+\label{TEMNiRich}
+\end{figure}
+
 \subsection{Deposición pobre en Ni}
 \subsubsection{Fases obtenidas}
 En la figura \ref{RXNiPoor} se muestran los difractogramas de las láminas con los distintos tratamientos térmicos. En las gráficas obtenidas se aplico un logaritmo a toda la curva para que todos los picos pudiesen ser mejor apreciados (de no aplicar esta transformación, o bien deberían haber sido recortados los picos más grandes, o no se podrían haber visto los más chicos). La identificación de las distintas fases se hizo con ayuda del programa PowderCell.
 
-\begin{figure}[h]
-\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_500.png}} \\
+\begin{figure}[H]
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_500.png}} 
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_600.png}} \\
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_700.png}} \\
-\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_800.png}} 
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_700.png}}
+\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_800.png}} \\
 \caption{Patrones de difracción para las muestras ricas en Ni}
 \label{RXNiPoor}
 \end{figure}
@@ -845,26 +876,39 @@ Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \r
 
 \begin{figure}[H]
 \noindent\makebox[\linewidth][c]{
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling500NiPoor}}
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating500NiPoor}}}\\
+	\subfloat[Enfriamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling500NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating500NiPoor}}}\\
 \noindent\makebox[\linewidth][c]{
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling600NiPoor}}
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating600NiPoor}}}\\
+	\subfloat[Enfriamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling600NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating600NiPoor}}}\\
 \noindent\makebox[\linewidth][c]{
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling700NiPoor}}
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating700NiPoor}}}\\
+	\subfloat[Enfriamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling700NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating700NiPoor}}}\\
 \noindent\makebox[\linewidth][c]{
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling800NiPoor}}
-	\subfloat[???]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating800NiPoor}}}
+	\subfloat[Enfriamiento, muestra tratada a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling800NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating800NiPoor}}}
 \caption{Curvas de DSC para las distintas muestras}
 \label{DSCNiPoor}
 \end{figure}
 
 \subsubsection{Imágenes obtenidas por TEM}
 
-
+\begin{figure}[H]
+\centering
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_600.png}} 
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_700.png}} 
+\caption{Imágenes de TEM para las muestras pobres en Ni}
+\label{TEMNiRich}
+\end{figure}
+\towrite{No hay análisis acá todavía porque falta ver las de 800 y no hay de 500. En principio, se ven similar a las ricas en Ni.}
 
 \section{Discusión}
+\towrite{Poner una intro}
+
+\subsection{Energía de activación}
+
+En el presente trabajo se estudió la energía de activación de láminas delgadas
+
 \section{Conclusión}
 Queda pendiente para un próximo estudio determinar los porcentajes de cada fase en las distintas muestras. 
 
