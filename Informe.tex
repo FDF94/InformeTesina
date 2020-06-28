@@ -139,16 +139,16 @@ Dentro del grupo de aleaciones con temperaturas de transformación en el rango d
 
 \subsection{Transformación martensítica}
 
-La transformación martensítica es una transformación de estado sólido, de primer orden, sin difusión atómica y está acompañada por una deformación homogénea de la red que conlleva un cambio en la estructura cristalina \cite{Santamarta}. Dicha transformación ocurre con el desplazamiento coordinado de todos los átomos en distancias del orden de 1 \AA \footnote{Estas transformaciones son llamadas displacivas, ya que los desplazamientos son pequeños en comparación con la distancia interatómica}, manteniendo los átomos su relación con sus vecinos cercanos, es decir que dos átomos que antes de la transformación eran vecinos, seguirán siéndolo luego del cambio de fase\citep{HTSMA} De esta manera, la nueva fase mantiene la misma composición y orden atómico de la fase inicial. La transformación se produce primero preferencialmente en bordes de granos y/o defectos, y luego con un crecimiento de la fase previamente nucleada. Las interfases están constituídas por un plano macroscópicamente invariante, denominado plano de hábito. Esto significa que dos vectores cualesquiera sobre este mantienen sus módulos y orientación relativa constantes durante la transformación \cite{Santamarta}.
+La transformación martensítica es una transformación de estado sólido, de primer orden, sin difusión atómica y está acompañada por una deformación homogénea de la red que conlleva un cambio en la estructura cristalina \cite{Santamarta}. Dicha transformación ocurre con el desplazamiento coordinado de todos los átomos en distancias del orden de 1 \AA \footnote{Estas transformaciones son llamadas displacivas, ya que los desplazamientos son pequeños en comparación con la distancia interatómica}, manteniendo los átomos su relación con sus vecinos cercanos, es decir que dos átomos que antes de la transformación eran vecinos, seguirán siéndolo luego del cambio de fase\citep{HTSMA} De esta manera, la nueva fase mantiene la misma composición y orden atómico de la fase inicial. La transformación se produce primero preferencialmente en bordes de granos y/o defectos, y luego con un crecimiento de la fase previamente nucleada. Las interfases están constituidas por un plano macroscópicamente invariante, denominado plano de hábito. Esto significa que dos vectores cualesquiera sobre este mantienen sus módulos y orientación relativa constantes durante la transformación \cite{Santamarta}.
 
-Usualmente la fase de mayor temperatura, llamada fase matriz, es cúbica mientras que la fase de menor temperatura, llamada martensita, es monoclínica, teniendo así menor simetría\cite{Malvasio}. Estas transformaciones tienen lugar en un intervalo finito de temperaturas, intervalo en el cual coexisten ambas fases. La transformación directa se induce enfriando el material y la temperatura en la cual comienza el proceso se la denomina $M_s$ (del inglés, martensite start), mientras que la temperatura en la cual termina es llamada $M_f$ (martensite finish). Análogamente, asumamos que el material está completamente en la fase martensítica, esto es $(T < M_f)$. Al calentarlo se produce la transformación inversa en la cual se pasa de martensita a austenita. La temperatura en la cual comienza el proceso es $A_s$(austenite start) y en la cual finaliza es $A_f$(austenite finish).\cite{Santamarta}
+Usualmente la fase de mayor temperatura, llamada fase matriz (austenita), es cúbica mientras que la fase de menor temperatura, llamada martensita, debe tener menor simetría que la fase matriz (monoclínica, ortorrómbica, etc) para que la transformación suceda\cite{Malvasio}. Estas transformaciones tienen lugar en un intervalo finito de temperaturas, intervalo en el cual coexisten ambas fases. La transformación directa se induce enfriando el material y la temperatura en la cual comienza el proceso se la denomina $M_s$ (del inglés, martensite start), mientras que la temperatura en la cual termina es llamada $M_f$ (martensite finish). Análogamente, asumamos que el material está completamente en la fase martensítica, esto es $(T < M_f)$. Al calentarlo se produce la transformación inversa en la cual se pasa de martensita a austenita. La temperatura en la cual comienza el proceso es $A_s$(austenite start) y en la cual finaliza es $A_f$(austenite finish).\cite{Santamarta}
 
-Alternativamente, la transformación puede obtenerse aplicando un esfuerzo externo sobre el material, incluso si se está a $T > A_f$, ya que la aplicación de esfuerzo cambia las temperaturas previamente mencionadas. Dicho efecto puede observarse en la Figura \ref{TvsS}. En estos casos una ecuación de Clausius-Clapeyron permite relacionar las variables termodinámicas implicadas en el proceso:
+Alternativamente, la transformación puede obtenerse aplicando un esfuerzo externo sobre el material, incluso si se está a $T > A_f$, ya que la aplicación de una tensión externa desplaza las temperaturas previamente mencionadas. Dicho efecto puede observarse en la Figura \ref{TvsS}. En estos casos una ecuación de Clausius-Clapeyron permite relacionar las variables termodinámicas implicadas en el proceso:
 \begin{equation}
 	\frac{d\sigma^{A-M}}{dT} = -\frac{\rho \Delta H}{\epsilon T_0}
 \end{equation}
 
-Donde $\sigma^{A-M}$ es la tensión para inducir la transformación; $T$ la temperatura; $\rho$ la densidad del material, considerada constante en ambas fases; $\Delta H$ es el cambio de entalpía de la transformación; $T_0$ la temperatura crítica y $\epsilon$ la deformación intrínseca a la transformación \citep{Malvasio}.
+donde $\sigma^{A-M}$ es la tensión para inducir la transformación; $T$ la temperatura; $\rho$ la densidad del material, considerada constante en ambas fases; $\Delta H$ es el cambio de entalpía de la transformación; $T_0$ la temperatura de equlibrio y $\epsilon$ la deformación intrínseca a la transformación \citep{Malvasio}.
 
 \begin{figure}[H]
 	\centering
@@ -158,43 +158,35 @@ Donde $\sigma^{A-M}$ es la tensión para inducir la transformación; $T$ la temp
 \end{figure}
 
 \subsubsection{Termodinámica de la transformación}
-Las transformaciones martensíticas son transformaciones de fase de primer orden sin difusión. Por no tener difusión, no hay cambios de composición y entonces el sistema termodinámico es un sistema monocomponente con dos fases sólidas de diferente estructura.\cite{Santamarta}
+Las transformaciones martensíticas son transformaciones de fase de primer orden sin difusión. Por no tener difusión, no hay cambios de composición y entonces el sistema termodinámico es un sistema monocomponente con dos fases sólidas de diferentes estructuras.\cite{Santamarta}
 
-Se denomina termoelástica a una transformación martensítica cuando la deformacion que produce la transformación es absorbida en forma elástica por la matriz ($A$, en este caso particular la austenita) que rodea a la martensita (M), de forma que existe un equilibrio termoelástico entre una energía de origen químico y una de origen elástico que controla el avance de la transformación. La fuerza motriz de la transformación es la diferencia de energías libres quiímicas o estructurales de las fases matriz y martensita.
+Se denomina termoelástica a una transformación martensítica cuando la deformación que produce la transformación es absorbida en forma elástica por la matriz (en este caso particular la austenita, $A$) que rodea a la martensita ($M$), de forma que existe un equilibrio termoelástico local entre una energía de origen químico y una de origen elástico que controla el avance de la transformación. La fuerza motriz de la transformación es la diferencia de energías libres quiímicas o estructurales entre las fases matriz y martensita ($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q$).
+
+En el caso ideal, la transformación sucedería a la temperatura de equilibrio termodinámico $T_0$, la cual se define como la temperatura en la cual la diferencia de energía libre quiímica entre ambas fases es cero($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q = 0$). Esta transformación sería termodinámicamente reversible y es esquematizada en las Figuras \todo{poner figuras}, en donde se observa que la fase estable a temperatura mayor a $T_0$ sería la austenita, mientras que a temperaturas menores a $T_0$ la fase estable sería la martensítica. Sin embargo, como ya vimos, la transformación comienza en $M_s$  ($< T_0$) y se extiende en un intervalo de temperaturas hasta $M_f$  $(< M_s)$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son: un término disipativo que se manifiesta experimentalmente por la presencia de histéresis ver Figura(\todo{poner figuras}) y la deformación elástica entre la fase matriz y la martensita, la cual se almacena durante la transformación (fer Figura\todo{poner figura}). El término disipativo incluye el trabajo de fricción generado en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos. El término elástico, por otra parte, proviene de la acomodación de los cambios de forma y volumen asociados a la transformación\todo{poner cita}.
+
+Debido al trabajo de fricción y el proceso de acumulación de energía elástica, la
+transformación martensítica consiste en un proceso irreversible desde el punto de vista de la termodinámica, a pesar de que es un proceso mecánicamente reversible. Por lo anto, la diferencia de energía libre química entre ambas fases se relaciona con el trabajo de fircción ($W_{fric}$) y el trabajo elástico ($W_{elast}$) mediante la siguiente ecuación \footnote{Esta relacipon se deduce desde el primer y segundo principio de la termodinámica, tomando como convención de signos que el calor absorvido por el sistema y el trabajo realizado sobre el sistema son ambos positivos} \todo{poner cita}:
+
 \begin{equation}
-	\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q
+	- \DeltaG_q^{A \leftrightarrow M} \geq W_{elast} } W_{fric}
 \end{equation}
 
-Cuando la fase matriz es estable, esto es a altas temperaturas, el delta de energía es positivo. Cuando es estable la fase martensita, a bajas temperaturas el delta es negativo. En un caso ideal, la transformación sucedería a una temperatura $T_0$ en la cual sucedería $\Delta G^{A \rightarrow M}_q = 0$. Sin embargo, la transformación comienza en $M_s < T_0$ y se extiende en un intervalo de temperaturas hasta $M_f < M_s$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son la deformación eslástica entre la fase matriz y martensita, la cual se alamcena durante la transformación, y un término disipativo que se manifiesta experimentalmente por la presencia de histéresis. El término elástico proveien de la acomodacion de los cambios de forma y volumen asociados a la transformación. El término disipativo incluye energías de fricción en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos.
+En una transformación inducida térmicamente, $\DeltaG_q^{A \leftrightarrow M}$ siempre es menor a cero (ver Figura \todo{y acá va otra figura!}), mientras que el trabajo de fricción siempre es positivo (ya que es realizado sobre el volumen que transforma), por lo cual se opone al camibo de fase y es el responsable del efecto de histéresis en la transformación, y negativo durante la retransformación, por lo cual ayudará a está última. Este trabajo elástico es el responsable de que la transformación se desarrolle en el rango de temperatura definido por las temperaturas $M_s$ y $M_f$ (ver Figura \todo{PONE LAS FIGURAS DE UNA VEZ}) 
 
-\begin{figure}
-	\label{Gibbs}
-	\includegraphics[scale=0.5]{img/Gibbs.png}
-	\caption{Energía de la austenita y martensita en función de la temperatura.}
-\end{figure}
+%\begin{figure}
+%	\label{Gibbs}
+%	\includegraphics[scale=0.5]{img/Gibbs.png}
+%	\caption{Energía de la austenita y martensita en función de la temperatura.}
+\%end{figure}
 
-
-Mencionadas entonces las fuerzas de origen no químico, la situación de equilibrio para la transformación directa puede expresarse mediante las siguientes ecuaciones, en las cuales los términos están expresados en valor absoluto y los signos se marcan en forma explícita. Para la transformación directa ($A \rightarrow M$):
-\begin{equation}\label{GibbsEq1}
-	- \Delta G^{A \rightarrow M}_q + \Delta E^{A \rightarrow M}_e + E^{A \rightarrow M}_d = 0 
-\end{equation}
-Mientras que para la transformación inversa ($M \rightarrow A$)
-\begin{equation}
-	\Delta G^{M \rightarrow A}_q - \Delta E^{M \rightarrow A}_e + E^{M \rightarrow A}_d = 0 \;\;\;\;\;\;\; T<T_0
-\end{equation}
-\begin{equation}
-	- \Delta G^{M \rightarrow A}_q - \Delta E^{M \rightarrow A}_e + E^{M \rightarrow A}_d = 0 \;\;\;\;\;\;\; T>T_0
-\end{equation}
-
-Este conjunto de ecuaciones muestra como cada término influye en las transformaciones directa e inversa. El término elástico se opone a la transformación directa, como indica el signo positivo en \ref{GibbsEq1} y queda almacenado hasta que es recuperado en la inversa, promoviendo de esta manera la retransformación, hecho marcado por el signo negativo en las dos ecuaciones restantes. Si este término es suficientemente grande, la transformación inversa puede comenzar incluso en temperaturas inferiores a $T_0$. El término disipativo siempre se opone al cambio de fase, por este motivo siempre tiene un signo positivo y es el responsable del efecto de histéresis en la transformación.
 
 \subsubsection{Efectos de memoria de forma y superelasticidad como consecuencias de la transformación}
 
-El proceso de memoria de forma comienza a una temperatura $T>A_f$. La forma que tenga el material en este punto es la que será ``recordada''. Luego, se enfría sin esfuerzo hasta una temperatura $T<M_f$. En este enfriamiento se produce la transformación directa de austenita a martensita, formandose la martensita de manera que la energía del sistema se minimice, con lo cual la forma macroscópica del material no cambia.
+El proceso de memoria de forma comienza a una temperatura $T>A_f$. La forma que tenga el material en este punto es la que será ``recordada''. Luego, se enfría sin una tensión externa hasta una temperatura $T<M_f$. En este enfriamiento, como ya vimos, se produce la transformación directa de austenita a martensita, formándose la martensita de manera que la energía del sistema se minimice, con lo cual la forma macroscópica del material no cambia.
 
 Siendo la estructura del material la martensita, se aplica un esfuerzo creciente para deformar la aleación. Tanto la deformación elástica de la martensita como la reorientación de las variantes formadas durante el enfriamiento dan lugar a esta deformación. Como estas variantes se mueven con facilidad, se acomodan para concordar con el esfuerzo aplicado. Aún así, si la deformación es muy grande, existe la posibilidad que haya una deformación plástica y el proceso no sea completamente reversible. Una vez relajado el esfuerzo, el material conserva una deformación residual.
 
-Finalmente, al calentarse la aleación a una temperatura $T>A_f$ se da la transformación inversa (martensita a austenita). De esta manera recupera la aleación su forma original, perdiendose la deformación residual. En la figura \ref{3DGraph} puede verse esquematicamente este proceso.
+Finalmente, al calentarse la aleación a una temperatura $T>A_f$ se da la transformación inversa (martensita a austenita). De esta manera recupera la aleación su forma original, perdiéndose la deformación residual. En la figura \ref{3DGraph} puede verse esquemáticamente este proceso.
 
 \begin{figure}[H]
 	\centering
@@ -204,11 +196,9 @@ Finalmente, al calentarse la aleación a una temperatura $T>A_f$ se da la transf
 \end{figure}
 
 
-El efecto de superelasticidad cuando se induce la transformación martensítica por tensión, aunque se este a temperatura $T>A_f$. Aplicando tensión al material en austenita, empieza a deformar elásticamente hasta la tensión $\sigma^{p \rightarrow m}$ valor a partir del cual comienza la transformación martensitica.
+Se denomina superelasticidad cuando se induce la transformación martensítica por tensión, a una temperatura mayor a $A_f$. Aplicando tensión al material en austenita, empieza a deformar elásticamente hasta la tensión $\sigma^{p \rightarrow m}$ valor a partir del cual comienza la transformación martensítica.
 
 Al retirarse la tensión, ocurre la transformación inversa, habiendo, al igual que en el caso de memoria de forma, histéresis.
-
-Si la temperatura no es lo suficientemente alta, por ejemplo, $T \approx M_s$, es posible que no todo el material este en estado austenitico y se este en un caso de memoria de forma, con lo cual al relajar la tensión, el material no volvería a su tamaño original.
 
 
 \subsection{Diagrama de fases de la familia Ni-Ti}
