@@ -17,6 +17,7 @@
 \usepackage{float}				 % force figure position(lets use [H])
 \usepackage{setspace}			 % for setting interline spacing
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SET TITLE PAGE VALUES HERE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,7 +136,7 @@ Existe un reciente aumento en el interés, impulsado principalmente por las indu
 
 Las aplicaciones actuales de los SMA están limitadas por debajo de los $100^\circ C$. Los materiales con memoria de forma de alta temperatura, abreviados como \textit{HTSMA} (del inglés, High Temperature Shape Memory Alloys) son aquellos en los cuales la transformación martensítica sucede a $T > 100^\circ C$.
 
-Dentro del grupo de aleaciones con temperaturas de transformación en el rango de $100^\circ$ C y $400^\circ$ C los dos sistemas más estudiados son el resultado de la adición de paladio o platino a la aleación binaria de NiTi. Como alternativa a estos, se presenta la posibilidad de añadir Hf o Zr (ambos agregados en detrimento del Ti)\cite{HTSMA}. Las aleaciones obtenidas mediante la adición de Zr y Hf tienen un menor costo relativo, y estos dopajes presentan, además, una alta influencia en las temperaturas de transformación (influencia aúm mayor que aquella generada por el Pd o el Pt), lo que permite usarloa en concentraciones menores \citep{HTSMA}. Estas dos aleaciones presentan similares características funcionales, pero la utilización del Zr en lugar del Hf ofrece la posibilidad de reducir el peso de la aleación hasta un 20\% en la misma estequeometría \todo{find cite}.
+Dentro del grupo de aleaciones con temperaturas de transformación en el rango de $100^\circ$ C y $400^\circ$ C los dos sistemas más estudiados son el resultado de la adición de paladio o platino a la aleación binaria de NiTi. Como alternativa a estos, se presenta la posibilidad de añadir Hf o Zr (ambos agregados en detrimento del Ti)\cite{HTSMA}. Las aleaciones obtenidas mediante la adición de Zr y Hf tienen un menor costo relativo, y estos dopajes presentan, además, una alta influencia en las temperaturas de transformación (influencia aúm mayor que aquella generada por el Pd o el Pt), lo que permite usarloa en concentraciones menores \citep{HTSMA}. Estas dos aleaciones presentan similares características funcionales, pero la utilización del Zr en lugar del Hf ofrece la posibilidad de reducir el peso de la aleación hasta un 20\% en la misma estequeometría \cite{Evirgen2013}.
 
 \subsection{Transformación martensítica}
 
@@ -162,10 +163,10 @@ Las transformaciones martensíticas son transformaciones de fase de primer orden
 
 Se denomina termoelástica a una transformación martensítica cuando la deformación que produce la transformación es absorbida en forma elástica por la matriz (en este caso particular la austenita, $A$) que rodea a la martensita ($M$), de forma que existe un equilibrio termoelástico local entre una energía de origen químico y una de origen elástico que controla el avance de la transformación. La fuerza motriz de la transformación es la diferencia de energías libres quiímicas o estructurales entre las fases matriz y martensita ($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q$).
 
-En el caso ideal, la transformación sucedería a la temperatura de equilibrio termodinámico $T_0$, la cual se define como la temperatura en la cual la diferencia de energía libre quiímica entre ambas fases es cero($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q = 0$). Esta transformación sería termodinámicamente reversible y es esquematizada en las Figuras \todo{poner figuras}, en donde se observa que la fase estable a temperatura mayor a $T_0$ sería la austenita, mientras que a temperaturas menores a $T_0$ la fase estable sería la martensítica. Sin embargo, como ya vimos, la transformación comienza en $M_s$  ($< T_0$) y se extiende en un intervalo de temperaturas hasta $M_f$  $(< M_s)$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son: un término disipativo que se manifiesta experimentalmente por la presencia de histéresis ver Figura(\todo{poner figuras}) y la deformación elástica entre la fase matriz y la martensita, la cual se almacena durante la transformación (fer Figura\todo{poner figura}). El término disipativo incluye el trabajo de fricción generado en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos. El término elástico, por otra parte, proviene de la acomodación de los cambios de forma y volumen asociados a la transformación\todo{poner cita}.
+En el caso ideal, la transformación sucedería a la temperatura de equilibrio termodinámico $T_0$, la cual se define como la temperatura en la cual la diferencia de energía libre quiímica entre ambas fases es cero($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q = 0$). Esta transformación sería termodinámicamente reversible y es esquematizada en las Figuras \todo{poner figuras}, en donde se observa que la fase estable a temperatura mayor a $T_0$ sería la austenita, mientras que a temperaturas menores a $T_0$ la fase estable sería la martensítica. Sin embargo, como ya vimos, la transformación comienza en $M_s$  ($< T_0$) y se extiende en un intervalo de temperaturas hasta $M_f$  $(< M_s)$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son: un término disipativo que se manifiesta experimentalmente por la presencia de histéresis ver Figura(\todo{poner figuras}) y la deformación elástica entre la fase matriz y la martensita, la cual se almacena durante la transformación (fer Figura\todo{poner figura}). El término disipativo incluye el trabajo de fricción generado en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos. El término elástico, por otra parte, proviene de la acomodación de los cambios de forma y volumen asociados a la transformación\cite{Wollants1993}.
 
 Debido al trabajo de fricción y el proceso de acumulación de energía elástica, la
-transformación martensítica consiste en un proceso irreversible desde el punto de vista de la termodinámica, a pesar de que es un proceso mecánicamente reversible. Por lo anto, la diferencia de energía libre química entre ambas fases se relaciona con el trabajo de fircción ($W_{fric}$) y el trabajo elástico ($W_{elast}$) mediante la siguiente ecuación \footnote{Esta relacipon se deduce desde el primer y segundo principio de la termodinámica, tomando como convención de signos que el calor absorvido por el sistema y el trabajo realizado sobre el sistema son ambos positivos} \todo{poner cita}:
+transformación martensítica consiste en un proceso irreversible desde el punto de vista de la termodinámica, a pesar de que es un proceso mecánicamente reversible. Por lo anto, la diferencia de energía libre química entre ambas fases se relaciona con el trabajo de fircción ($W_{fric}$) y el trabajo elástico ($W_{elast}$) mediante la siguiente ecuación \footnote{Esta relacipon se deduce desde el primer y segundo principio de la termodinámica, tomando como convención de signos que el calor absorvido por el sistema y el trabajo realizado sobre el sistema son ambos positivos} \cite{Isola2020}:
 
 \begin{equation}
 	- \Delta G_{q}^{A \leftrightarrow M} \geq W_{elast} W_{fric}
@@ -271,13 +272,13 @@ La fase martensítica B19' es una estructura monoclínica. Esta es la fase marte
 Los parámetros de estas fases son muy similares, por lo cual resulta díficil distinguirlas entre sí. La fase $Ti_2Ni$ aparece en composiciones pobres en Ni, mientras que la fase $Ti_4Ni_2O$ aparece por la presencia de oxígeno en algún momento del proceso de elaboración de la aleación. Ambas fases se corresponden con una estructura FCC, con grupo espacia $Fd3m$ (número 227) y sus parametros de red son cercanos a 11,3 $\AA$.
 
 \subsubsection{NiZr}
-La fase NiZr tiene una estructura ortorrómbica y su grupo espacial es $Cmcm$ (número 63) \todo{LA CITAAAAA}.
+La fase NiZr tiene una estructura ortorrómbica y su grupo espacial es $Cmcm$ (número 63) \cite{Kirkpatrick1962}.
 
 \subsubsection{Fase $\lambda$}
-La fase $\lambda$ es una solución sólida ternaria de TiNiZr con una estructura tipo C14 Laves, la cual es una fase hexagonal y su grupo espacial es $P6_3/mmc$ (número 194). En el trabajo \todo{Otra cita...}, a través de refinamiento de difracción de neutrones, se reporta la fórmula química $Ni_{0,91}Ti_{1,21}Zr_{0,88}$ para esta fase.
+La fase $\lambda$ es una solución sólida ternaria de TiNiZr con una estructura tipo C14 Laves, la cual es una fase hexagonal y su grupo espacial es $P6_3/mmc$ (número 194). En el trabajo \cite{Bououdina2003}, a través de refinamiento de difracción de neutrones, se reporta la fórmula química $Ni_{0,91}Ti_{1,21}Zr_{0,88}$ para esta fase.
 
 \subsubsection{Fase H}
-La fase H tiene una estructura ortorrómbica y su grupo espacial es $Fddd$(número 70) \todo{van 2 citas...}. Se encuentra en composiciones ricas en Ni cuando a la aleación binara de NiTi se le agrega Zr o Hf. Su estructura se construye como una superestructura de la fase B2, desde la recombinación de los átomos Zr/Hf y Ti en su subred, con un posterior desplazamiento de los átomos\todo{And another one cita}. La composición de esta fase es rica en Ni y en el tercer aleante (Zr/Hf), mientras que resulta pobre en Ti. Las estructuras de la fase H y la fase matriz B2 tiene un alto nivel de acuerdo, lo cual permite una completa coherencia caracterizada por un ajuste perfecto del plano de la interfase austenita-precipitado.
+La fase H tiene una estructura ortorrómbica y su grupo espacial es $Fddd$(número 70) \cite{Yang2013} \cite{Santamarta2013}. Se encuentra en composiciones ricas en Ni cuando a la aleación binara de NiTi se le agrega Zr o Hf. Su estructura se construye como una superestructura de la fase B2, desde la recombinación de los átomos Zr/Hf y Ti en su subred, con un posterior desplazamiento de los átomos\cite{Evirgen2018}. La composición de esta fase es rica en Ni y en el tercer aleante (Zr/Hf), mientras que resulta pobre en Ti. Las estructuras de la fase H y la fase matriz B2 tiene un alto nivel de acuerdo, lo cual permite una completa coherencia caracterizada por un ajuste perfecto del plano de la interfase austenita-precipitado\cite{Evirgen2018}.
 
 
 %\begin{figure}[H]
@@ -454,7 +455,7 @@ De la ecuación \ref{kvalue} y de considerar a la temperatura como una función 
 	u = k\: t = f\: t\: exp \left\lbrace -\frac{E_c}{R(T_0 + \alpha t)} \right\rbrace
 \end{equation}
 
-Esto permite reescribir el modelo de Avrami como \todo{es eso lo que reescribo acá?}
+Esto permite reescribir el modelo de Avrami como 
 \begin{equation}
 	X = 1-e^{-u^{n}}
 \end{equation}
@@ -938,12 +939,10 @@ Los tamaños de grano asi mismo coinciden con lo que informa Sawaguchi2004\todo{
 \section{Conclusión}
 Queda pendiente para un próximo estudio determinar los porcentajes de cada fase en las distintas muestras. Queda pendiente coeficiente de Avrami.
 
-\newpage
 
 % You can choose a citation style, 'plain' is the default
 % See:
 % https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
-\todo{Make bibliography style consistent. which is the correct one?}
 \nocite{*} 
 \bibliographystyle{plain}
 \bibliography{Referencias}
