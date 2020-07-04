@@ -161,9 +161,16 @@ donde $\sigma^{A-M}$ es la tensión para inducir la transformación; $T$ la temp
 \subsubsection{Termodinámica de la transformación}
 Las transformaciones martensíticas son transformaciones de fase de primer orden sin difusión. Por no tener difusión, no hay cambios de composición y entonces el sistema termodinámico es un sistema monocomponente con dos fases sólidas de diferentes estructuras.\cite{Santamarta}
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{img/Termo.eps}
+	\caption{Fracción transformada ($\xi$) y energía libre de Gibbs de ambas fases como función de la temperatura en los casos: si la transformación sucediera a la temperatura de equilibrio termodinámico (a) y (b), si sólo hubiera trabajo de fricción (c) y (d), si hubiera tanto trabajo de fricción como trabajo elástico (e) y (f)} 
+	\label{Gibbs}
+\end{figure}
+
 Se denomina termoelástica a una transformación martensítica cuando la deformación que produce la transformación es absorbida en forma elástica por la matriz (en este caso particular la austenita, $A$) que rodea a la martensita ($M$), de forma que existe un equilibrio termoelástico local entre una energía de origen químico y una de origen elástico que controla el avance de la transformación. La fuerza motriz de la transformación es la diferencia de energías libres quiímicas o estructurales entre las fases matriz y martensita ($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q$).
 
-En el caso ideal, la transformación sucedería a la temperatura de equilibrio termodinámico $T_0$, la cual se define como la temperatura en la cual la diferencia de energía libre quiímica entre ambas fases es cero($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q = 0$). Esta transformación sería termodinámicamente reversible y es esquematizada en las Figuras \todo{poner figuras}, en donde se observa que la fase estable a temperatura mayor a $T_0$ sería la austenita, mientras que a temperaturas menores a $T_0$ la fase estable sería la martensítica. Sin embargo, como ya vimos, la transformación comienza en $M_s$  ($< T_0$) y se extiende en un intervalo de temperaturas hasta $M_f$  $(< M_s)$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son: un término disipativo que se manifiesta experimentalmente por la presencia de histéresis ver Figura(\todo{poner figuras}) y la deformación elástica entre la fase matriz y la martensita, la cual se almacena durante la transformación (fer Figura\todo{poner figura}). El término disipativo incluye el trabajo de fricción generado en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos. El término elástico, por otra parte, proviene de la acomodación de los cambios de forma y volumen asociados a la transformación\cite{Wollants1993}.
+En el caso ideal, la transformación sucedería a la temperatura de equilibrio termodinámico $T_0$, la cual se define como la temperatura en la cual la diferencia de energía libre quiímica entre ambas fases es cero($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q = 0$). Esta transformación sería termodinámicamente reversible y es esquematizada en la Figura \ref{Gibbs}(a) y \ref{Gibbs}(b), en donde se observa que la fase estable a temperatura mayor a $T_0$ sería la austenita, mientras que a temperaturas menores a $T_0$ la fase estable sería la martensítica. Sin embargo, como ya vimos, la transformación comienza en $M_s$  ($< T_0$) y se extiende en un intervalo de temperaturas hasta $M_f$  $(< M_s)$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son: un término disipativo que se manifiesta experimentalmente por la presencia de histéresis ver Figura \ref{Gibbs}(c) y \ref{Gibbs}(d)) y la deformación elástica entre la fase matriz y la martensita, la cual se almacena durante la transformación (ver Figura \ref{Gibbs}(e) y \ref{Gibbs}(f)). El término disipativo incluye el trabajo de fricción generado en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos. El término elástico, por otra parte, proviene de la acomodación de los cambios de forma y volumen asociados a la transformación\cite{Wollants1993}.
 
 Debido al trabajo de fricción y el proceso de acumulación de energía elástica, la
 transformación martensítica consiste en un proceso irreversible desde el punto de vista de la termodinámica, a pesar de que es un proceso mecánicamente reversible. Por lo anto, la diferencia de energía libre química entre ambas fases se relaciona con el trabajo de fircción ($W_{fric}$) y el trabajo elástico ($W_{elast}$) mediante la siguiente ecuación \footnote{Esta relacipon se deduce desde el primer y segundo principio de la termodinámica, tomando como convención de signos que el calor absorvido por el sistema y el trabajo realizado sobre el sistema son ambos positivos} \cite{Isola2020}:
@@ -172,14 +179,7 @@ transformación martensítica consiste en un proceso irreversible desde el punto
 	- \Delta G_{q}^{A \leftrightarrow M} \geq W_{elast} W_{fric}
 \end{equation}
 
-En una transformación inducida térmicamente, $\Delta G_{q}^{A \leftrightarrow M}$ siempre es menor a cero (ver Figura \todo{y acá va otra figura!}), mientras que el trabajo de fricción siempre es positivo (ya que es realizado sobre el volumen que transforma), por lo cual se opone al camibo de fase y es el responsable del efecto de histéresis en la transformación, y negativo durante la retransformación, por lo cual ayudará a está última. Este trabajo elástico es el responsable de que la transformación se desarrolle en el rango de temperatura definido por las temperaturas $M_s$ y $M_f$ (ver Figura \todo{PONE LAS FIGURAS DE UNA VEZ}) 
-
-\begin{figure}
-	\centering
-	\label{Gibbs}
-	\includegraphics[scale=0.7]{img/Termo.eps}
-	\caption{Fracción transformada ($\xi$) y energía libre de Gibbs de ambas fases como función de la temperatura en los casos: si la transformación sucediera a la temperatura de equilibrio termodinámico (a) y (b), si sólo hubiera trabajo de fricción (c) y (d), si hubiera tanto trabajo de fricción como trabajo elástico (e) y (f)} 
-\end{figure}
+En una transformación inducida térmicamente, $\Delta G_{q}^{A \leftrightarrow M}$ siempre es menor a cero (ver Figura \ref{Gibbs}, mientras que el trabajo de fricción siempre es positivo (ya que es realizado sobre el volumen que transforma), por lo cual se opone al camibo de fase y es el responsable del efecto de histéresis en la transformación, y negativo durante la retransformación, por lo cual ayudará a está última. Este trabajo elástico es el responsable de que la transformación se desarrolle en el rango de temperatura definido por las temperaturas $M_s$ y $M_f$ (ver Figura \ref{Gibbs}(e) y \ref{Gibbs}(f)) 
 
 
 \subsubsection{Efectos de memoria de forma y superelasticidad como consecuencias de la transformación}
@@ -889,7 +889,7 @@ Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \r
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_600.png}} 
 \subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_700.png}} 
 \caption{Imágenes de TEM para las muestras pobres en Ni}
-\label{TEMNiRich}
+\label{TEMNiPoor}
 \end{figure}
 \towrite{No hay análisis acá todavía porque falta ver las de 800 y no hay de 500. En principio, se ven similar a las ricas en Ni.}
 
