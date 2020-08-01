@@ -111,6 +111,7 @@ forma de alta temperatura Ni-Ti-Zr mediante sputtering.}
 
 \newpage
 \section{Introducción}
+\newpage
 
 \subsection{Motivación}
 
@@ -475,7 +476,54 @@ Aplicando logaritmo natural a esta expresión se obtiene la relación de Augis B
 \end{equation}
 Donde la forma de hallar el valor de $E_c$ es similar a la de Kissinger, a partir de la pendiente de la gráfica $ln(\frac{\alpha}{T_p - T_0})$
 
+\newpage
+
 \section{Técnicas experimentales}
+
+\subsection{Deposición por magnetrón sputtering}
+Para realizar la deposición de las láminas delgadas se usaron 3 magnetrones modelo Meivac MAK-130-V, \textcolor{violet}{los cuales pueden verse en la figura \ref{magnetrones}}. Los magnetrones están construidos de manera que su superficie exterior, de acero inoxidable, \textcolor{violet}{funciona} como ánodo, mientras que los blancos, construidos en los materiales a depositar, \textcolor{violet}{son} el cátodo de la descarga. Además en su interior poseen dos imanes concéntricos que permiten la concentración de la descarga brillante en un anillo sobre la superficie del blanco. Entre estos imanes se encuentra una serie de cilindros huecos aislantes y un anillo de cobre conectado a la fuente de tensión y al sistema de circulación de agua, que actúa como refrigerante durante la experiencia. A los blancos no magnéticos se \textcolor{violet}{les} suelda por punto una arandela de hierro niquelada, la cual permite que se acoplen magnéticamente al magnetrón y mediante una pasta conductora se asegura el contacto térmico y eléctrico con el anillo de cobre. Los blancos usados para generar las láminas delgadas fueron de titanio ($99,7$ \% de pureza), níquel ($99,7$ \% de pureza) y zirconio ($99,7$ \% de pureza). \textcolor{red}{Corroborar esta info.}
+
+
+Los magnetrones están colocados en la tapa superior de la cámara de  deposición, construida en acero inoxidable, la cual se muestra en la figura \ref{camara}. \textcolor{violet}{Dicha} cámara posee una ventana de cuarzo para poder ver en su interior, sin embargo al avanzar la deposición dicha ventana se contamina, \textcolor{violet}{imposibilitando así la visión dentro de la cámara.}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{img/camara.jpg}
+	\caption{Cámara empleada para realizar las deposiciones}
+	\label{camara}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{img/magnetrones.jpg}
+	\caption{Magnetrones empleados durante la deposición}
+	\label{magnetrones}
+\end{figure}
+
+\subsubsection{Sistema de vacío}
+
+\textcolor{violet}{Para realizar la deposición de los materiales se utilizó una atmósfera de 3 mTorr de argón dentro de la cámara.} Se eligió Ar como gas ya que al ser inerte no hay posibilidad que reaccione con alguno de los metales a ser depositados.
+
+
+Para llegar al nivel de vacío requerido, se usó una bomba turbomolecular Varian V70 \textcolor{red}{(no es la bomba que se usó)} \textcolor{violet}{¿Cuál entonces?} que alcanza un vacío base de $1,5 \times 10^{-6}Torr$. Esta bomba requiere un vacío previo, para lo cual se utilizó una bomba mecánica de dos etapas Edward Rv8 capaz de reducir la presión hasta $10^{-3}Torr$. La medición de vacío se realizó con \todo{ver que medidores eran y que medían}
+
+
+Para reducir el caudal durante la deposición y no dañar el sistema de vació, se entrecerró la válvula plato colocada entre la bomba turbomolecular y la cámara de deposición.
+
+
+\subsubsection{Sistema eléctrico}
+\textcolor{violet}{Para alimentar los magnetrones, se emplearon tres fuentes independientes entre sí, que se encargaban de transformar el voltaje proveniente de la tensión de línea (220 V), para que luego la corriente fuese rectificada. Al haber variaciones en la tensión de entrada, los ajustes correspondientes para mantener la potencia correspondiente en cada magnetron se realizaban manualmente.} 
+
+\subsubsection{Colocación de los sustratos}
+Dentro de la cámara se encontraban dos platos metálicos, uno sobre el otro, unidos por un eje. En el inferior se encontraban las muestras y el superior actuaba como pantalla para evitar deposición alguna sobre las muestras hasta que las condiciones sean las adecuadas (presión y potencia estable). Al alcanzarse las condiciones deseadas, se hace girar unicamente el plato superior lo suficiente para que las muestras queden expuestas. Luego giran a velocidad constante de 60rpm en forma conjunta durante la deposición para que esta sea uniforme para todas las muestras. En la figura \ref{muestras} se muestra una foto de este esquema
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{img/muestras.jpg}
+	\caption{Láminas de vidrio depositadas sobre un disco rotatorio antes de comenzar la deposición}
+	\label{muestras}
+\end{figure}
 
 \subsection{Difracción por rayos X}
  La difracción por Rayos X es una técnica para determinar la estructura molecular de un material cristalino. Al recibir la muestra un haz incidente de Rayos X, los electrones lo absorben para luego vibrar a dicha frecuencia como un dipolo, emitiendo así radiación de la misma frecuencia a la incidente. En este proceso se producen fenómenos de difracción e interferencia.  Conociendo las intensidades y los ángulos de dichos haces difractados es posible determinar la estructura del material.
@@ -521,35 +569,6 @@ El área debajo de los picos registrados es proporcional a la energía calórica
 
 El equipo trabaja con panes de Al de 3mm de diámetro, dónde se colocan las muestras a ser estudiadas.
 
-\subsection{Deposición por magnetrón sputtering}
-Para realizar la deposición se usaron 3 magnetrones modelo Meivac MAK-130-V. Todos están compuestos de la siguiente manera: por el exterior una carcasa de acero inoxidable, que es el ánodo; dentro de ellos se colocan imanes; el blanco, que es a su vez el cátodo, esta sujetado por un acoplamiento magnético al resto de las partes; entre los imanes y el blanco se coloca un anillo de cobre conectado con un sistema de circulación de agua para actuar como refrigerante durante la experiencia. Los blancos usados fueron de titanio, níquel y zirconio.
-
-La deposición fue hecha dentro de una cámara de acero inoxidable, la cual se muestra en la figura \ref{camara}. La cámara posee una ventana de cuarzo para poder ver en su interior, sin embargo al avanzar la deposición dicha ventana se contamina y no puede seguir viéndose dentro.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.1]{img/camara.jpg}
-	\caption{Cámara empleada para realizar las deposiciones}
-	\label{camara}
-\end{figure}
-
-\subsubsection{Atmósfera dentro de la cámara}
-La atmósfera dentro de la cámara era de argón a 3mTorr. Se eligió Ar como gas ya que al ser inerte no hay posibilidad que reaccione con alguno de los metales a ser depositados. Para llegar al nivel de vacío requerido, se usó una bomba turbomolecular Varian V70 que alcanza un vacío base de $1,5x10^{-10}Torr$. Esta bomba requiere un vacío previo, para lo cual primeramente se realizó vacío con una bomba mecánica capaz de reducir la presión hasta $10^{-4}Torr$. Para reducir el caudal durante la deposición y así lograr una atmósfera más estable, se colocó una válvula plato entre la bomba turbomolecular y la cámara.
-
-La medición de vacío se realizó con \todo{ver que medidores eran y que medían}
-
-\subsubsection{Sistema eléctrico}
-\towrite{Explayarme, eran 3 resistencias y 3 fuentes creo}
-
-\subsubsection{Colocación de las muestras}
-Dentro de la cámara se encontraban dos platos metálicos, uno sobre el otro, unidos por un eje. En el inferior se encontraban las muestras y el superior actuaba como pantalla para evitar deposición alguna sobre las muestras hasta que las condiciones sean las adecuadas (presión y potencia estable). Al alcanzarse las condiciones deseadas, se hace girar unicamente el plato superior lo suficiente para que las muestras queden expuestas. Luego giran a velocidad constante de 60rpm en forma conjunta durante la deposición para que esta sea uniforme para todas las muestras. En la figura \ref{muestras} se muestra una foto de este esquema
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.1]{img/muestras.jpg}
-	\caption{Láminas de vidrio depositadas sobre un disco rotatorio antes de comenzar la deposición}
-	\label{muestras}
-\end{figure}
 
 \subsection{Microscopía electrónica de barrido}
 El microscopio electrónico de barrido (SEM, del inglés Scanning Electron Microscope) es un dispositivo que produce imágenes de alta resolución de la superficie de la muestra realizando un escaneo con un haz concentrado de electrones. Dichos electrones interactúan con la muestra produciendo varias señales que contienen información sobre la topografía de la superficie de la muestra y de su composición. Estas posibles señales son electrones secundarios, electrones retro dispersados, rayos X característicos, corriente absorbida y electrones transmitidos, siendo las operatorias más comunes la de electrones secundarios y la de rayos X.
@@ -628,6 +647,8 @@ Este proceso consiste en acelerar iones de un determinado gas, en este caso y no
 
 
 \section{Resultados obtenidos}
+
+\newpage
 Debido a que la tanda rica en Ni presenta muchas diferencias con la tanda pobre en Ni, la organización de esta sección será de la siguiente manera: Primeramente, se mostrarán los datos que son similares para ambas deposiciones, esto es, los estudios sin tratamiento térmico de las láminas. Luego, se analizarán primero los resultados obtenidos de la deposición rica en Ni, para finalmente terminar con los resultados de la deposición pobre en Ni.
 \subsection{Deposición de las láminas delgadas}
 Se realizaron dos deposiciones para obtener láminas delgadas de NiTiZr. En la Tabla \ref{potencias} se muestran los valores para la potencia de cada blanco en ambas deposiciones. Los errores corresponden a las variaciones observadas durante las deposiciones, que era mayor al error de los instrumentos. Al no tener un equipo que estabilizase la potencia en función de la tensión de línea, el proceso se hacía manualmente y cada 10 minutos se registraba la potencia de cada magnetrón.
@@ -894,6 +915,8 @@ Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \r
 \towrite{No hay análisis acá todavía porque falta ver las de 800 y no hay de 500. En principio, se ven similar a las ricas en Ni.}
 
 \section{Discusión}
+
+\newpage
 \towrite{Poner una intro}
 
 \subsection{Energía de activación}
