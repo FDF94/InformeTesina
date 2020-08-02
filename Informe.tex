@@ -17,7 +17,7 @@
 \usepackage{float}				 % force figure position(lets use [H])
 \usepackage{setspace}			 % for setting interline spacing
 
-
+\usepackage{ulem}               % para tachar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SET TITLE PAGE VALUES HERE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -171,7 +171,7 @@ Las transformaciones martensíticas son transformaciones de fase de primer orden
 
 Se denomina termoelástica a una transformación martensítica cuando la deformación que produce la transformación es absorbida en forma elástica por la matriz (en este caso particular la austenita, $A$) que rodea a la martensita ($M$), de forma que existe un equilibrio termoelástico local entre una energía de origen químico y una de origen elástico que controla el avance de la transformación. La fuerza motriz de la transformación es la diferencia de energías libres químicas o estructurales entre las fases matriz y martensita ($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q$).
 
-En el caso ideal, la transformación sucedería a la temperatura de equilibrio termodinámico $T_0$, la cual se define como la temperatura en la cual la diferencia de energía libre quiímica entre ambas fases es cero($\Delta G^{A \rightarrow M}_q = G^M_q - G^A_q = 0$). Esta transformación sería termodinámicamente reversible y es esquematizada en la Figura \ref{Gibbs}(a) y \ref{Gibbs}(b), en donde se observa que la fase estable a temperatura mayor a $T_0$ sería la austenita, mientras que a temperaturas menores a $T_0$ la fase estable sería la martensítica. Sin embargo, como ya vimos, la transformación comienza en $M_s$  ($< T_0$) y se extiende en un intervalo de temperaturas hasta $M_f$  $(< M_s)$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son: un término disipativo que se manifiesta experimentalmente por la presencia de histéresis ver Figura \ref{Gibbs}(c) y \ref{Gibbs}(d)) y la deformación elástica entre la fase matriz y la martensita, la cual se almacena durante la transformación (ver Figura \ref{Gibbs}(e) y \ref{Gibbs}(f)). El término disipativo incluye el trabajo de fricción generado en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos. El término elástico, por otra parte, proviene de la acomodación de los cambios de forma y volumen asociados a la transformación\cite{Wollants1993}.
+En el caso ideal, la transformación sucedería a la temperatura de equilibrio termodinámico $T_0$, la cual se define como la temperatura en la cual la diferencia de energía libre química entre ambas fases es cero ($\Delta G^{A \rightarrow M}_q = 0$). Esta transformación sería termodinámicamente reversible y es esquematizada en la Figura \ref{Gibbs}(a) y \ref{Gibbs}(b), en donde se observa que la fase estable a temperatura mayor a $T_0$ sería la austenita, mientras que a temperaturas menores a $T_0$ la fase estable sería la martensítica. Sin embargo, como ya vimos, la transformación comienza en $M_s$  ($< T_0$) y se extiende en un intervalo de temperaturas hasta $M_f$  $(< M_s)$. Esto se debe a que el sistema necesita una energía suplementaria $\Delta G_q$ para compensar las energías de origen no químico que se oponen a la transformación cuando esta ocurre. Las contribuciones más importantes al término no químico son: un término disipativo que se manifiesta experimentalmente por la presencia de histéresis ver Figura \ref{Gibbs}(c) y \ref{Gibbs}(d)) y la deformación elástica entre la fase matriz y la martensita, la cual se almacena durante la transformación (ver Figura \ref{Gibbs}(e) y \ref{Gibbs}(f)). El término disipativo incluye el trabajo de fricción generado en el movimiento de las interfases e interacción de las mismas con otras variantes y/o defectos. El término elástico, por otra parte, proviene de la acomodación de los cambios de forma y volumen asociados a la transformación\cite{Wollants1993}.
 
 Debido al trabajo de fricción y el proceso de acumulación de energía elástica, la
 transformación martensítica consiste en un proceso irreversible desde el punto de vista de la termodinámica, a pesar de que es un proceso mecánicamente reversible. Por lo anto, la diferencia de energía libre química entre ambas fases se relaciona con el trabajo de fircción ($W_{fric}$) y el trabajo elástico ($W_{elast}$) mediante la siguiente ecuación \footnote{Esta relacipon se deduce desde el primer y segundo principio de la termodinámica, tomando como convención de signos que el calor absorvido por el sistema y el trabajo realizado sobre el sistema son ambos positivos} \cite{Isola2020}:
@@ -513,62 +513,19 @@ Para reducir el caudal durante la deposición y no dañar el sistema de vació, 
 
 
 \subsubsection{Sistema eléctrico}
+
 \textcolor{violet}{Para alimentar los magnetrones, se emplearon tres fuentes independientes entre sí, que se encargaban de transformar el voltaje proveniente de la tensión de línea (220 V), para que luego la corriente fuese rectificada. Al haber variaciones en la tensión de entrada, los ajustes correspondientes para mantener la potencia correspondiente en cada magnetron se realizaban manualmente.} 
 
 \subsubsection{Colocación de los sustratos}
-Dentro de la cámara se encontraban dos platos metálicos, uno sobre el otro, unidos por un eje. En el inferior se encontraban las muestras y el superior actuaba como pantalla para evitar deposición alguna sobre las muestras hasta que las condiciones sean las adecuadas (presión y potencia estable). Al alcanzarse las condiciones deseadas, se hace girar unicamente el plato superior lo suficiente para que las muestras queden expuestas. Luego giran a velocidad constante de 60rpm en forma conjunta durante la deposición para que esta sea uniforme para todas las muestras. En la figura \ref{muestras} se muestra una foto de este esquema
+
+El sistema de soporte de los sustratos fue construido utilizando dos platos de acero inoxidable, colocados uno sobre el otro, unidos por un eje construido en teflón. En el plato inferior se colocan los sustratos y el superior actúa como pantalla para evitar que se deposite material en los sustratos, hasta que las condiciones de descargas sean las adecuadas (presión y potencia estable). Al alcanzarse las condiciones deseadas, se hace girar unicamente el plato superior lo suficiente para que los sustratos queden expuestos. Durante la deposición se hace giran todo el sistema en forma conjunta, a una velocidad constante de 60 rpm, para que los sustratos se expongan a cada magnetrón y de esa manera se logren láminas uniformes. En la figura \ref{muestras} se muestra una foto del sistema de soporte de los sustratos.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.1]{img/muestras.jpg}
-	\caption{Láminas de vidrio depositadas sobre un disco rotatorio antes de comenzar la deposición}
+	\caption{Sustratos de vidrio \textcolor{violet}{depositados} el sistema de soporte rotatorio, antes de comenzar la deposición}
 	\label{muestras}
 \end{figure}
-
-\subsection{Difracción por rayos X}
- La difracción por Rayos X es una técnica para determinar la estructura molecular de un material cristalino. Al recibir la muestra un haz incidente de Rayos X, los electrones lo absorben para luego vibrar a dicha frecuencia como un dipolo, emitiendo así radiación de la misma frecuencia a la incidente. En este proceso se producen fenómenos de difracción e interferencia.  Conociendo las intensidades y los ángulos de dichos haces difractados es posible determinar la estructura del material.
- 
-\begin{figure}[H]
-\centering
-\subfloat[Reflexión de Bragg en planos atómicos.]{
-  \includegraphics[width=60mm]{img/Bragg.png}
-}
-\subfloat[Esquema del dispositivo tipo Bragg-Brentano.]{
-  \includegraphics[width=60mm]{img/gonio.png}
-}
-\end{figure}
- 
- Este fenómeno de difracción sucede cuando la longitud de onda de la radiación incidente es comparable a las distancias entre los átomos del material. Está distancia es del orden de 0,15 a 0,4 nm, que en el espectro electromagnético corresponde a los Rayos X, con energías entre 3 y 8 keV. De usarse una longitud mayor de onda, Rayos UV por ejemplo, se obtendría menor resolución y de usarse una menor longitud de onda, se correría el riesgo de alterar la muestra debido a la alta energía que poseería la radiación.
- 
- 
- Este fenómeno de difracción puede ser explicado mediante la Ley de Bragg. Radiación electromagnética incide en los diferentes planos atómicos, la cual ser re-emitida presentará un fenómeno de difracción e interferencia debido a una diferencia de recorrido. La interferencia será constructiva en caso de que la distancia entre los planos cumpla con
- \begin{equation}
- 2d sin \theta =n \lambda; n \in \mathbf{N}
- \end{equation}
- 
- 
- Luego, la intensidad del haz refractado es medida para diversos ángulos, en este caso $10^{\circ}$ a $120^{\circ}$ y es mostrada en función del parámetro $2\theta$. Al deberse este patrón de intensidades  a factores puramente geométricos de la estructura, se emplea para discernir distintas estructuras y encontrar valores característicos como la distancia entre planos o los parámetros de red de la celda unidad.
-
- El dispositivo usado para esta medición fue un difractómetro Philips X'Pert Pro X-ray, de tipo Bragg-Brentano en la configuración $\theta - 2\theta$.  Para el análisis de los datos, fue usado el programa \textit{Highscore} con la base de datos \textit{PDF 2004 ICDD}.
- 
-\subsection{Calorimetría diferencial de barrido}
-La calorimetría diferencial de barrido, llamada normalmente DSC (del inglés, differential scanning calorimetry) es una técnica termoanalítica en la cual se mide la diferencia de de calor requerida para calentar una muestra y una referencia como función de la temperatura. La medición suele realizarse en una atmósfera controlada de un gas inerte, y con rampas programas de cambio de temperatura en función del tiempo.  Es necesario destacar que la referencia debe ser inerte en el rango de temperaturas medido.
-Esta técnica permite determinar las temperaturas a las cuales ocurren distintos procesos en los materiales, como transformaciones de fase o reacciones químicas. Además, es posible determinar el calor específico y el cambio de entalpía que acompañan las transiciones de primer y segundo orden, ya sean procesos exotérmicos o endotérmicos.
-
-El calorímetro usado fue el model Shimadzu DSC-60, cuyo esquema se muestra en la figura \ref{DSCscheme}. Para usarlo, se configura un programa que controla la temperatura del bloque calefactor ($T_b$), del cual fluye calor a través de una resistencia R hacia la muestra y la referencia, haciendo que la temperatura de la muestra ($T_m$) y la temperatura de la referencia ($T_r$) cambien al igual que $T_b$. La diferencia entre la $T_m$ y $T_r$ es $\Delta T = T_m - T_r$
-Cuando la muestra se funde, su temperatura se mantiene constante mientras que la temperatura de la referencia sigue aumentando. Cuando esto sucede, es necesario entregarle mucho más calor a la muestra para que su temperatura se mantenga igual a la de la referencia. En caso de una solidificación, lo inverso ocurre.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.2]{img/DSCscheme.png}
-	\caption{Esquema del DSC empleado}
-	\label{DSCscheme}
-\end{figure}
-
-El área debajo de los picos registrados es proporcional a la energía calórica necesaria para la transformación o reacción que sucede. En condiciones de presión constante, la energía calórica es igual al cambio de entalpía $\Delta H$ de la muestra.
-
-El equipo trabaja con panes de Al de 3mm de diámetro, dónde se colocan las muestras a ser estudiadas.
-
 
 \subsection{Microscopía electrónica de barrido}
 El microscopio electrónico de barrido (SEM, del inglés Scanning Electron Microscope) es un dispositivo que produce imágenes de alta resolución de la superficie de la muestra realizando un escaneo con un haz concentrado de electrones. Dichos electrones interactúan con la muestra produciendo varias señales que contienen información sobre la topografía de la superficie de la muestra y de su composición. Estas posibles señales son electrones secundarios, electrones retro dispersados, rayos X característicos, corriente absorbida y electrones transmitidos, siendo las operatorias más comunes la de electrones secundarios y la de rayos X.
@@ -586,16 +543,94 @@ Como fuente de electrones estos dispositivos tienen distintos tipos de cañones 
 	\label{SEM}
 \end{figure} 
 
-El equipo utilizado es un Leitz Wetzlar AMR1000 con filamento de tungsteno. El detector de rayos X es un modelo Oxforde XMAX. Con dicho detector se realizó un análisis de la composición química de las muestras. Se realizaron dos análisis, uno detectando todos los elementos presentes y otro detectando unicamente Ni, Ti y Zr. Los datos fueron analizados con el software AZtec 3.0.
+Para analizar las composiciones químicas de las láminas delgadas se utilizó un SEM Leitz Wetzlar AMR1000 con filamento de tungsteno, el cual tiene un detector de rayos X SDD (Silicon Drift Detector) modelo Oxford X-MAX. Los datos fueron analizados con el software AZtec 3.0.
 
-Para este estudio se armó un portamuestras con \todo{que había acá?}.
+% Para este estudio se armó un portamuestras con \todo{que había acá?}.
 
-Antes de cada medición, se midió la intensidad del pico de rayos X sobre la muestra de Co puro, con el objetivo de estandarizar la corriente del filamento y no medir hasta que esta estuviese estabilizada, asegurando reproducibilidad de los resultados.
+El análisis de composición se realizó utilizando patrones de metales de Ni \textcolor{red}{(pureza $99,7$ \%) y Ti (pureza $99,7$ \%)}, mientras que para el Zr se utilizó el patrón de fabrica del detector. Además, antes de cada medición, se midió la intensidad del pico de rayos X sobre una muestra de Co puro, con el objetivo de estandarizar la corriente del filamento y no medir hasta que esta estuviese estabilizada, asegurando reproducibilidad de los resultados.
+
+
+\subsection{Difracción por rayos X}
+ La difracción por Rayos X es una técnica para determinar la estructura molecular de un material cristalino. Al recibir la muestra un haz incidente de Rayos X, los electrones lo absorben para luego vibrar a dicha frecuencia como un dipolo, emitiendo así radiación de la misma frecuencia a la incidente. En este proceso se producen fenómenos de difracción e interferencia.  Conociendo las intensidades y los ángulos de dichos haces difractados es posible determinar la estructura del material.
+ 
+\begin{figure}[H]
+\centering
+\subfloat[Reflexión de Bragg en planos atómicos.]{
+  \includegraphics[width=60mm]{img/Bragg.png}
+}
+\subfloat[Esquema del dispositivo tipo Bragg-Brentano.]{
+  \includegraphics[width=60mm]{img/gonio.png}
+}
+\caption{}
+\label{Rxesquema}
+\end{figure}
+ 
+ Este fenómeno de difracción sucede cuando la longitud de onda de la radiación incidente es comparable a las distancias entre los átomos del material. Está distancia es del orden de 0,15 a 0,4 nm, que en el espectro electromagnético corresponde a los Rayos X, con energías entre 3 y 8 keV. De usarse una longitud mayor de onda, Rayos UV por ejemplo, se obtendría menor resolución y de usarse una menor longitud de onda, se correría el riesgo de alterar la muestra debido a la alta energía que poseería la radiación.
+ 
+ 
+ Este fenómeno de difracción puede ser explicado mediante la Ley de Bragg. La radiación electromagnética incide en los diferentes planos atómicos, la cual ser re-emitida presentará un fenómeno de difracción e interferencia debido a una diferencia de recorrido. La interferencia será constructiva en caso de que la distancia entre los planos cumpla con
+ 
+{\begin{equation}
+ 2 \, d\, {\rm sin} \theta =n \, \lambda \, \,; \, \, n \in \mathbf{N}
+ \end{equation}
+ 
+  \noindent donde $d$ es la distancia entre los planos cristalino, $\theta$ el ángulo de difracción, $\lambda$ la longitud de onda y $n$ un número natural (ver figura \ref{Rxesquema}).
+ 
+ Entonces, la intensidad del haz refractado es medida para diversos ángulos, en este caso $10^{\circ}$ a $120^{\circ}$ y es mostrada en función del parámetro $2\theta$. Al deberse este patrón de intensidades  a factores puramente geométricos de la estructura, se emplea para discernir distintas estructuras y encontrar valores característicos como la distancia entre planos o los parámetros de red de la celda unidad.
+
+ El dispositivo usado para las medición presentado en este trabajo fue un difractómetro de Rayos X PANalytical-Empyrean en la configuración $\theta - 2\theta$.
+ 
+\subsection{Microscopía electrónica de transmisión}
+La microscopía electrónica de transmisión, conocida normalmente como \textbf{TEM} (del inglés, \textbf{T}ransmission \textbf{E}lectron \textbf{M}icroscopy) es una técnica de microscopía en la cual un haz de electrones atraviesa una muestra para formar una imagen. El poder de resolución de esta técnica se sitúa en el orden de $1 \AA$, resolución lograda ya que la onda de de Broglie de electrones muy energéticos es considerablemente menor que aquella de la luz visible. Para realizar esta técnica se requiere que la muestra tenga un grosor menor a $100 nm$, debido al escaso poder de penetración de los electrones.
+
+\textcolor{violet}
+{Al igual que en un microscopio electrónico de barrido,} un microscopio eltrónico de transmisión consiste de un cañón de electrones y de un conjunto de lentes magnéticas dentro de una columna de vacío. El esquema en particular para este útlimo se muestra en la Figura \ref{TEM}. La disposición de las lentes magnéticas para controlar el haz es similar a la disposición de lentes ópticas en un microscopio común.
+
+ \begin{figure}[H]
+ 	\centering
+	\includegraphics[scale=0.5]{img/TEM.png}
+ 	\caption{Esquema del tubo de un microscopio electrónico de transmisión.}
+	\label{TEM}
+\end{figure} 
+
+Una lente magnética es un dispositivo que permite el foco o la deflección de partículas con carga usando la fuerza de Lorentz. Normalmente consisten de bobinas por las cuales circula corriente rodeadas por materiales ferromagnéticos diseñados para concentrar el campo magnético en un espacio confinado. La distancia focal de estas lentes es regulado variando la corriente que circula por las bobinas.
+
+La lente condensadora permite producir un haz de electrones colimado incidente sobre la muestra. Luego de atravesar la muestra, el haz de electrones atraviesa una lente objetivo, cuya tarea es formar una imagen magnificada hasta 40 veces en el plano focal de la siguiente lente, la lente intermedia. Esta lente produce una magnificación aún mayor que llega a la lente proyectora. Esta última lente reproduce la imagen, una vez más aumentada, sobre el receptor final de imagen, normalmente una pantalla fluorescente.
+
+\textcolor{red}{Se podria agregar algo relacionado con los patrones de difracción y especificaciones del TEM usado ...} 
+\textcolor{violet}{Ajustando las lentes electromagnéticas es posible generar un espectro de difracción en lugar de recrear la imagen. Este patrón consiste en diversos puntos en el caso de un cristal simple, o una serie de anillos en el caso de una muestra policristalina o un sólido amorfo. Como el patrón de difracción depende de la estructura de la muestra y de sus espacios interatómicos, con este patrón es posible conocer dichas propiedades. En caso de tener un sólido con múltiples fases, se colima el haz de electrones para que incida únicamente sobre una región deseada, y se obtiene el patrón de difracción de está área. Realizando el proceso sucesivas veces sobre los distintos granos, es posible obtener información sobre todas las fases presentes. Esto último es una gran ventaja en comparación con el estudio de rayos X, ya que con rayos X no es posible obtener los espectros por separado para cada fase.}
+
+
+\subsubsection{Preparación de las muestras}
+
+Como se dijo anteriormente, para observa imágenes en TEM es necesario afinar las muestras hasta que su espesor sea menor a los $100$ nm. Debido al espesor inicial de las láminas delgadas y su fragilidad, se optó por el método de adelgazamiento iónico. Este proceso consiste en acelerar iones de un determinado gas, en este caso y normalmente Ar, en un alto vacío en la dirección de la muestra. Este choque de iones va liberando átomos de la capa superior de la muestra, proceso que se mantiene hasta que se obtiene el espesor deseado. En el caso de muestras cristalinas, se produce la amorfización de las capas cercanas a la superficie (unos pocos nanómetros). Sin embargo, la estructura cristalina original permanece dentro de la muestra y las capas amorfas no interfieren con la observación. \todo{Especificaciones del equipo}
+ 
+\subsection{Calorimetría diferencial de barrido}
+
+La calorimetría diferencial de barrido, llamada normalmente DSC (del inglés, differential scanning calorimetry) es una técnica termoanalítica en la cual se mide la diferencia de de calor requerida para calentar una muestra y una referencia como función de la temperatura. La medición suele realizarse en una atmósfera controlada de un gas inerte, y con rampas programas de cambio de temperatura en función del tiempo.  Es necesario destacar que la referencia debe ser inerte en el rango de temperaturas medido.
+Esta técnica permite determinar las temperaturas a las cuales ocurren distintos procesos en los materiales, como transformaciones de fase o reacciones químicas. Además, es posible determinar el calor específico y el cambio de entalpía que acompañan las transiciones de primer y segundo orden, ya sean procesos exotérmicos o endotérmicos.
+
+El calorímetro usado fue el model Shimadzu DSC-60, cuyo esquema se muestra en la figura \ref{DSCscheme}. Para usarlo, se configura un programa que controla la temperatura del bloque calefactor ($T_b$), del cual fluye calor a través de una resistencia R hacia la muestra y la referencia, haciendo que la temperatura de la muestra ($T_m$) y la temperatura de la referencia ($T_r$) cambien al igual que $T_b$. La diferencia entre la $T_m$ y $T_r$ es $\Delta T = T_m - T_r$. Cuando la muestra se funde, su temperatura se mantiene constante mientras que la temperatura de la referencia sigue aumentando. Cuando esto sucede, es necesario entregarle mucho más calor a la muestra para que su temperatura se mantenga igual a la de la referencia. En caso de una solidificación, lo inverso ocurre.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{img/DSCscheme.png}
+	\caption{Esquema del DSC empleado}
+	\label{DSCscheme}
+\end{figure}
+
+El área debajo de los picos registrados es proporcional a la energía calórica necesaria para la transformación o reacción que sucede. En condiciones de presión constante, la energía calórica es igual al cambio de entalpía $\Delta H$ de la muestra.
+
+En el trabajo se utilizaron panes de Aluminio de 5 mm de diámetro, \textcolor{violet}{dentro de los cuales} se colocan múltiples trozos de las láminas delgadas hasta alcanzar una masa cercana a los 5 mg.
+
 
 \subsection{Resistividad por el método de cuatro puntas}
-Al cambiar un material su estructura atómica, lo normal es que muchas de sus propiedades se vean afectadas, entre ellas la resistividad. Si esta transición sucede mientras a través del material circula una corriente eléctrica, puede asociarse un cambio en la resistencia con un cambio de fase. De esta manera, al tener una corriente controlada, al medir la diferencia de potencial es posible determinar donde comienzan y terminan los cambios de fase.
 
-A la lámina delgada se le aplica una corriente alterna constante $I$ a través de dos contactos y con otros dos contactos en la zona de circulación de la muestra se mide la caída de potencial $\delta V$. De estos cuatro contactos deriva el nombre del método. Un esquema de la disposición se muestra en la figura \ref{4puntas}. La lámina es sujetada en una base de cobre, llamada dedo frío, con los cuatro contactos compuestos de un alambre de Constatán soldada a una capa elástica de acero para asegurar un buen contacto eléctrico.
+
+Al cambiar un material su estructura atómica, lo normal es que muchas de sus propiedades se vean afectadas, entre ellas la resistividad. Si esta transformación sucede mientras circula una corriente eléctrica a través del material, se observará un cambio en la resistencia del material asociado a la transformación de fase. De esta manera, si se le aplica una corriente constante al material, midiendo la diferencia de potencial es posible determinar donde comienzan y terminan los cambios de fase.
+
+
+La medición de resistividad por cuatro punta consiste en aplicar una corriente \textcolor{violet}{constante} $I$ a través de dos contactos y medir  la caída de potencial $\delta V$ con otros dos contactos en la zona de circulación de la corriente. De estos cuatro contactos deriva el nombre del método. Un esquema de la disposición se muestra en la figura \ref{4puntas}. La lámina es sujetada en una base de cobre, llamada dedo frío, mediante los cuatro contactos fabricados con alambre de Constatán, soldados a cuatro chapas elásticas de acero para asegurar un buen contacto eléctrico.
 
  \begin{figure}[H]
  	\centering
@@ -609,41 +644,20 @@ Toda esta estructura se encuentra dentro de un tubo de vidrio cerrado, lo cual p
 \begin{itemize}
 \item Dos contactos por los cuales circula la corriente 
 \item Dos contactos para medir la diferencia de potencial
-\item Dos contactos para conexión del Variac
-\item Un contacto para la termocupla
+\item Un contacto para la termocupla de medición
+\item Un contacto para la tierra dentro del tubo \textcolor{violet}{No sería a tierra?}
+\item Dos contactos para conexión del controlador de temperatura
+\item Dos contactos para la termocupla del controlador de temperatura
 \end{itemize}
 
 
-Dentro del dedo frío hay una resistencia eléctrica alimentada por transformador Variac, calentando la muestra por efecto Joule. La temperatura se mide con una termocupla sobre el dedo frío. Al estar la muestra cubierta con lana de alúmina, esta intercambia calor unicamente con el dedo frío, por lo cual puede considerarse que tanto muestra como dedo frío están siempre a la misma temperatura.
+Dentro del dedo frío hay una resistencia eléctrica alimentada desde el controlador de temperatura novus 1200, calentando la muestra por efecto Joule y dos termocuplas tipo K. Una de ellas se utiliza para el controlador de temperatura, mientras que la otra termocupla mide la temperatura de la muestra a través de una punta fría y un multímetro Agilent 34401a. Al estar la muestra cubierta con lana de alúmina, esta intercambia calor unicamente con el dedo frío, por lo cual puede considerarse que tanto muestra como dedo frío están siempre a la misma temperatura.
 
 En la parte superior del tubo hay dos aberturas laterales. Una de ellas está conectada a un acople T que conecta un tubo de Ar y otro de He. La otra abertura se conecta con una bomba de vacío.
 
-Todas las mediciones se realizaron en una atmósfera de He a 660 Torr y un vacío base de 20 mTorr. Se trabajó en una atmósfera inerte para evitar que la condensación de la humedad ambiente a bajas temperaturas afectase la medición, y se eligió atmósfera de He en lugar de Ar ya que el último se condensa dentro del rango de temperaturas en el cual se trabajó.
+Al ser la muestra un material conductor, la diferencia de potencial medida es muy pequeña (orden de los $\mu V$), por lo cual el instrumento para llevar a cabo la medición debe ser de alta precisión y con filtros de ruido. El equipo usado para esta tarea fue un amplificador Lock-in modelo Sr-510 Stanford Research. En los contactos exteriores se aplicó una corriente de aproximadamente $10mA$, generada con un generador de señal operando a un 1 $kHz$ a través de una resistencia de 1$k\Omega$. El amplificador Lock-in y el multímetro Agilent se conectan a un sistema de adquisición de datos en una computadora. 
 
-Al ser la muestra un material conductor, la diferencia de potencial medida es muy pequeña (orden de los $\mu V$) el instrumento para llevar a cabo la medición debe ser de alta precisión y con filtros de ruido. El equipo usado para esta tarea fue un amplificador Lock-in modelo Sr-510 Stanford Research. En los contactos exteriores se aplico una corriente una corriente de aproximadamente $10mA$, generada con un generador de señal operando a un 1 $kHz$ a través de una resistencia de 1$k\Omega$. El dispositivo estaba conectado a un sistema de adquisición de datos en una computadora. La temperatura fue medida a través de una termocupla tipo K conectada a una punta fría y a un multímetro Agilent. El rango de temperaturas en las cuales se realizaron las mediciones fue desde $-140 ^\circ C$ hasta al menos $120 ^\circ C$
-
-
-\subsection{Microscopía electrónica de transmisión}
-La microscopía electrónica de transmisión, conocida normalmente como \textbf{TEM} (del inglés, \textbf{T}ransmission \textbf{E}lectron \textbf{M}icroscopy) es una técnica de microscopía en la cual un haz de electrones atraviesa una muestra para formar una imagen. El poder de resolución de esta técnica se sitúa en el orden de $1 \AA$, resolución lograda ya que la onda de de Broglie de electrones muy energéticos es considerablemente menor que aquella de la luz visible. Para realizar esta técnica se requiere que la muestra tenga un grosor menor a $100 nm$, debido al escaso poder de penetración de los electrones.
-
-Un microscopio de este tipo consiste de un cañón de electrones y de un conjunto de lentes magnéticas dentro de una columna de vacío. Dicho esquema se muestra en la Figura \ref{TEM}. La disposición de las lentes magnéticas para controlar el haz es similar a la disposición de lentes ópticas en un microscopio común.
-
- \begin{figure}[H]
- 	\centering
-	\includegraphics[scale=0.5]{img/TEM.png}
- 	\caption{Esquema del tubo de un microscopio electrónico de transmisión.}
-	\label{TEM}
-\end{figure} 
-
-Una lente magnética es un dispositivo que permite el foco o la deflección de partículas con carga usando la fuerza de Lorentz. Normalmente consisten de bobinas por las cuales circula corriente rodeadas por materiales ferromagnéticos diseñados para concentrar el campo magnético en un espacio confinado. La distancia focal de estas lentes es regulado variando la corriente que circula por las bobinas.
-
-La lente condensadora permite producir un haz de electrones colimado incidente sobre la muestra. Luego de atravesar la muestra, el haz de electrones atraviesa una lente objetivo, cuya tarea es formar una imagen magnificada hasta 40 veces en el plano focal de la siguiente lente, la lente intermedia. Esta lente produce una magnificación aún mayor que llega a la lente proyectora. Esta última lente reproduce la imagen, una vez más aumentada, sobre el receptor final de imagen, normalmente una pantalla fluorescente.
-
-\subsubsection{Preparación de las muestras}
-
-Para que las muestras sean lo suficientemente finas para el TEM, es necesario realizarlas algún tipo de tratamiento. Normalmente se realiza un pulido electrolítico. Esto es, se establece una celda electrolítica donde la muestra es el ánodo y se aplica un voltaje para disolverla en forma controlada hasta obtener el espesor deseado. En el presente trabajo, al ser las muestras demasiado frágiles se opto por el método de adelgazamiento iónico.
-
-Este proceso consiste en acelerar iones de un determinado gas, en este caso y normalmente Ar, en un alto vacío en la dirección del sustrato. Este choque de iones va liberando moléculas de la capa superior de la muestra, proceso que se mantiene hasta que se obtiene el espesor deseado. En el caso de muestras cristalinas, se produce la amorfización de las capas cercanas a la superficie (unos pocos nanómetros). Sin embargo, la estructura cristalina original permanece dentro de la muestra y las capas amorfas no interfieren con la observación.
+Todas las mediciones se realizaron en una atmósfera de He a 660 Torr y un vacío base de 20 mTorr. Se trabajó en una atmósfera inerte para evitar que la condensación de la humedad ambiente a bajas temperaturas afectase la medición, y se eligió atmósfera de He en lugar de Ar ya que el último se condensa dentro del rango de temperaturas en el cual se trabajó (desde $\sim 120 ^\circ C$ hasta $-140 ^\circ C$). La velocidad de enfriamiento y calentamiento se mantuvo a $\sim10$ K min$^{-1}$.
 
 
 \section{Resultados obtenidos}
