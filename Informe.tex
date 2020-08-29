@@ -795,22 +795,97 @@ Cada lámina fue envuelta dentro de una hoja de tantalio y luego encapsuladas, e
 
 Las láminas obtenidas resultaron quebradizas, con lo cual su manipulación resultó ser muy difícil, restringiendo considerablemente los estudios que sobre ellas podían realizarse, especialmente para aquellas de la tercera deposición. Esta fragilidad es atribuible al alto contenido en $Zr$ que presenta la aleación. Esta propiedad también es reportada por Hee Young Kim en 2009\cite{HeeYoungKim2009}.
 
+
+\subsection{Deposición pobre en Ni}
+\subsubsection{Fases obtenidas}
+En la figura \ref{RXNiPoor} se muestran los difractogramas de las láminas con los distintos tratamientos térmicos. En las gráficas obtenidas se aplico un logaritmo a toda la curva para que todos los picos pudiesen ser mejor apreciados (de no aplicar esta transformación, o bien deberían haber sido recortados los picos más grandes, o no se podrían haber visto los más chicos). La identificación de las distintas fases se hizo con ayuda del programa PowderCell.
+
+\begin{figure}[H]
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_500.png}} 
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_600.png}} \\
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_700.png}}
+\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_800.png}} \\
+\caption{Patrones de difracción para las muestras ricas en Ni}
+\label{RXNiPoor}
+\end{figure}
+
+
+En todos los difractogramas puede encontrarse la fase B2, en forma coexistente con la fase $Ti_2Ni$ (es posible que en lugar de esto sea $Ti_4Ni_2O$, ya que sus estructuras son muy similares, se cree que la primera es más probable por haberse trabajado en una atmósfera de $Ar$).
+
+En la muestra tratada a $600 ^\circ C$, se observan picos correspondientes a $NiZr$ y a la fase lambda.
+
+En la muestra tratada a $700 ^\circ C$, se observan picos correspondientes a $B19'$, correspondiente a la martensita. Esto implica que ambas fases coexisten a temperatura ambiente.
+
+En la muestra tratada a $800 ^\circ C$, vuelven a observarse picos pertenecientes a NiZr, con lo cual es probable que esta fase también este en la muestra tratada a $700 ^\circ C$, pero sus picos no puedan ser observados fácilmente por estar superpuestos con otros.
+
+\subsubsection{Imágenes obtenidas por TEM}
+
+\begin{figure}[H]
+\centering
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_600.png}} 
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_700.png}} 
+\caption{Imágenes de TEM para las muestras pobres en Ni}
+\label{TEMNiPoor}
+\end{figure}
+\towrite{No hay análisis acá todavía porque falta ver las de 800 y no hay de 500. En principio, se ven similar a las ricas en Ni.}
+
+\subsubsection{Transformación martensítica}
+Para determinar las temperaturas de transformación de las distintas muestras se realizó una calorimetría diferencial de barrido. En este caso no fue posible realizar el método de resistividad por cuatro puntas ya que las láminas eran extremadamente frágiles, impidiendo realizar las conexiones necesarias.
+
+Para analizar las curvas, primero fueron divididas entre enfriamiento y calentamiento, para luego restarseles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición no presenta ruido y los puntos originales son muy cercanos entre sí.
+
+Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \ref{DSCNiPoor} no es posible apreciar una transformación de fase. Dados los valores reportados en la literatura se cree que esto es porque los picos a observar son muy anchos y planos, evitando así que sean fácilmente vistos los efectos de las transformaciones. Una situación similar a esta es informada por Isola 2020 \cite{Isola2020}.
+
+\begin{figure}[H]
+\noindent\makebox[\linewidth][c]{
+	\subfloat[Enfriamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling500NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating500NiPoor}}}\\
+\noindent\makebox[\linewidth][c]{
+	\subfloat[Enfriamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling600NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating600NiPoor}}}\\
+\noindent\makebox[\linewidth][c]{
+	\subfloat[Enfriamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling700NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating700NiPoor}}}\\
+\noindent\makebox[\linewidth][c]{
+	\subfloat[Enfriamiento, muestra tratada a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling800NiPoor}}
+	\subfloat[Calentamiento, muestra tratada a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating800NiPoor}}}
+\caption{Curvas de DSC para las distintas muestras}
+\label{DSCNiPoor}
+\end{figure}
+
+
 \subsection{Deposición rica en Ni}
 \subsubsection{Fases obtenidas}
-En la figura \ref{RXNiRich} se muestran los difractogramas de las láminas con los distintos tratamientos térmicos. En las gráficas obtenidas se aplicó un logaritmo a toda la curva para que todos los picos pudiesen ser mejor apreciados (de no haberse aplicado esta transformación, o bien deberían haber sido recortados los picos más grandes, o no se podrían haber visto los más chicos). La identificación de las distintas fases se hizo con ayuda del programa PowderCell.
+En la figura \ref{RXNiRich} se muestran los difractogramas de las láminas ricas en Ni con los distintos tratamientos térmicos. En dichas figuras se muestran el logaritmo natural de la intensidad, de modo que todos los picos puedan ser apreciados.Del mismo modo que en las muestra pobres en Ni, la identificación de las distintas fases se realizó a través de la simulación de las estructuras cristalinas con el programa PowderCell.
 
 \begin{figure}[H]
 \subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_500.png}}
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_600.png}} \\
 \subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_700.png}} 
 \subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_800.png}} 
-\caption{Patrones de difracción para las muestras ricas en Ni}
+\caption{Patrones de difracción de rayos X para las muestras ricas en Ni}
 \label{RXNiRich}
 \end{figure}
 
-En todos los difractogramas puede encontrarse la fase B2, correspondiente a la austenita, siendo esta casi la única existente en la deposición tratada a $500 ^\circ C$. En este difractograma pueden apreciarse las direcciones $100$ en $2\theta \approx 29$; $110$ en $2\theta \approx 41,2$; $111$ en $2\theta \approx 51$; $200$ en $2\theta \approx 60$; $210$ en $2\theta \approx 67.8$ y $211$ en $2\theta \approx 75.3$. En los difractogramas a mayores temperaturas comienzan a apreciarse picos de $Ti_2Ni$ (es posible que en lugar de esto sea $Ti_4Ni_2O$, ya que sus estructuras son muy similares, se cree que la primera es más probable por haberse trabajado en una atmósfera de $Ar$) y de fase H. Es destacable que en la muestra tratada a $700 ^\circ C$ se observa la fase $B19'$ y en la tratada a $800 ^\circ C$ se observa $NiZr$.
+En todos los difractogramas puede encontrarse la fase B2, correspondiente a la austenita, siendo esta la única fase existente en la lámina tratada a $500 ^\circ C$. En los difractogramas de las muestras tratadas a mayores temperaturas comienzan a apreciarse picos de $Ti_2Ni$ (o posible $Ti_4Ni_2O$, ya que sus estructuras son muy similares) y de fase H. Además en la muestra tratada a $700 ^\circ C$ se observa la fase $B19'$, mientras que en la tratada a $800 ^\circ C$ se observa $NiZr$.
 
-\subsubsection{Temperaturas de transformación}
+\subsubsection{Imágenes obtenidas por TEM}
+
+En la figura \ref{TEMNiRich} se muestran las imágenes obtenidas por TEM para las diferentes muestras de esta deposición. Sobre las fotos hay superpuesta una grilla, cuyos vértices consecutivos se encuentran a una distancia de 50 nm, para facilitar la dimensionalización de los tamaños. 
+
+Puede verse un ligero aumento del tamaño de grano a medida que aumenta la temperatura del tratamiento térmico. De esta manera, en la muestra tratada a menor temperatura se ven granos que cuyos diámetros se enmarcan en su mayoría entre los 50 y los 100 nanómetros. En la muestra tratada a $600 ^\circ C$ se aprecian al menos dos fases bien diferenciadas, de granos cuyos diámetros rondan los 50 nm y otros cuyos diámetros rondan los 100, para finalmente verse en la muestra tratada a $700 ^\circ C$ que la mayor parte de los granos tienen alrededor de 100 nm de diámetro. \todo{ver que onda la de 800}
+
+\begin{figure}[H]
+\centering
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_500.png}} 
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600.png}} \\
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600_2.png}}
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_700.png}}
+\caption{Imágenes de TEM para las muestras ricas en Ni}
+\label{TEMNiRich}
+\end{figure}
+
+\subsubsection{Transformación martensítica}
 Para determinar las temperaturas de transformación se realizaron dos estudios: calorimetría diferencial de barrido y el método de resistividad por cuatro puntas.
 
 Para determinar las temperaturas de transformación en resistividad, se recurrió a un método gráfico, buscando donde se intersectarían las pendientes de distintos puntos en la curva. Ajustadas las curvas, los puntos de intersección fueron buscados en forma analítica.
@@ -854,80 +929,8 @@ Dichas curvas se muestran en la figura \ref{DSCNiRich}. En ninguna de las curvas
 \label{DSCNiRich}
 \end{figure}
 
-\subsubsection{Imágenes obtenidas por TEM}
-
-En la figura \ref{TEMNiRich} se muestran las imágenes obtenidas por TEM para las diferentes muestras de esta deposición. Sobre las fotos hay superpuesta una grilla, cuyos vértices consecutivos se encuentran a una distancia de 50 nm, para facilitar la dimensionalización de los tamaños. 
-
-Puede verse un ligero aumento del tamaño de grano a medida que aumenta la temperatura del tratamiento térmico. De esta manera, en la muestra tratada a menor temperatura se ven granos que cuyos diámetros se enmarcan en su mayoría entre los 50 y los 100 nanómetros. En la muestra tratada a $600 ^\circ C$ se aprecian al menos dos fases bien diferenciadas, de granos cuyos diámetros rondan los 50 nm y otros cuyos diámetros rondan los 100, para finalmente verse en la muestra tratada a $700 ^\circ C$ que la mayor parte de los granos tienen alrededor de 100 nm de diámetro. \todo{ver que onda la de 800}
-
-\begin{figure}[H]
-\centering
-\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_500.png}} 
-\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600.png}} \\
-\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600_2.png}}
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_700.png}}
-\caption{Imágenes de TEM para las muestras ricas en Ni}
-\label{TEMNiRich}
-\end{figure}
-
-\subsection{Deposición pobre en Ni}
-\subsubsection{Fases obtenidas}
-En la figura \ref{RXNiPoor} se muestran los difractogramas de las láminas con los distintos tratamientos térmicos. En las gráficas obtenidas se aplico un logaritmo a toda la curva para que todos los picos pudiesen ser mejor apreciados (de no aplicar esta transformación, o bien deberían haber sido recortados los picos más grandes, o no se podrían haber visto los más chicos). La identificación de las distintas fases se hizo con ayuda del programa PowderCell.
-
-\begin{figure}[H]
-\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_500.png}} 
-\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_600.png}} \\
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_700.png}}
-\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_800.png}} \\
-\caption{Patrones de difracción para las muestras ricas en Ni}
-\label{RXNiPoor}
-\end{figure}
-
-
-En todos los difractogramas puede encontrarse la fase B2, en forma coexistente con la fase $Ti_2Ni$ (es posible que en lugar de esto sea $Ti_4Ni_2O$, ya que sus estructuras son muy similares, se cree que la primera es más probable por haberse trabajado en una atmósfera de $Ar$).
-
-En la muestra tratada a $600 ^\circ C$, se observan picos correspondientes a $NiZr$ y a la fase lambda.
-
-En la muestra tratada a $700 ^\circ C$, se observan picos correspondientes a $B19'$, correspondiente a la martensita. Esto implica que ambas fases coexisten a temperatura ambiente.
-
-En la muestra tratada a $800 ^\circ C$, vuelven a observarse picos pertenecientes a NiZr, con lo cual es probable que esta fase también este en la muestra tratada a $700 ^\circ C$, pero sus picos no puedan ser observados fácilmente por estar superpuestos con otros.
-
-\subsubsection{Temperaturas de transformación}
-Para determinar las temperaturas de transformación de las distintas muestras se realizó una calorimetría diferencial de barrido. En este caso no fue posible realizar el método de resistividad por cuatro puntas ya que las láminas eran extremadamente frágiles, impidiendo realizar las conexiones necesarias.
-
-Para analizar las curvas, primero fueron divididas entre enfriamiento y calentamiento, para luego restarseles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición no presenta ruido y los puntos originales son muy cercanos entre sí.
-
-Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \ref{DSCNiPoor} no es posible apreciar una transformación de fase. Dados los valores reportados en la literatura se cree que esto es porque los picos a observar son muy anchos y planos, evitando así que sean fácilmente vistos los efectos de las transformaciones. Una situación similar a esta es informada por Isola 2020 \cite{Isola2020}.
-
-\begin{figure}[H]
-\noindent\makebox[\linewidth][c]{
-	\subfloat[Enfriamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling500NiPoor}}
-	\subfloat[Calentamiento, muestra tratada a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating500NiPoor}}}\\
-\noindent\makebox[\linewidth][c]{
-	\subfloat[Enfriamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling600NiPoor}}
-	\subfloat[Calentamiento, muestra tratada a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating600NiPoor}}}\\
-\noindent\makebox[\linewidth][c]{
-	\subfloat[Enfriamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling700NiPoor}}
-	\subfloat[Calentamiento, muestra tratada a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating700NiPoor}}}\\
-\noindent\makebox[\linewidth][c]{
-	\subfloat[Enfriamiento, muestra tratada a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Cooling800NiPoor}}
-	\subfloat[Calentamiento, muestra tratada a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/DSCNiPoor/Heating800NiPoor}}}
-\caption{Curvas de DSC para las distintas muestras}
-\label{DSCNiPoor}
-\end{figure}
-
-\subsubsection{Imágenes obtenidas por TEM}
-
-\begin{figure}[H]
-\centering
-\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_600.png}} 
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_700.png}} 
-\caption{Imágenes de TEM para las muestras pobres en Ni}
-\label{TEMNiPoor}
-\end{figure}
-\towrite{No hay análisis acá todavía porque falta ver las de 800 y no hay de 500. En principio, se ven similar a las ricas en Ni.}
-
 \newpage
+
 \section{Discusión}
 \towrite{Poner una intro}
 
