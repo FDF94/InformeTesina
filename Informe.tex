@@ -739,7 +739,7 @@ En la Tabla \ref{compositionAvg} se ve el promedio de estas mediciones, y puede 
 Las altas variaciones en la composición entre las diferentes caras de una misma lámina se explican por fluctuaciones en las condiciones de descarga de los magnetrones. 
 
 \subsubsection{Difracción de rayos X}
-Las láminas depositadas no presentaron estructura cristalina previo a los tratamientos térmicos. En la Figura \ref{amorfo} se muestra el difractograma de una muestra de la tercer deposición. La presencia del pico ancho cercano a los $2\theta=$ {40\textdegree}  es característico de una muestra amorfa. El pico de Si se debe a que para la medición de rayos X se utilizó un portamuestras construido en Si monocristalino.
+Las láminas depositadas no presentaron estructura cristalina previo a los tratamientos térmicos. En la Figura \ref{amorfo} se muestra el difractograma de una muestra de la tercer deposición. La presencia del pico ancho cercano a los $2\theta=40^\circ$  es característico de una muestra amorfa. El pico de Si se debe a que para la medición de rayos X se utilizó un portamuestras construido en Si monocristalino.
 
 \begin{figure}[H]
  	\centering
@@ -748,6 +748,45 @@ Las láminas depositadas no presentaron estructura cristalina previo a los trata
 	\label{amorfo}
 \end{figure}
 
+
+\subsubsection{Temperaturas de cristalización y energía de activación}
+
+Para determinar la energía de activación de las láminas delgadas de NiTi se trataron térmicamente cinco muestras con DSC a 5, 10, 20, 30 y 50 $^{\circ}/min$. Cada muestra utilizada tenía una masa de 6 mg aproximadamente. El software de adquisición de datos permite realizar un seguimiento de la temperatura y el flujo de calor en función del tiempo, resultando en una tabla del tipo tiempo/temperatura/flujo de calor. El proceso de cristalización, similar para todas fue el siguiente:
+
+\begin{itemize}
+\item Se las llevaba a $200^{\circ}C$ a una velocidad de $50^{\circ}C/min$
+\item A diversas velocidades por muestra, eran llevadas a $600^{\circ}C$
+\item Se bajaba su temperatura a $-50^{\circ}C/min$ hasta $200^{\circ}C$
+\item Se las llevaba nuevamente hasta $600^{\circ}C$ a la misma velocidad que fueron llevadas originalmente
+\item Finalmente, se llevaba la muestra nuevamente hasta $200^{\circ}C$, momento en el cual finalizaba la medición.
+\end{itemize}
+En el primer calentamiento hasta $600^{\circ}C$ el objetivo era medir el pico de absorción característico de la muestra. En el segundo calentamiento el objetivo era medir la línea base del equipo, para luego restarla de la medición con el pico y así poder hallar en forma precisa la temperatura del pico, $T_p$. Finalmente, en lugar de esto se prefirió ajustar una recta y restarla a la base del pico, ya que se obtenían resultados similares con cálculos más simples.
+
+Debido a que el error relativo de $T_p^{-1}$ es mucho mayor que $ln(\frac{\alpha}{T_p^2})$ y que $ln(\frac{\alpha}{T_p-T_0})$, para poder realizar una regresión lineal se invirtieron los ejes, graficándose así $T_p^{-1}$ en función de $ln(\frac{\alpha}{T_p^2})$ y de $ln(\frac{\alpha}{T_p-T_0})$ para los modelos de Kissinger y Augis-Bennet respectivamente. Esto es
+\begin{equation}
+	T_p^{-1}=-\frac{R}{E_c}ln(\frac{\alpha}{T_p^2})+cte
+\end{equation}
+
+\begin{equation}
+	T_p^{-1}=-\frac{R}{E_c}ln(\frac{\alpha}{T_p-T_0})+cte
+\end{equation}
+
+Con un ajuste lineal realizado con la función $curve\_fit$ de la librería SciPy se obtuvo el valor de $E_c$ a través de la pendiente en cada modelo. Los puntos calculados a partir de los medidos junto con los ajuste lineales se muestran en las figuras \ref{Kiss} y \ref{AugBen}. A través del método de Kissinger el valor obtenido para la energía de activación fue de $420 \pm 30 kJ$ mientras que por Augis-Bennet el valor obtenido fue de $410 \pm 30 kJ$.
+
+
+\begin{figure}[H]
+ 	\centering
+	\includegraphics[scale=0.4]{img/Kissinger.png}
+ 	\caption{Regresión lineal realizada para la relación de Kissinger.}
+	\label{Kiss}
+\end{figure} 
+
+ \begin{figure}[H]
+ 	\centering
+	\includegraphics[scale=0.4]{img/Augis_bennet.png}
+ 	\caption{Regresión lineal realizada para la relación de Augis-Bennet.}
+	\label{AugBen}
+\end{figure} 
 
 \subsection{Tratamiento térmicos}
 Para que las láminas obtenidas presenten una estructura cristalina es necesario realizarles un tratamiento térmico para lograr la cristalización. Las láminas de la segunda y tercera deposición fueron tratadas a $500 ^\circ C$, $600 ^\circ C$, $700 ^\circ C$ y $800 ^\circ C$ dentro de un horno tubular con un controlador de temperatura, sin embargo, para ,mayor precisión en la temperatura, se empleó una termocupla envainada tipo K al lado de la muestra. Cada tratamiento duró una hora.
@@ -814,45 +853,6 @@ Dichas curvas se muestran en la figura \ref{DSCNiRich}. En ninguna de las curvas
  \caption{Curvas de DSC para muestras ricas en Ni tratadas a diferentes temperaturas}
 \label{DSCNiRich}
 \end{figure}
-
-\subsubsection{Temperaturas de cristalización y energía de activación}
-
-Para determinar la energía de activación de las láminas delgadas de NiTi se trataron térmicamente cinco muestras con DSC a 5, 10, 20, 30 y 50 $^{\circ}/min$. Cada muestra utilizada tenía una masa de 6 mg aproximadamente. El software de adquisición de datos permite realizar un seguimiento de la temperatura y el flujo de calor en función del tiempo, resultando en una tabla del tipo tiempo/temperatura/flujo de calor. El proceso de cristalización, similar para todas fue el siguiente:
-
-\begin{itemize}
-\item Se las llevaba a $200^{\circ}C$ a una velocidad de $50^{\circ}C/min$
-\item A diversas velocidades por muestra, eran llevadas a $600^{\circ}C$
-\item Se bajaba su temperatura a $-50^{\circ}C/min$ hasta $200^{\circ}C$
-\item Se las llevaba nuevamente hasta $600^{\circ}C$ a la misma velocidad que fueron llevadas originalmente
-\item Finalmente, se llevaba la muestra nuevamente hasta $200^{\circ}C$, momento en el cual finalizaba la medición.
-\end{itemize}
-En el primer calentamiento hasta $600^{\circ}C$ el objetivo era medir el pico de absorción característico de la muestra. En el segundo calentamiento el objetivo era medir la línea base del equipo, para luego restarla de la medición con el pico y así poder hallar en forma precisa la temperatura del pico, $T_p$. Finalmente, en lugar de esto se prefirió ajustar una recta y restarla a la base del pico, ya que se obtenían resultados similares con cálculos más simples.
-
-Debido a que el error relativo de $T_p^{-1}$ es mucho mayor que $ln(\frac{\alpha}{T_p^2})$ y que $ln(\frac{\alpha}{T_p-T_0})$, para poder realizar una regresión lineal se invirtieron los ejes, graficándose así $T_p^{-1}$ en función de $ln(\frac{\alpha}{T_p^2})$ y de $ln(\frac{\alpha}{T_p-T_0})$ para los modelos de Kissinger y Augis-Bennet respectivamente. Esto es
-\begin{equation}
-	T_p^{-1}=-\frac{R}{E_c}ln(\frac{\alpha}{T_p^2})+cte
-\end{equation}
-
-\begin{equation}
-	T_p^{-1}=-\frac{R}{E_c}ln(\frac{\alpha}{T_p-T_0})+cte
-\end{equation}
-
-Con un ajuste lineal realizado con la función $curve\_fit$ de la librería SciPy se obtuvo el valor de $E_c$ a través de la pendiente en cada modelo. Los puntos calculados a partir de los medidos junto con los ajuste lineales se muestran en las figuras \ref{Kiss} y \ref{AugBen}. A través del método de Kissinger el valor obtenido para la energía de activación fue de $420 \pm 30 kJ$ mientras que por Augis-Bennet el valor obtenido fue de $410 \pm 30 kJ$.
-
-
-\begin{figure}[H]
- 	\centering
-	\includegraphics[scale=0.4]{img/Kissinger.png}
- 	\caption{Regresión lineal realizada para la relación de Kissinger.}
-	\label{Kiss}
-\end{figure} 
-
- \begin{figure}[H]
- 	\centering
-	\includegraphics[scale=0.4]{img/Augis_bennet.png}
- 	\caption{Regresión lineal realizada para la relación de Augis-Bennet.}
-	\label{AugBen}
-\end{figure} 
 
 \subsubsection{Imágenes obtenidas por TEM}
 
