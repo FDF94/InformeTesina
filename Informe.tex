@@ -686,8 +686,8 @@ Por cada deposición fue tomada dos muestras y analizadas con EDS-SEM para deter
 
  \begin{figure}[H]
  	\centering
-	\includegraphics[scale=0.5]{img/dep2.png}
- 	\caption{Espectrograma de la cara superior de una muestra de la segunda deposición}
+	\includegraphics[scale=0.5]{img/SEMAllElements.png}
+ 	\caption{Espectrograma de la cara superior de una muestra de la tercera deposición}
 	\label{dep2}
 \end{figure} 
 
@@ -797,8 +797,8 @@ Las láminas obtenidas resultaron quebradizas, con lo cual su manipulación resu
 
 
 \subsection{Deposición pobre en Ni}
-\subsubsection{Fases obtenidas}
-En la figura \ref{RXNiPoor} se muestran los difractogramas de las láminas con los distintos tratamientos térmicos. En las gráficas obtenidas se aplico un logaritmo a toda la curva para que todos los picos pudiesen ser mejor apreciados (de no aplicar esta transformación, o bien deberían haber sido recortados los picos más grandes, o no se podrían haber visto los más chicos). La identificación de las distintas fases se hizo con ayuda del programa PowderCell.
+\subsubsection{Difracción de rayos X}
+En la figura \ref{RXNiPoor} se muestran los difractogramas de las láminas con composición pobre en Ni, luego de los distintos tratamientos térmicos. En dicha figura se muestra el logaritmo natural de la intensidad, de modo que todos los picos puedan ser apreciados. La identificación de las distintas fases se realizó a través de la simulación de las estructuras cristalines con el programa PowderCell.
 
 \begin{figure}[H]
 \subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiPoor_500.png}} 
@@ -809,14 +809,11 @@ En la figura \ref{RXNiPoor} se muestran los difractogramas de las láminas con l
 \label{RXNiPoor}
 \end{figure}
 
+En todos los difractogramas pueden encontrarse la fase B2 junto con la fase $Ti_2Ni$ . Sin embargo, en la muestra de 500$^\circ$ C la proporción de la fase $Ti_2 Ni$ es muy baja. Como se explicó en la sección \ref{Ti2Ni}, la estructura cristalina de la fase $Ti_2 Ni$ es muy similar a la de la fase $Ti_4Ni_2O$, por lo cual es muy difícil de diferenciar por rayos X. Al tener una composición pobre en Ni, es esperable encontrar la fase termodinámicamente estable $Ti_2 Ni$, mientras que la fase $Ti_4Ni_2O$ podría aparecer por la oxidación en los tratamientos térmicos.
 
-En todos los difractogramas puede encontrarse la fase B2, en forma coexistente con la fase $Ti_2Ni$ (es posible que en lugar de esto sea $Ti_4Ni_2O$, ya que sus estructuras son muy similares, se cree que la primera es más probable por haberse trabajado en una atmósfera de $Ar$).
+En la muestra tratada a $600 ^\circ C$, además de las dos fases mencionadas, se observan picos correspondientes a la fase $NiZr$ y a la fase lambda. Por el contrario, en la muestra tratada a $700 ^\circ C$ no se observan picos correspondientes a estas dos fases, pero se observan picos correspondientes a la fase martensítica $B19'$. Esto implica que en esta muestra, a temperatura ambiente, coexisten las fases austenítica y martensita.
 
-En la muestra tratada a $600 ^\circ C$, se observan picos correspondientes a $NiZr$ y a la fase lambda.
-
-En la muestra tratada a $700 ^\circ C$, se observan picos correspondientes a $B19'$, correspondiente a la martensita. Esto implica que ambas fases coexisten a temperatura ambiente.
-
-En la muestra tratada a $800 ^\circ C$, vuelven a observarse picos pertenecientes a NiZr, con lo cual es probable que esta fase también este en la muestra tratada a $700 ^\circ C$, pero sus picos no puedan ser observados fácilmente por estar superpuestos con otros.
+En la muestra tratada a $800 ^\circ C$, vuelven a observarse picos pertenecientes a NiZr y crecen los picos de $Ti_2 Ni$. Es importante notar que esta muestra, al ser la tratada a mayor temperatura, presentó una mayor oxidación superficial luego del tratamiento térmico. 
 
 \subsubsection{Imágenes obtenidas por TEM}
 
@@ -830,11 +827,12 @@ En la muestra tratada a $800 ^\circ C$, vuelven a observarse picos perteneciente
 \towrite{No hay análisis acá todavía porque falta ver las de 800 y no hay de 500. En principio, se ven similar a las ricas en Ni.}
 
 \subsubsection{Transformación martensítica}
-Para determinar las temperaturas de transformación de las distintas muestras se realizó una calorimetría diferencial de barrido. En este caso no fue posible realizar el método de resistividad por cuatro puntas ya que las láminas eran extremadamente frágiles, impidiendo realizar las conexiones necesarias.
 
-Para analizar las curvas, primero fueron divididas entre enfriamiento y calentamiento, para luego restarseles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición no presenta ruido y los puntos originales son muy cercanos entre sí.
+Para estudiar la transformación martensítica se realizó calorimetría diferencial de barrido en las muestras sometidas a los distintos tratamientos térmicos. En este caso no fue posible realizar el método de resistividad por cuatro puntas ya que las láminas eran extremadamente frágiles, impidiendo utilizar los contactos por presión de dicho dispositivo.
 
-Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \ref{DSCNiPoor} no es posible apreciar una transformación de fase. Dados los valores reportados en la literatura se cree que esto es porque los picos a observar son muy anchos y planos, evitando así que sean fácilmente vistos los efectos de las transformaciones. Una situación similar a esta es informada por Isola 2020 \cite{Isola2020}.
+\textit{Para analizar las curvas, primero fueron divididas entre enfriamiento y calentamiento, para luego restarseles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición no presenta ruido y los puntos originales son muy cercanos entre sí.}\todo{Mover a un apéndice}
+
+Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \ref{DSCNiPoor} no es posible apreciar una transformación de fase. Esto se puede deber a que la cantidad de masa que transforme sea baja y que la transformación esté extendida en un amplio rango de temperatura. Está discusión será retomada en la sección \ref{DpobreNi}.
 
 \begin{figure}[H]
 \noindent\makebox[\linewidth][c]{
@@ -871,9 +869,7 @@ En todos los difractogramas puede encontrarse la fase B2, correspondiente a la a
 
 \subsubsection{Imágenes obtenidas por TEM}
 
-En la figura \ref{TEMNiRich} se muestran las imágenes obtenidas por TEM para las diferentes muestras de esta deposición. Sobre las fotos hay superpuesta una grilla, cuyos vértices consecutivos se encuentran a una distancia de 50 nm, para facilitar la dimensionalización de los tamaños. 
-
-Puede verse un ligero aumento del tamaño de grano a medida que aumenta la temperatura del tratamiento térmico. De esta manera, en la muestra tratada a menor temperatura se ven granos que cuyos diámetros se enmarcan en su mayoría entre los 50 y los 100 nanómetros. En la muestra tratada a $600 ^\circ C$ se aprecian al menos dos fases bien diferenciadas, de granos cuyos diámetros rondan los 50 nm y otros cuyos diámetros rondan los 100, para finalmente verse en la muestra tratada a $700 ^\circ C$ que la mayor parte de los granos tienen alrededor de 100 nm de diámetro. \todo{ver que onda la de 800}
+En la figura \ref{TEMNiRich} se muestran las imágenes obtenidas por TEM para las diferentes muestras de esta deposición. Puede verse un ligero aumento del tamaño de grano a medida que aumenta la temperatura del tratamiento térmico. De esta manera, en la muestra tratada a menor temperatura se ven granos que cuyos diámetros se enmarcan en su mayoría entre los 50 y los 100 nanómetros. En la muestra tratada a $600 ^\circ C$ se aprecian al menos dos fases bien diferenciadas, de granos cuyos diámetros rondan los 50 nm y otros cuyos diámetros rondan los 100, para finalmente verse en la muestra tratada a $700 ^\circ C$ que la mayor parte de los granos tienen alrededor de 100 nm de diámetro. \todo{ver que onda la de 800}
 
 \begin{figure}[H]
 \centering
@@ -886,11 +882,9 @@ Puede verse un ligero aumento del tamaño de grano a medida que aumenta la tempe
 \end{figure}
 
 \subsubsection{Transformación martensítica}
-Para determinar las temperaturas de transformación se realizaron dos estudios: calorimetría diferencial de barrido y el método de resistividad por cuatro puntas.
+Para estudiar la transformación martensitica en el caso de las láminas ricas en Ni se realizaron dos estudios: calorimetría diferencial de barrido y el método de resistividad por cuatro puntas.
 
-Para determinar las temperaturas de transformación en resistividad, se recurrió a un método gráfico, buscando donde se intersectarían las pendientes de distintos puntos en la curva. Ajustadas las curvas, los puntos de intersección fueron buscados en forma analítica.
-
-Este análisis sólo se logro en la muestra tratada a $700 ^\circ C$, que puede verse en la figura \ref{Res700}.
+Mediante el método de resistividad se logró detectar la transformación martensítica en la muestra tratada a $700 ^\circ C$ (ver figura \ref{Resist}(c)). Para determinar sus temperaturas se recurrió a un método gráfico, buscando la intersección de las rectas tangentes de los distintos puntos en la curva. Los puntos de intersección fueron buscados en forma analítica. Los valores son reportados en la tabla \textcolor{red}{(hacer una tabla con los valores)}
 
 \begin{figure}[H]
  	\centering
@@ -967,6 +961,7 @@ En este caso es complejo saber que porcentaje hay de cada fase, ya que en las fa
 Se observa fase H, como en el paper que está dopado con Hafnio y también es rico en Ni.
 
 \subsubsection{Pobre en Ni}
+\label{DPobreNi}
 
 Ningún otro trabajo reporta la fase $Ti_2Ni$, con lo cual es altamente probable que en su lugar se encuentre la fase $Ti_4Ni_2O$. Esta discrepancia se explicaría por un oxígeno residual que haya quedado en la cápsula de vidrio a la hora de hacer el tratamiento térmico.
 
@@ -975,6 +970,8 @@ Las fases halladas en este caso, coinciden con aquellas presentadas en \todo{Cry
 En coincidencia con lo aquí visto, ningún trabajo presenta alguna aleación pobre en Ni que contenga fase H.
 
 Los tamaños de grano así mismo coinciden con lo que informa Sawaguchi2004\todo{algún día voy a poner todas las citas}
+
+\textcolor{red}{(esto que sigue debe ir en la discusión), con lo cual es probable que esta fase también este en la muestra tratada a $700 ^\circ C$, pero sus picos no puedan ser observados fácilmente por estar superpuestos con otros.}
 
 \newpage
 \section{Conclusión}
