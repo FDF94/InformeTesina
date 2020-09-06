@@ -632,6 +632,20 @@ El área debajo de los picos registrados es proporcional a la energía calórica
 
 En el trabajo se utilizaron panes de Aluminio de 5 mm de diámetro, \textcolor{violet}{dentro de los cuales} se colocan múltiples trozos de las láminas delgadas hasta alcanzar una masa cercana a los 5 mg.
 
+\subsubsection{\textcolor{violet}{Cristalización de las láminas}}
+
+Con el objetivo de analizar el proceso de cristalización de las láminas delgadas de NiTiZr se realizaron calentamientos a distintas velocidades 5, 10, 20, 30 y 50 $^{\circ C }/min$ en láminas obtenidas en la segunda deposición. Para cada ensayo se empleó una lámina distinta, la cual se colocó dentro de los panes de aluminio. Dichas láminas tenían una masa de 6 mg cada una aproximadamente. El software de adquisición de datos permite realizar un seguimiento de la temperatura y el flujo de calor en función del tiempo, resultando en una tabla del tipo tiempo/temperatura/flujo de calor. El proceso de cristalización, similar para todas fue el siguiente:
+
+\begin{itemize}
+\item Se llevaba las láminas a $200^{\circ}C$ a una velocidad de $50^{\circ}C/min$
+\item A la velocidad correspondiente para la muestra, eran llevadas a $600^{\circ}C$
+\item Se bajaba su temperatura a $-50^{\circ}C/min$ hasta $200^{\circ}C$
+\item Se las llevaba nuevamente hasta $600^{\circ}C$ a la misma velocidad que fueron llevadas originalmente
+\item Finalmente, se llevaba la muestra nuevamente hasta $200^{\circ}C$, momento en el cual finalizaba la medición.
+\end{itemize}
+
+En el primer calentamiento hasta $600^{\circ}C$ el objetivo era medir el pico de absorción característico de la muestra. En el segundo calentamiento el objetivo era medir la línea base del equipo, para luego restarla de la medición con el pico y así poder hallar en forma precisa la temperatura del pico, $T_p$. Finalmente, en lugar de esto se prefirió ajustar una recta y restarla a la base del pico, ya que se obtenían resultados similares con cálculos más simples.
+
 
 \subsection{Resistividad por el método de cuatro puntas}
 
@@ -760,17 +774,8 @@ Las láminas depositadas no presentaron estructura cristalina previo a los trata
 
 
 \subsubsection{Temperaturas de cristalización y energía de activación}
-\todo{Mejorar. Ver comentario de Lucio}
-Para determinar la energía de activación de las láminas delgadas de NiTi se trataron térmicamente cinco muestras con DSC a 5, 10, 20, 30 y 50 $^{\circ}/min$. Cada muestra utilizada tenía una masa de 6 mg aproximadamente. El software de adquisición de datos permite realizar un seguimiento de la temperatura y el flujo de calor en función del tiempo, resultando en una tabla del tipo tiempo/temperatura/flujo de calor. El proceso de cristalización, similar para todas fue el siguiente:
 
-\begin{itemize}
-\item Se las llevaba a $200^{\circ}C$ a una velocidad de $50^{\circ}C/min$
-\item A diversas velocidades por muestra, eran llevadas a $600^{\circ}C$
-\item Se bajaba su temperatura a $-50^{\circ}C/min$ hasta $200^{\circ}C$
-\item Se las llevaba nuevamente hasta $600^{\circ}C$ a la misma velocidad que fueron llevadas originalmente
-\item Finalmente, se llevaba la muestra nuevamente hasta $200^{\circ}C$, momento en el cual finalizaba la medición.
-\end{itemize}
-En el primer calentamiento hasta $600^{\circ}C$ el objetivo era medir el pico de absorción característico de la muestra. En el segundo calentamiento el objetivo era medir la línea base del equipo, para luego restarla de la medición con el pico y así poder hallar en forma precisa la temperatura del pico, $T_p$. Finalmente, en lugar de esto se prefirió ajustar una recta y restarla a la base del pico, ya que se obtenían resultados similares con cálculos más simples.
+Las diversas velocidades de calentamiento fueron 5, 10, 20, 30 y 50 $^{\circ C }/min$ en láminas obtenidas en la segunda deposición. Las mediciones obtenidas se muestran en la figura \todo{poner la figura}
 
 Debido a que el error relativo de $T_p^{-1}$ es mucho mayor que $ln(\frac{\alpha}{T_p^2})$ y que $ln(\frac{\alpha}{T_p-T_0})$, para poder realizar una regresión lineal se invirtieron los ejes, graficándose así $T_p^{-1}$ en función de $ln(\frac{\alpha}{T_p^2})$ y de $ln(\frac{\alpha}{T_p-T_0})$ para los modelos de Kissinger y Augis-Bennet respectivamente. Esto es
 \begin{equation}
