@@ -604,6 +604,16 @@ La lente condensadora permite producir un haz de electrones colimado incidente s
 
 Como se dijo anteriormente, para observa imágenes en TEM es necesario afinar las muestras hasta que su espesor sea menor a los $100$ nm. Debido al espesor inicial de las láminas delgadas y su fragilidad, se optó por el método de adelgazamiento iónico. Este proceso consiste en acelerar iones de un determinado gas, en este caso y normalmente Ar, en un alto vacío en la dirección de la muestra. Este choque de iones va liberando átomos de la capa superior de la muestra, proceso que se mantiene hasta que se obtiene el espesor deseado. En el caso de muestras cristalinas, se produce la amorfización de las capas cercanas a la superficie (unos pocos nanómetros). Sin embargo, la estructura cristalina original permanece dentro de la muestra y las capas amorfas no interfieren con la observación. \todo{Especificaciones del equipo}
  
+
+\subsection{\textocolor{violet}{Tratamientos térmicos}}
+
+Para que las láminas obtenidas presenten una estructura cristalina es necesario realizarles un tratamiento térmico para lograr la cristalización. Para llevar a cabo este procedimiento, se empleó un horno tubular con un controlador de temperatura para mantener la temperatura constante. Para mayor precisión en la medición de la temperatura, se empleó una termocupla envainada tipo K al lado de la muestra. 
+
+Cada lámina fue envuelta dentro de una hoja de tantalio y luego encapsulada.
+Las cápsulas empleadas fueron de vidrio para aquellas muestras tratadas hasta $600 ^\circ C$, y en cuarzo para las cápsulas tratadas a mayor temperatura. Dentro de las cápsulas, la atmósfera er de Ar a 3 mTorr \textcolor{violet}{Tenía anotado esto, puede ser que me haya equivocado 0,3 mTorr tiene sentido?}. Para generar esta atmósfera, se generó vacío y se llevo a presión atmósfera con Ar tres veces antes de generar el vacío final.
+
+El propósito de esta atmósfera era evitar que quedase oxígeno que pudiese oxidar las muestras. Así mismo, el tantalio se eligió porque resiste las temperaturas aquí empleadas (hasta 800 $^circ C$) y para que tome el residuo de oxígeno dentro de las capsulas, oxidándose así en lugar de las muestras.
+
 \subsection{Calorimetría diferencial de barrido}
 
 La calorimetría diferencial de barrido, llamada normalmente DSC (del inglés, differential scanning calorimetry) es una técnica termoanalítica en la cual se mide la diferencia de de calor requerida para calentar una muestra y una referencia como función de la temperatura. La medición suele realizarse en una atmósfera controlada de un gas inerte, y con rampas programas de cambio de temperatura en función del tiempo.  Es necesario destacar que la referencia debe ser inerte en el rango de temperaturas medido.
@@ -750,7 +760,7 @@ Las láminas depositadas no presentaron estructura cristalina previo a los trata
 
 
 \subsubsection{Temperaturas de cristalización y energía de activación}
-
+\todo{Mejorar. Ver comentario de Lucio}
 Para determinar la energía de activación de las láminas delgadas de NiTi se trataron térmicamente cinco muestras con DSC a 5, 10, 20, 30 y 50 $^{\circ}/min$. Cada muestra utilizada tenía una masa de 6 mg aproximadamente. El software de adquisición de datos permite realizar un seguimiento de la temperatura y el flujo de calor en función del tiempo, resultando en una tabla del tipo tiempo/temperatura/flujo de calor. El proceso de cristalización, similar para todas fue el siguiente:
 
 \begin{itemize}
@@ -789,11 +799,9 @@ Con un ajuste lineal realizado con la función $curve\_fit$ de la librería SciP
 \end{figure} 
 
 \subsection{Tratamiento térmicos}
-Para que las láminas obtenidas presenten una estructura cristalina es necesario realizarles un tratamiento térmico para lograr la cristalización. Las láminas de la segunda y tercera deposición fueron tratadas a $500 ^\circ C$, $600 ^\circ C$, $700 ^\circ C$ y $800 ^\circ C$ dentro de un horno tubular con un controlador de temperatura, sin embargo, para ,mayor precisión en la temperatura, se empleó una termocupla envainada tipo K al lado de la muestra. Cada tratamiento duró una hora.
 
-Cada lámina fue envuelta dentro de una hoja de tantalio y luego encapsuladas, en vidrio para aquellas que iban a $500 ^\circ C$ y $600 ^\circ C$, y em cuarzo para las que iban en $700 ^\circ C$ y $800 ^\circ C$,. Las cápsulas tenían un vació de 3 mTorr en atmósfera de Ar. Esto se realizo para evitar que quedase oxígeno que pudiese oxidar las muestras. Así mismo, el tantalio se eligió porque resiste dichas temperaturas y para que tome el residuo de oxígeno dentro de las capsulas. Aún así, para esta aleación esto parece no haber sido efectivo ya que algunas muestras presentaban una capa de óxido en su superficie, mientras que en la hoja de $Ta$ no se observó ningún tipo de reacción.
-
-Las láminas obtenidas resultaron quebradizas, con lo cual su manipulación resultó ser muy difícil, restringiendo considerablemente los estudios que sobre ellas podían realizarse, especialmente para aquellas de la tercera deposición. Esta fragilidad es atribuible al alto contenido en $Zr$ que presenta la aleación. Esta propiedad también es reportada por Hee Young Kim en 2009\cite{HeeYoungKim2009}.
+Las láminas de la segunda y tercera deposición fueron tratadas a $500 ^\circ C$, $600 ^\circ C$, $700 ^\circ C$ y $800 ^\circ C$. Las láminas obtenidas resultaron ser quebradizas, con lo cual su manipulación resultó muy difícil. 
+Esta propieda restringió considerablemente los estudios que sobre ellas podían realizarse, especialmente para aquellas de la tercera deposición. Esta fragilidad es atribuible al alto contenido en $Zr$ que presenta la aleación. Esta propiedad también es reportada por Hee Young Kim en 2009\cite{HeeYoungKim2009}. \textcolor{violet}{Lo mando a discusión o lo dejó acá?}
 
 
 \subsection{Deposición pobre en Ni}
@@ -816,7 +824,7 @@ En la muestra tratada a $600 ^\circ C$, además de las dos fases mencionadas, se
 En la muestra tratada a $800 ^\circ C$, vuelven a observarse picos pertenecientes a NiZr y crecen los picos de $Ti_2 Ni$. Es importante notar que esta muestra, al ser la tratada a mayor temperatura, presentó una mayor oxidación superficial luego del tratamiento térmico. 
 
 \subsubsection{Imágenes obtenidas por TEM}
-
+ \todo{Ver que onda lo que mando Flor}
 \begin{figure}[H]
 \centering
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_600.png}} 
@@ -893,7 +901,7 @@ Mediante el método de resistividad se logró detectar la transformación marten
 	\label{Res700}
 \end{figure}
 
-En las otras muestras, no fue posible definir dichas temperaturas. En la figura \ref{Failures} se muestran estos resultados. Puede verse que en la muestras tratadas a $500 ^\circ C$ y a $800 ^\circ C$ las curvas en enfriamiento y en calentamiento permanecen casi siempre pegadas. Una leve diferencia se aprecia en la de  $500 ^\circ C$ entre aproximadamente $-70 ^\circ C$ y $20 ^\circ C$, pero no es suficiente para asegurar son fases distintas. Por otra parte, en la lámina tratada a $600 ^\circ C$ hay un salto abrupto cerca de  $-45 ^\circ C$ y las curvas de calentamiento y enfriamiento lentamente se acercan llegando a $150 ^\circ C$. En este caso, es probable que estemos ante la presencia de dos fases distintas a pesar que no sea posible definir las temperaturas de comienzo y final de la transformación martensítica y su inversa. 
+En las otras muestras, no fue posible definir dichas temperaturas. En la figura \ref{Failures} se muestran estos resultados. Puede verse que en la muestras tratadas a $500 ^\circ C$ y a $800 ^\circ C$ las curvas en enfriamiento y en calentamiento permanecen casi siempre pegadas. Una leve diferencia se aprecia en la de  $500 ^\circ C$ entre aproximadamente $-70 ^\circ C$ y $20 ^\circ C$, pero no es suficiente para asegurar un cambio de fase. Por otra parte, en la lámina tratada a $600 ^\circ C$ hay un salto abrupto cerca de  $-45 ^\circ C$ y las curvas de calentamiento y enfriamiento lentamente se acercan llegando a $150 ^\circ C$. Sin embargo, por la presencia de ruido principalmente causado por inestabilidades debidas a los contactos a presión en estas láminas frágiles, no es posible establecer las temperaturas de transformación.
 
 \begin{figure}[H]
 \centering
@@ -905,9 +913,9 @@ En las otras muestras, no fue posible definir dichas temperaturas. En la figura 
 \end{figure}
 
 
-Para analizar las curvas de DSC, primero fueron divididas entre enfriamiento y calentamiento, para luego restarles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí. Todas las mediciones fueron hechas dos veces.
+\textit{Para analizar las curvas de DSC, primero fueron divididas entre enfriamiento y calentamiento, para luego restarles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí. Todas las mediciones fueron hechas dos veces.}\todo{Mandar al apéndice}
 
-Dichas curvas se muestran en la figura \ref{DSCNiRich}. En ninguna de las curvas, ni siquiera en la de $700 ^\circ C$, en la cual aproximadamente se conocen las temperaturas de inicio y transformación, puede apreciarse un cambio de fase.
+En la figura \ref{DSCNiRich} se muestran las mediciones realizadas con el DSC luego de haberle sido sustraída la línea de base del equipo (ver Apéndice \todo{poner apéndice}). En ninguna de las curvas es posible apreciar los picos correspondientes a la transformación de fase. Esto posiblemente se deba a la baja cantidad de masa que transforma, sumado al amplio rango de temperatura en la cual sucede la transformación de fase. Por ejemplo, en la muestra tratada a 700$^\circ C$, de acuerdo a la medición de resistividad por el método de cuatro puntas, la transformación sucede en un rango de aproximadamente 60$^\circ C$, mientras que la retransformación tiene lugar en un rango de 70$^\circ C$. Las causas de este amplio rango de transformación serán discutidas en la próxima sección.
 
 \begin{figure}[H]
 \noindent\makebox[\linewidth][c]{
