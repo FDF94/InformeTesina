@@ -18,6 +18,7 @@
 \usepackage{setspace}			 % for setting interline spacing
 
 \usepackage{ulem}               % para tachar
+\usepackage{textcomp}           % para poder escribir °
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SET TITLE PAGE VALUES HERE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -605,7 +606,7 @@ La lente condensadora permite producir un haz de electrones colimado incidente s
 Como se dijo anteriormente, para observa imágenes en TEM es necesario afinar las muestras hasta que su espesor sea menor a los $100$ nm. Debido al espesor inicial de las láminas delgadas y su fragilidad, se optó por el método de adelgazamiento iónico. Este proceso consiste en acelerar iones de un determinado gas, en este caso y normalmente Ar, en un alto vacío en la dirección de la muestra. Este choque de iones va liberando átomos de la capa superior de la muestra, proceso que se mantiene hasta que se obtiene el espesor deseado. En el caso de muestras cristalinas, se produce la amorfización de las capas cercanas a la superficie (unos pocos nanómetros). Sin embargo, la estructura cristalina original permanece dentro de la muestra y las capas amorfas no interfieren con la observación. \todo{Especificaciones del equipo}
  
 
-\subsection{\textocolor{violet}{Tratamientos térmicos}}
+\subsection{\textcolor{violet}{Tratamientos térmicos}}
 
 Para que las láminas obtenidas presenten una estructura cristalina es necesario realizarles un tratamiento térmico para lograr la cristalización. Para llevar a cabo este procedimiento, se empleó un horno tubular con un controlador de temperatura para mantener la temperatura constante. Para mayor precisión en la medición de la temperatura, se empleó una termocupla envainada tipo K al lado de la muestra. 
 
@@ -829,15 +830,31 @@ En la muestra tratada a $600 ^\circ C$, además de las dos fases mencionadas, se
 En la muestra tratada a $800 ^\circ C$, vuelven a observarse picos pertenecientes a NiZr y crecen los picos de $Ti_2 Ni$. Es importante notar que esta muestra, al ser la tratada a mayor temperatura, presentó una mayor oxidación superficial luego del tratamiento térmico. 
 
 \subsubsection{Imágenes obtenidas por TEM}
- \todo{Ver que onda lo que mando Flor}
+\subsubsection{Imágenes obtenidas por TEM}
+
+En la figura \ref{TEMNiPoor} se presentan las imágenes TEM de las muestras tratadas a diferentes temperaturas en composición pobre en Ni. En la lámina tratada a $500 ^\circ C$ se observa una microestructura caracterizada por granos entre los 10 nm y 50 nm. Mientras que en la lámina tratada a $600 ^\circ C$ se observa una distribución bimodal de grano, con granos de un tamaño entre 110 nm y 140 nm, rodeados por granos mas pequeños de entre 10 nm y 30 nm. En la lámina tratada a $700 ^\circ C$ se observa una distribución de granos mas homogénea con una tamaño de grano promedio de \textcolor{red}{??} nm y algunos precipitados muy pequeños en borde de grano. Por último, en la muestra tratada a $800 ^\circ C$ se observa una distribución de tamaño de grano más amplia, con grano de entre 20 nm y 130 nm.
+
 \begin{figure}[H]
 \centering
-\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_600.png}} 
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiPoor_700.png}} 
-\caption{Imágenes de TEM para las muestras pobres en Ni}
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 24a.jpg}} 
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 24b.jpg}} \\
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 24c.jpg}} 
+\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 24d.jpg}} 
+\caption{Imágenes de TEM para las muestras pobres en Ni.}
 \label{TEMNiPoor}
 \end{figure}
-\towrite{No hay análisis acá todavía porque falta ver las de 800 y no hay de 500. En principio, se ven similar a las ricas en Ni.}
+
+En la figura \ref{TEMNiPoor-PD}(a) se observa un patrón de difracción de anillos obtenidos para la muestra tratada a $500 ^\circ C$, el cual fue indexado teniendo en cuenta las fases B2 y $Ti_2Ni$. Mientras que en la figura \ref{TEMNiPoor-PD}(b) se muestra una imagen de campo claro de la lámina tratada a $600 ^\circ C$, donde se observa un grano de aproximadamente 120 nm orientado en la dirección 001, el cual corresponde a la fase B2 y conjuntamente se presenta el patrón de difracción de anillos obtenido para de los granos más pequeños, en la cual se muestran indexados solo los anillos más importantes de la fase $Ti_2 Ni$. Esto muestra que la distribución bimodal de tamaño de grano de esta lámina se debe a la cristalización de estas dos fases en regiones adyacentes. El patrón de anillo presentado en la figura \ref{TEMNiPoor-PD}(c) fue obtenido en la muestra tratada a $700 ^\circ C$, y fue  indexado con las fases B2 y $Ti_2Ni$. Es importante notar que se puede observar algún anillo sin indexar, sin embargo es difícil establecer a que fase corresponde. Finalmente en la figura \ref{TEMNiPoor-PD}(d) se muestra un grano de la fase $Ti_2Ni$, correspondiente a la lámina tratada a $800 ^\circ C$, cuyo tamaño superó los $\sim 100$ nm (patrón de difracción en el eje de zona 112).
+
+\begin{figure}[H]
+\centering
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 25a.jpg}} 
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 25b.jpg}} \\
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 25c.jpg}} 
+\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 25d.jpg}} 
+\caption{Patrones de difracción de TEM para las muestras pobres en Ni.}
+\label{TEMNiPoor-PD}
+\end{figure}
 
 \subsubsection{Transformación martensítica}
 
@@ -882,18 +899,29 @@ En todos los difractogramas puede encontrarse la fase B2, correspondiente a la a
 
 \subsubsection{Imágenes obtenidas por TEM}
 
-En la figura \ref{TEMNiRich} se muestran las imágenes obtenidas por TEM para las diferentes muestras de esta deposición. Puede verse un ligero aumento del tamaño de grano a medida que aumenta la temperatura del tratamiento térmico. De esta manera, en la muestra tratada a menor temperatura se ven granos que cuyos diámetros se enmarcan en su mayoría entre los 50 y los 100 nanómetros. En la muestra tratada a $600 ^\circ C$ se aprecian al menos dos fases bien diferenciadas, de granos cuyos diámetros rondan los 50 nm y otros cuyos diámetros rondan los 100, para finalmente verse en la muestra tratada a $700 ^\circ C$ que la mayor parte de los granos tienen alrededor de 100 nm de diámetro. \todo{ver que onda la de 800}
+En la figura \ref{TEMNiRich} se muestran imágenes obtenidas por TEM para las muestras sometidas a los diferentes tratamientos térmicos de las láminas ricas en Ni. En estas figuras se puede observar un ligero aumento del tamaño de grano a medida que aumenta la temperatura del tratamiento térmico entre los 500 \textdegree C y 700 \textdegree C. De esta manera, en la muestra tratada a menor temperatura se observa un tamaño de grano promedio de \textcolor{red}{?? nm}, mientras que el tamaño promedio aumenta a  \textcolor{red}{?? nm} en la muestra tratada a $600 ^\circ C$ y alcanza los \textcolor{red}{?? nm} en la muestra tratada a $700 ^\circ C$ . Por el otro lado, en la muestra tratada a 800 \textdegree C se pueden observar una distribución mas amplia de tamaño de granos, con algunos granos pequeños de decenas de nanómetro, hasta granos de dimensiones superiores a los 500 nm. 
 
 \begin{figure}[H]
 \centering
-\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_500.png}} 
-\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600.png}} \\
-\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_600_2.png}}
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.4]{img/TEM/NiRich_700.png}}
-\caption{Imágenes de TEM para las muestras ricas en Ni}
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 27a.jpg}} 
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 27b.jpg}} \\
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 27c.jpg}}
+\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 27d.jpg}}
+\caption{Imágenes de TEM para las muestras ricas en Ni.}
 \label{TEMNiRich}
 \end{figure}
 
+En la figura \ref{TEMNiRich-PD}(a) se muestra el patrón de anillos de la lámina tratada a 500 \textdegree C, donde se puede observar que en esta muestra solo se encuentra la fase B2. En las muestras tratadas a mayor temperatura, la multiplicidad de fases presentes dificulta el análisis de los patrones de difracción de anillos. A esto se le suma la imposibilidad de obtener patrones de difracción de granos menores a los 100 nm. Debido a esto, en las muestras tratadas a mayor temperatura solo se podrá realizará un análisis de las fases de algunos de los granos que superen esta dimensión. En la figura \ref{TEMNiRich-PD}(b) se puede observar un grano orientado de la muestra tratada a 600 \textdegree C y su patrón de difracción, el cual corresponde al eje de zona $[111]$ de la fase B2. En la figura \ref{TEMNiRich}(c), obtenida en la muestra tratada a 700 \textdegree C, se observa algunos granos con una morfología que puede asociarse a placas martensíticas, lo que correspondería a la presencia de la fase B19' en esta muestra. Además en la figura \ref{TEMNiRich-PD}(c) se muestra un patrón de difracción de un grano que corresponde al eje de zona $[100]$  de la fase H, mostrando que esta fase dejo de ser un precipitado para constituirse en granos. En la figura \ref{TEMNiRich-PD}(d) se puede observar que el tamaño de los granos de la fase H en la muestra tratada a 800 \textdegree C superan los 500 nm.
+
+\begin{figure}[H]
+\centering
+\subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 28a.jpg}} 
+\subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 28b.jpg}} \\
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 28c.jpg}}
+\subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.6]{img/TEM/Fig 28d.jpg}}
+\caption{Patrones de difracción TEM para las muestras ricas en Ni.}
+\label{TEMNiRich-PD}
+\end{figure}
 \subsubsection{Transformación martensítica}
 Para estudiar la transformación martensitica en el caso de las láminas ricas en Ni se realizaron dos estudios: calorimetría diferencial de barrido y el método de resistividad por cuatro puntas.
 
@@ -989,6 +1017,10 @@ Los tamaños de grano así mismo coinciden con lo que informa Sawaguchi2004\todo
 \newpage
 \section{Conclusión}
 Queda pendiente para un próximo estudio determinar los porcentajes de cada fase en las distintas muestras. Queda pendiente coeficiente de Avrami.
+
+\newpage
+\section{Apéndice}
+\towrite{Ver como hacer que esto aparezca al final de todo}
 
 
 % You can choose a citation style, 'plain' is the default
