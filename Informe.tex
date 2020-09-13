@@ -940,8 +940,6 @@ En las otras muestras, no fue posible definir dichas temperaturas. En la figura 
 \end{figure}
 
 
-\textit{Para analizar las curvas de DSC, primero fueron divididas entre enfriamiento y calentamiento, para luego restarles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí. Todas las mediciones fueron hechas dos veces.}\todo{Mandar al apéndice}
-
 En la figura \ref{DSCNiRich} se muestran las mediciones realizadas con el DSC luego de haberle sido sustraída la línea de base del equipo (ver Apéndice \todo{poner apéndice}). En ninguna de las curvas es posible apreciar los picos correspondientes a la transformación de fase. Esto posiblemente se deba a la baja cantidad de masa que transforma, sumado al amplio rango de temperatura en la cual sucede la transformación de fase. Por ejemplo, en la muestra tratada a 700$^\circ C$, de acuerdo a la medición de resistividad por el método de cuatro puntas, la transformación sucede en un rango de aproximadamente 60$^\circ C$, mientras que la retransformación tiene lugar en un rango de 70$^\circ C$. Las causas de este amplio rango de transformación serán discutidas en la próxima sección.
 
 \begin{figure}[H]
@@ -1017,8 +1015,39 @@ Queda pendiente para un próximo estudio determinar los porcentajes de cada fase
 \newpage
 \section{Apéndice}
 \towrite{Ver como hacer que esto aparezca al final de todo}
+\subsection{Restado de la línea base en las mediciones de DSC}
+
+Para analizar las curvas de DSC, estas primero fueron divididas entre enfriamiento y calentamiento, para luego restarles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí.
+
+En la Figura \ref{MeasureExample} se muestra como ejemplo una medición obtenida en DSC y en la Figura \ref{BaseLine} la medición de la línea base correspondiente.
+
+\begin{figure}[H]
+	\centering	
+	\includegraphics[scale=0.1]{img/500NiPoorExample}
+	\caption{Medición de DSC para la muestra pobre en Ni tratada a 500 $^\circ C$}
+	\label{MeasureExample}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.1]{img/BaseLine}
+	\caption{Medición de DSC para la línea de base}
+	\label{BaseLine}
+\end{figure}
+
+En la Figura \ref{Comparison} se muestran la medición original, la línea base y la diferencia entre ambas, para el calentamiento.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/NiPoorHeatingExample}
+	\caption{Comparación entre medición, línea de base y su diferencia}
+	\label{Comparison}
+\end{figure}
 
 
+Para realizar este proceso, se escribió un código en Python, usando las librerías \textit{SciPy} u \textit{Numpy}.
+
+\subsection{Obtención de picos para energía de activación}
 % You can choose a citation style, 'plain' is the default
 % See:
 % https://www.overleaf.com/learn/latex/Bibtex_bibliography_styles
