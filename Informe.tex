@@ -867,9 +867,7 @@ En la figura \ref{TEMNiPoor-PD}(a) se observa un patrón de difracción de anill
 
 Para estudiar la transformación martensítica se realizó calorimetría diferencial de barrido en las muestras sometidas a los distintos tratamientos térmicos. En este caso no fue posible realizar el método de resistividad por cuatro puntas ya que las láminas eran extremadamente frágiles, impidiendo utilizar los contactos por presión de dicho dispositivo.
 
-\textit{Para analizar las curvas, primero fueron divididas entre enfriamiento y calentamiento, para luego restarseles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición no presenta ruido y los puntos originales son muy cercanos entre sí.}\todo{Mover a un apéndice}
-
-Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \ref{DSCNiPoor} no es posible apreciar una transformación de fase. Esto se puede deber a que la cantidad de masa que transforme sea baja y que la transformación esté extendida en un amplio rango de temperatura. Está discusión será retomada en la sección \ref{DpobreNi}.
+Analizando las curvas de calentamiento y enfriamiento, mostradas en la figura \ref{DSCNiPoor} no es posible apreciar una transformación de fase. Esto se puede deber a que la cantidad de masa que transforme sea baja y que la transformación esté extendida en un amplio rango de temperatura. Está discusión será retomada en la sección \ref{DpobreNi}. \textcolor{violet}{La descripción de como fueron obtenidas estas curvas a partir de las mediciones originales se explica en la sección \ref{BaseLineAppendix}.}
 
 \begin{figure}[H]
 \noindent\makebox[\linewidth][c]{
@@ -926,7 +924,7 @@ En la figura \ref{TEMNiRich-PD}(a) se muestra el patrón de anillos de la lámin
 \subsubsection{Transformación martensítica}
 Para estudiar la transformación martensitica en el caso de las láminas ricas en Ni se realizaron dos estudios: calorimetría diferencial de barrido y el método de resistividad por cuatro puntas.
 
-Mediante el método de resistividad se logró detectar la transformación martensítica en la muestra tratada a $700 ^\circ C$ (ver figura \ref{Resist}(c)). Para determinar sus temperaturas se recurrió a un método gráfico, buscando la intersección de las rectas tangentes de los distintos puntos en la curva. Los puntos de intersección fueron buscados en forma analítica. Los valores son reportados en la tabla \textcolor{red}{(hacer una tabla con los valores)}
+Mediante el método de resistividad se logró detectar la transformación martensítica en la muestra tratada a $700 ^\circ C$ (ver figura \ref{Resist}(c)). Para determinar sus temperaturas se recurrió a un método gráfico, buscando la intersección de las rectas tangentes de los distintos puntos en la curva. Los puntos de intersección fueron buscados en forma analítica. Los valores son reportados en la tabla \ref{TransformationPoints}
 
 \begin{figure}[H]
  	\centering
@@ -935,6 +933,22 @@ Mediante el método de resistividad se logró detectar la transformación marten
 	\label{Res700}
 \end{figure}
 
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Puntos de interés & Temperatura {[}$^\circ$ C{]} \\ \hline
+$M_s$             & $56 \pm 2$                   \\ \hline
+$M_f$             & $0 \pm 2$                    \\ \hline
+$A_s$             & $18 \pm 2$                   \\ \hline
+$A_f$             & $85 \pm 2$                   \\ \hline
+\end{tabular}
+\caption{Valores hallados para los principios y finales de ambas transformaciones}
+\label{TransformationPoints}
+\end{table}
+
 En las otras muestras, no fue posible definir dichas temperaturas. En la figura \ref{Failures} se muestran estos resultados. Puede verse que en la muestras tratadas a $500 ^\circ C$ y a $800 ^\circ C$ las curvas en enfriamiento y en calentamiento permanecen casi siempre pegadas. Una leve diferencia se aprecia en la de  $500 ^\circ C$ entre aproximadamente $-70 ^\circ C$ y $20 ^\circ C$, pero no es suficiente para asegurar un cambio de fase. Por otra parte, en la lámina tratada a $600 ^\circ C$ hay un salto abrupto cerca de  $-45 ^\circ C$ y las curvas de calentamiento y enfriamiento lentamente se acercan llegando a $150 ^\circ C$. Sin embargo, por la presencia de ruido principalmente causado por inestabilidades debidas a los contactos a presión en estas láminas frágiles, no es posible establecer las temperaturas de transformación.
 
 \begin{figure}[H]
@@ -942,12 +956,12 @@ En las otras muestras, no fue posible definir dichas temperaturas. En la figura 
 \subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_500.png}} \\
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_600.png}}\\
 \subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_800.png}} 
-\caption{Curvas medidas por el método de resistividad de 4 puntas en las cuales no fue posible hallar en forma precisa las temperatura de transformación}
+\caption{Curvas medidas por el método de resistividad de 4 puntas en las cuales no fue posible hallar en forma precisa las temperatura de transformación \textcolor{violet}{Personalmente, mantendría separada la medición de 700 del resto.}}
 \label{Failures}
 \end{figure}
 
 
-En la figura \ref{DSCNiRich} se muestran las mediciones realizadas con el DSC luego de haberle sido sustraída la línea de base del equipo (ver Apéndice \todo{poner apéndice}). En ninguna de las curvas es posible apreciar los picos correspondientes a la transformación de fase. Esto posiblemente se deba a la baja cantidad de masa que transforma, sumado al amplio rango de temperatura en la cual sucede la transformación de fase. Por ejemplo, en la muestra tratada a 700$^\circ C$, de acuerdo a la medición de resistividad por el método de cuatro puntas, la transformación sucede en un rango de aproximadamente 60$^\circ C$, mientras que la retransformación tiene lugar en un rango de 70$^\circ C$. Las causas de este amplio rango de transformación serán discutidas en la próxima sección.
+En la figura \ref{DSCNiRich} se muestran las mediciones realizadas con el DSC luego de haberle sido sustraída la línea de base del equipo (el proceso se explica en la sección \ref{BaseLineAppendix}). En ninguna de las curvas es posible apreciar los picos correspondientes a la transformación de fase. Esto posiblemente se deba a la baja cantidad de masa que transforma, sumado al amplio rango de temperatura en la cual sucede la transformación de fase. Por ejemplo, en la muestra tratada a 700$^\circ C$, de acuerdo a la medición de resistividad por el método de cuatro puntas, la transformación sucede en un rango de aproximadamente 60$^\circ C$, mientras que la retransformación tiene lugar en un rango de 70$^\circ C$. Las causas de este amplio rango de transformación serán discutidas en la próxima sección.
 
 \begin{figure}[H]
 
@@ -1021,10 +1035,12 @@ Queda pendiente para un próximo estudio determinar los porcentajes de cada fase
 
 \newpage
 \section{Apéndice}
+\label{Appendix}
 \towrite{Ver como hacer que esto aparezca al final de todo}
 \subsection{Restado de la línea base en las mediciones de DSC}
+\label{BaseLineAppendix}
 
-Para analizar las curvas de DSC, estas primero fueron divididas entre enfriamiento y calentamiento, para luego restarles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido error, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí.
+Para analizar las curvas de DSC, estas primero fueron divididas entre enfriamiento y calentamiento, para luego restarles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido un error apreciable, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí.
 
 En la Figura \ref{MeasureExample} se muestra como ejemplo una medición obtenida en DSC y en la Figura \ref{BaseLine} la medición de la línea base correspondiente.
 
