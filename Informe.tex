@@ -213,10 +213,10 @@ Viendo el diagrama es fácil poder apreciar cuales son las fases que acompañara
 \begin{figure}[H]
 	\centering
 	\subfloat[Diagrama completo]{
-  		\includegraphics[width=60mm]{img/NiTiPhaseDiagramCompleteSpanish.png}
+  		\includegraphics[width=70mm]{img/NiTiPhaseDiagramCompleteSpanish.png}
 	}
 	\subfloat[Diagrama centrado en NiTi]{
-  		\includegraphics[width=50mm]{img/NiTiphasediagram.png}
+  		\includegraphics[width=70mm]{img/NiTiphasediagram.png}
 	}
 	\caption{Diagrama de fases de la aleación Ni-Ti}
 	\label{PhaseDiagram}
@@ -1071,6 +1071,10 @@ En la Figura \ref{Comparison} se muestran la medición original, la línea base 
 Para realizar este proceso, se escribió un código en Python, usando las librerías \textit{SciPy} y \textit{Numpy}.
 
 \subsection{Obtención de picos para energía de activación}
+
+Para obtener en forma correcta el máximo de los picos en las mediciones de DSC, en lugar de sustraer la línea base se procedió a unir con una recta los puntos de inicio y fin de cada pico, y luego restar dicha resta de la medición original. Esta decisión se tomo en base a que la resta de una recta en lugar de la línea base original es una operación más sencilla, y que lo único realmente buscado es la temperatura máxima del pico.
+
+
 
 
 % You can choose a citation style, 'plain' is the default
