@@ -305,13 +305,13 @@ Para generar llevar el gas inerte al estado de plasma es necesario alto vacío $
 
 \subsection{Cristalización}
 
-La cristalización es un proceso importante en la fabricación de láminas delgadas de NiTi, ya que es la microestructura la que dicta las propiedades macroscópicas del material y dicha microestructura es fuertemente influenciada por la forma en que se crea el material. A diferencia de la fusión de un material, la cristalización no sucede a una temperatura definida, sino que depende tanto del tiempo como de la temperatura.
+La cristalización es un proceso importante en la fabricación de láminas delgadas de $NiTi$, ya que es la microestructura la que dicta las propiedades macroscópicas del material y dicha microestructura es fuertemente influenciada por la forma en que se crea el material. A diferencia de la fusión de un material, la cristalización no sucede a una temperatura definida, sino que depende tanto del tiempo como de la temperatura.
 
-La deposición por sputtering debe ser hecha en manera muy cuidadosa, ya que las láminas de NiTi producidas por sputtering a temperatura ambiente son sólidos amorfos. Para obtener las fases deseadas, es importante planificar y controlar los parámetros de los tratamientos térmicos. Para ello deben tenerse en cuenta factores como la temperatura y la energía de activación del proceso de cristalización.
+La deposición por sputtering debe ser hecha en manera muy cuidadosa, ya que las láminas de $NiTi$ producidas por sputtering a temperatura ambiente son sólidos amorfos. Para obtener las fases deseadas, es importante planificar y controlar los parámetros de los tratamientos térmicos. Para ello deben tenerse en cuenta factores como la temperatura y la energía de activación del proceso de cristalización.
 
 \subsubsection{Ecuación de Johnshon-Mehl}
 
- El proceso de cristalización ocurre por nucleación y crecimiento. La nucleación es la formación de la nueva fase. El crecimiento de estos núcleos sucede por la transferencia de átomos a través de la interfase, desde la original hacia las zonas nucleadas. Este proceso continúa hasta que toda la muestra ha cristalizado. En la Figura \ref{cristalization} se muestra esquemáticamente este proceso.
+ El proceso de cristalización ocurre por nucleación y crecimiento. La nucleación es la formación del primer volumen de la nueva fase dentro del material de partida. El crecimiento de estos núcleos sucede por la transferencia de átomos a través de la interfase, desde la original hacia las zonas nucleadas. Este proceso continúa hasta que toda la muestra ha cristalizado. En la Figura \ref{cristalization} se muestra esquemáticamente este proceso.
  \begin{figure}[H]
  	\centering
 	\includegraphics[scale=0.5]{img/cristalization.png}
@@ -321,50 +321,50 @@ La deposición por sputtering debe ser hecha en manera muy cuidadosa, ya que las
 
 Para comenzar el análisis de la transformación, supondremos que la transformación es isotérmica.
 
-Supongamos que la muestra tiene un volumen total $V$, y el volumen transformado de una fase inicial $\alpha$ a otra fase $\beta$ es $V_\beta$. Intuitivamente podemos imaginar que el porcentaje de muestra cristalizada en función del tiempo, $X(t) = \frac{V_\beta (t)}{V}$ tendrá un carácter sigmoidal, mostrado esquemáticamente en la Figura \ref{cvst}
+Supongamos que la muestra tiene un volumen total $V$, y el volumen transformado de una fase inicial $\alpha$ a otra fase $\beta$ es $V_\beta$. Intuitivamente podemos imaginar que la fracción de muestra cristalizada en función del tiempo, $X(t) = \frac{V_\beta (t)}{V}$ tendrá un carácter sigmoidal, mostrado esquemáticamente en la Figura \ref{cvst}.
 
  \begin{figure}[H]
  	\centering
 	\includegraphics[scale=1]{img/cristalization_vs_tiempo.png}
- 	\caption{Porcentaje de muestra transformado en función del tiempo}
+ 	\caption{Porcentaje de muestra transformado en función del tiempo.}
 	\label{cvst}
 \end{figure} 
 
 La rapidez con que aparecen nuevas partículas transformadas por unidad de volumen se llama velocidad de nucleación y se denota por $I$. Análogamente, se llama velocidad de crecimiento a la velocidad con que aumenta el radio de los núcleos formados y se denota por $\Gamma$.
 
-Para comprender como cristaliza la muestra en su totalidad, empecemos por
+Para comprender cómo cristaliza la muestra en su totalidad, empecemos por
 considerar el tamaño de una región individual ya en fase $\beta$, es decir, ya cristalizada. La región se forma en un tiempo de incubación $t=\tau$, y luego crece en forma continua. Si la fase inicial y final tienen la misma composición, en la mayor parte de los casos, se observa experimentalmente que cualquier dimensión de la región transformada es una función lineal del tiempo \cite{Transformations2002}.
 
-Para facilitar el análisis asumiremos una velocidad de crecimiento isotrópica $\Gamma$, lo que implica que las regiones transforman con simetría esférica. Hay que destacar que no se pierde mucha generalidad con esta aproximación, aunque este no suela ser el caso. Con estás hipótesis, el volumen $v_\tau$ de una región que transformó en un tiempo de incubación es 
+Para facilitar el análisis asumiremos una velocidad de crecimiento isotrópica $\Gamma$, lo que implica que las regiones transforman con simetría esférica. Hay que destacar que no se pierde mucha generalidad con esta aproximación, aunque este no suela ser el caso. Con estás hipótesis, el volumen $v_\tau$ de una región que transformó en un tiempo de incubación es:
 \begin{equation}
 	v_\tau = \frac{4}{3}\pi \Gamma^3(t-\tau)^3
 \end{equation}
 
-El número de nuevas regiones en la fase $\beta$ nucleadas en un intervalo de tiempo entre $\tau$ y $\tau + d\tau$ es $IV_\alpha d\tau$. Entonces, el volumen transformado en un tiempo t, producto de dichas regiones nucleadas es $v_\tau IV_\alpha d\tau$. Al inicio de la transformación, podemos asumir que la velocidad de nucleación $I$ y la de crecimiento $\Gamma$ son constantes y que como $V_\beta << V_\alpha$ entonces $V_\alpha \approx V$, resulta
+El número de nuevas regiones en la fase $\beta$ nucleadas en un intervalo de tiempo entre $\tau$ y $\tau + d\tau$ es $IV_\alpha d\tau$. Entonces, el volumen transformado en un tiempo t, producto de dichas regiones nucleadas es $v_\tau IV_\alpha d\tau$. Al inicio de la transformación, podemos asumir que la velocidad de nucleación $I$ y la de crecimiento $\Gamma$ son constantes y que como $V_\beta << V_\alpha$ entonces $V_\alpha \approx V$, resulta:
 
 \begin{equation}
 \label{integral}
 	V_\beta = \frac{4}{3}\pi V \int_{\tau = 0}^{t} I\Gamma^3(t-\tau)^3d\tau
 \end{equation}
 
-Esta función, llamada función de Johsnon-Mehl, da como resultado que la fracción transformada en función del tiempo es:
+Esta función, llamada función de Johnson-Mehl, da como resultado que la fracción transformada en función del tiempo es:
 \begin{equation}
 \label{eq1}
 	X_e(t) = \frac{V_\beta (t)}{V} = \frac{\pi}{3}\Gamma^3 I t^4
 \end{equation}
 
-En esta ecuación la fracción transformada tiende a infinito con el tiempo. El error no es sorprendente ya que en la hipótesis considerada la transformación recién comenzaba, y de hecho, experimentalmente la ecuación \ref{eq1} describe bien la fracción transformada en el $t \approx 0$. El subíndice $e$ es porque este porcentaje suele llamarse fracción cristalizada extendida.
+En esta ecuación la fracción transformada tiende a infinito con el tiempo. El error no es sorprendente ya que en la hipótesis considerada la transformación recién comenzaba, y de hecho, experimentalmente la ecuación \ref{eq1} describe bien la fracción transformada en el $t \approx 0$. El subíndice $e$ es porque esta fracción suele llamarse fracción cristalizada extendida.
 
 En un análisis más exacto, se debe considerar la interferencia entre las regiones transformadas durante el proceso de crecimiento. Al chocar entre sí dos regiones transformadas, puede ocurrir una de tres cosas:
 \begin{itemize}
-\item Las regiones pueden unirse y formar una única región
-\item Pueden tocarse y seguir creciendo como si nunca hubieran interferido
-\item Pueden formar una interfase en la que el crecimiento frena, aunque siga en otras partes
+\item Las regiones pueden unirse y formar una única región.
+\item Pueden tocarse y seguir creciendo como si nunca hubieran interferido.
+\item Pueden formar una interfase en la que el crecimiento frena, aunque siga en otras partes.
 \end{itemize}
 
 De todas estas posibilidades, la última es la que ocurre en una transformación de estado sólido.
 
-Anteriormente se asumió en forma implícita que la nucleación ocurre en forma aleatoria, aunque esto no es verdad, la hipótesis aún puede ser aplicada. Lo que en verdad sucede es que la nucleación ocurre en sitios preferenciales de la muestra. Sin embargo, dividiendo la muestra en pequeños elementos de volumen, cada elemento contiene muchos de estos sitios preferenciales, con lo cual puede asumirse que cada uno de estos elementos tiene la misma probabilidad de nucleación. Cómo esta nucleación es igualmente probable en todas partes, cuanto mayor sea la fracción cristalizada, mayor es la probabilidad que $dX_e$ sea de lo ya transformado. Describiendo entonces la fracción cristalizada real con respecto a la fracción cristalizada anterior queda:
+Anteriormente se asumió en forma implícita que la nucleación ocurre en forma aleatoria, aunque esto no necesariamente es cierto, la hipótesis aún puede ser aplicada. Lo que en verdad sucede es que la nucleación ocurre en sitios preferenciales de la muestra. Sin embargo, dividiendo la muestra en pequeños elementos de volumen, cada elemento contiene muchos de estos sitios preferenciales, con lo cual puede asumirse que cada uno de estos elementos tiene la misma probabilidad de nucleación. Como esta nucleación es igualmente probable en todas partes, cuanto mayor sea la fracción cristalizada, mayor es la probabilidad que $dX_e$ sea de lo ya transformado. Describiendo entonces la fracción cristalizada real con respecto a la fracción cristalizada anterior queda:
 \begin{equation}
  dX = (1 - X)dX_e
 \end{equation}
@@ -372,18 +372,18 @@ La solución de está ecuación diferencial es:
 \begin{equation}
 	X(t)=1-e^{-\frac{\pi}{3}V^3 I t^4}
 \end{equation}
-Esta ecuación se conoce como ecuación de Johnson-Mehl y describe correctamente la curva de la Figura \ref{cvst}. Esta ecuación mantiene el comportamiento proporcional a $t^4$ para tiempos chicos, pero satura en $X = 1$ para tiempos grandes
+Esta ecuación se conoce como ecuación de Johnson-Mehl y describe correctamente la curva de la Figura \ref{cvst}. Esta ecuación mantiene el comportamiento proporcional a $t^4$ para tiempos chicos, pero satura en $X = 1$ para tiempos grandes.
 
 \subsubsection{Modelo de Avrami}
-En general, la velocidad de nucleación $I$ no es constante. Para corregir este hecho, Avrami consideró que la nucleación sólo ocurre en sitios preferenciales de la muestra que se van agotando con el tiempo. Sea $N_0$ los sitios iniciales de nucleación por unidad de volumen en la muestra, luego de un tiempo t tenemos
+En general, la velocidad de nucleación $I$ no es constante. Para corregir este hecho, Avrami consideró que la nucleación sólo ocurre en sitios preferenciales de la muestra que se van agotando con el tiempo. Sea $N_0$ los sitios iniciales de nucleación por unidad de volumen en la muestra, luego de un tiempo t tenemos:
 \begin{equation}
 	N(t) = N_0e^{-\nu t}
 \end{equation}
-donde $\nu$ es la velocidad con la que un núcleo cristaliza. Luego, la velocidad de nucleación por unidad de volumen es 
+donde $\nu$ es la velocidad con la que un sitio se convierte en núcleo. Luego, la velocidad de nucleación por unidad de volumen es:
 \begin{equation}
 	I = -\frac{dN}{dt} = N_0\nu e^{-\nu t} = N\nu
 \end{equation}
-Sustituyendo esta fórmula en la ecuación \ref{integral} e integrando por partes queda
+Sustituyendo esta fórmula en la ecuación \ref{integral} e integrando por partes queda:
 \begin{equation}
 	X = 1-exp \left\lbrace 8\pi N_0\frac{\Gamma^3}{\nu^3} \left[ e^{-\nu t} -1+\nu t -\nu^2t^2/2 + \nu^3 t^3/6 \right] \right\rbrace
 \end{equation}
@@ -392,7 +392,7 @@ Para valores chicos de $\nu t$ se obtiene nuevamente la ecuación de Johnson-Meh
 \begin{equation}
 	X = 1 - exp\left\lbrace -\frac{4}{3} \pi N_0 \nu^3 t^3 \right\rbrace
 \end{equation}
-En general la fracción cristalizada en función del tiempo sigue la ecuación
+En general la fracción cristalizada en función del tiempo sigue la ecuación:
 
 \begin{equation}
 	X = 1 - e^{-(kt)^n}
@@ -402,14 +402,14 @@ donde $n$ es el exponente de Avrami y $k$ una constante dependiente de la veloci
 
 	El exponente de Avrami generalmente toma valores entre 1.5 y 4, y en casos de nucleación tridimensional se restringe a valores entre 3 y 4. Esto debería cubrir los casos en los que la velocidad de nucleación $I$ es una función decreciente en el tiempo, hasta el caso límite ($n = 4$) en que es constante. En el caso de láminas delgadas, el crecimiento en el espesor finaliza rápidamente, con lo cual el proceso es esencialmente bidimensional y $n$ toma valores entre 2 y 3, siendo 3 el caso límite de velocidad de nucleación constante. 
 	
-Como los procesos de nucleación y crecimientos son procesos activados térmicamente, la constante k puede ser descripta como
+Como los procesos de nucleación y crecimientos son procesos activados térmicamente, la constante k puede ser descripta como:
 \begin{equation}
 \label{kvalue}
 	k=fe^{-\frac{E_c}{RT}}
 \end{equation}
 
 donde $f$ es el llamado factor de frecuencia y $E_c$ la energía de activación.
-La cristalización puede ser descripta completamente si se conocen los valores de $n$, $E_c$ y f. Estos parámetros normalmente se hayan midiendo la fracción cristalizada en función del tiempo para procesos isótermicos y ajustando la ecuación convenientemente.
+La cristalización puede ser descripta completamente si se conocen los valores de $n$, $E_c$ y f. Estos parámetros normalmente se hallan midiendo la fracción cristalizada en función del tiempo para procesos isótermicos y ajustando la ecuación convenientemente.
 
 La energía de activación de la cristalización puede usarse para describir la estabilidad térmica de una fase, donde mayores números se corresponden con mayores valores de estabilidad.
 
@@ -418,7 +418,7 @@ Para lograr medir la energía de activación en procesos térmicamente activados
 \begin{equation}
 	\dot{X} = k(1-X)
 \end{equation}
-cuya solución es
+cuya solución es:
 \begin{equation}
 	X(t) = 1 - e^{-kt}
 \end{equation}
@@ -439,24 +439,24 @@ Aplicando logaritmo natural miembro a miembro para simplificar la expresión se 
 	ln(\frac{\alpha}{R T_p^2}) = -\frac{E_c}{RT_p} + cte
 \end{equation}
 
-Con los diversos valores de $T_p$ obtenidos de barridos a distintas velocidades $\alpha$ puede graficarse $ln(\frac{\alpha}{R T_p^2})$ vs $T_p^{-1}$, y de la pendiente de esta recta puede obtenerse el valor de la energía de activación, $E_c$
+Con los diversos valores de $T_p$ obtenidos de barridos a distintas velocidades $\alpha$ puede graficarse $ln(\frac{\alpha}{R T_p^2})$ vs $T_p^{-1}$, y de la pendiente de esta recta puede obtenerse el valor de la energía de activación, $E_c$.
 
 \subsubsection{Relación de Augis-Bennet}
 Para conservar el modelo de Avrami en un proceso a temperatura variable, Augis y Bennet propusieron un modelo alternativo al de Kissinger. Este considera que el proceso es aproximable por una sucesión de pasos isotérmicos.
-De la ecuación \ref{kvalue} y de considerar a la temperatura como una función lineal en el tiempo, podemos definir
+De la ecuación \ref{kvalue} y de considerar a la temperatura como una función lineal en el tiempo, podemos definir:
 \begin{equation}
 	u = k\: t = f\: t\: exp \left\lbrace -\frac{E_c}{R(T_0 + \alpha t)} \right\rbrace
 \end{equation}
 
-Esto permite reescribir el modelo de Avrami como 
+Esto permite reescribir el modelo de Avrami como:
 \begin{equation}
 	X = 1-e^{-u^{n}}
 \end{equation}
-de donde sale que
+de donde sale que:
 \begin{equation}
 	\dot{X} = \dot{u}\: n\: u^{n-1}(1-X)
 \end{equation}
-Considerando una vez más que el máximo de la velocidad de la reacción coincide con el pico del barrido, vuelve a suceder que $\ddot{X}(T_p) = 0$. En este modelo se llega a la siguiente expresión
+Considerando una vez más que el máximo de la velocidad de la reacción coincide con el pico del barrido, vuelve a suceder que $\ddot{X}(T_p) = 0$. En este modelo se llega a la siguiente expresión:
 \begin{equation}
 	f^n exp \left\lbrace -\frac{n E_c}{RT_p} \right\rbrace = (\frac{\alpha}{T_p - T_0})^n
 \end{equation}
@@ -465,7 +465,7 @@ Aplicando logaritmo natural a esta expresión se obtiene la relación de Augis B
 \begin{equation}
 	ln(\frac{\alpha}{T_p - T_0}) = -\frac{n E_c}{RT_p} + cte
 \end{equation}
-Donde la forma de hallar el valor de $E_c$ es similar a la de Kissinger, a partir de la pendiente de la gráfica $ln(\frac{\alpha}{T_p - T_0})$
+Donde la forma de hallar el valor de $E_c$ es similar a la de Kissinger, a partir de la pendiente de la gráfica $ln(\frac{\alpha}{T_p - T_0})$.
 
 \newpage
 
