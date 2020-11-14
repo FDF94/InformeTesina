@@ -276,10 +276,10 @@ La fase martensítica B19' es una estructura monoclínica. Esta es la fase que s
 \end{figure}
 
 \subsubsection{Fase $Ti_2Ni$ y $Ti_4Ni_2O$}
-
+\label{Ti2Ni}
 Los parámetros de estas fases son muy similares, por lo cual resulta difícil distinguirlas entre sí. La fase $Ti_2Ni$ aparece en composiciones pobres en $Ni$, mientras que la fase $Ti_4Ni_2O$ aparece por la presencia de oxígeno en algún momento del proceso de elaboración de la aleación. Ambas fases se corresponden con una estructura FCC, con grupo espacial $Fd3m$ (número 227) y sus parámetros de red son cercanos a 11,3 $\AA$.
 
-\subsubsection{$NiZr$}
+\subsubsection{Fase $NiZr$}
 \todo{Expandir}
 La fase $NiZr$ tiene una estructura ortorrómbica y su grupo espacial es $Cmcm$ (número 63) \cite{Kirkpatrick1962}.
 
@@ -769,27 +769,30 @@ Las láminas depositadas no presentaron estructura cristalina previo a los trata
 
 \subsubsection{Temperaturas de cristalización y energía de activación}
 
-Las diversas velocidades de calentamiento fueron 5, 10, 20, 30 y 50 $^{\circ C }/min$ en láminas obtenidas en la segunda deposición. Las mediciones obtenidas se muestran en la Figura \ref{DSCPeaks}
+Con el objetivo de analizar el proceso de cristalización de las láminas delgadas de $NiTiZr$, se realizaron calentamientos a distintas velocidades 5, 10, 20, 30 y 50 $^{\circ} C/min$ en las láminas obtenidas en la segunda deposición. Para cada ensayo se empleó una lámina distinta, la cual se colocó dentro de los panes de aluminio. Dichas láminas tenían una masa de 6 mg cada una aproximadamente. En la Figura \ref{DSCPeaks} se muestran los picos exotérmicos observados en las mediciones y se indican las temperaturas donde el pico alcanza el máximo ($T_p$). Se supuso que la curva de base del DSC es lineal en el rango de temperatura donde se desarrolla el pico correspondiente a la cristalización.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.2]{img/DSCPeaks}
-	\caption{Mediciones de los diferentes picos de DSC para distintas velocidades. En rojo, $T_p$ para cada curva}
+	\caption{Mediciones de los diferentes picos de DSC para distintas velocidades. El punto rojo indica la temperatura donde el pico alcanza su valor máximo ($T_p$).}
 	\label{DSCPeaks}
 \end{figure}
 
-Debido a que el error relativo de $T_p^{-1}$ es mucho mayor que $ln(\frac{\alpha}{T_p^2})$ y que $ln(\frac{\alpha}{T_p-T_0})$, para poder realizar una regresión lineal se invirtieron los ejes, graficándose así $T_p^{-1}$ en función de $ln(\frac{\alpha}{T_p^2})$ y de $ln(\frac{\alpha}{T_p-T_0})$ para los modelos de Kissinger y Augis-Bennet respectivamente. Esto es
+Debido a que el error relativo de $T_p^{-1}$ es mucho mayor que $ln(\frac{\alpha}{T_p^2})$ y que $ln(\frac{\alpha}{T_p-T_0})$, para poder realizar una regresión lineal se invirtieron los ejes, graficándose así $T_p^{-1}$ en función de $ln(\frac{\alpha}{T_p^2})$ y de $ln(\frac{\alpha}{T_p-T_0})$ para los modelos de Kissinger y Augis-Bennet respectivamente. Esto es:
+
 \begin{equation}
+\label{EquationKissinger}
 	T_p^{-1}=-\frac{R}{E_c}ln(\frac{\alpha}{T_p^2})+cte
 \end{equation}
 
 \begin{equation}
+\label{EquationAugisBennet}
 	T_p^{-1}=-\frac{R}{E_c}ln(\frac{\alpha}{T_p-T_0})+cte
 \end{equation}
 
-Con un ajuste lineal realizado con la función $curve\_fit$ de la librería SciPy se obtuvo el valor de $E_c$ a través de la pendiente en cada modelo. Los puntos calculados a partir de los medidos junto con los ajuste lineales se muestran en las figuras \ref{Kiss} y \ref{AugBen}. A través del método de Kissinger el valor obtenido para la energía de activación fue de $420 \pm 30 kJ$ mientras que por Augis-Bennet el valor obtenido fue de $410 \pm 30 kJ$.
+Con un ajuste lineal realizado por mínimos cuadrados se obtuvo el valor de $E_c$ a través de la pendiente en cada modelo. Los puntos calculados usando las Ecuaciones \ref{EquationKissinger} y \ref{EquationAugisBennet} a partir de los medidos junto con los ajuste lineales se muestran en las Figuras \ref{Kiss} y \ref{AugBen}. A través del método de Kissinger el valor obtenido para la energía de activación fue de $420 \pm 30 kJ$ mientras que por el método de Augis-Bennet el valor obtenido fue de $410 \pm 30 kJ$.
 
-
+\todo{Agregar valores de las pendientes con su error}
 \begin{figure}[H]
  	\centering
 	\includegraphics[scale=0.4]{img/Kissinger.png}
@@ -806,9 +809,7 @@ Con un ajuste lineal realizado con la función $curve\_fit$ de la librería SciP
 
 \subsection{Tratamiento térmicos}
 
-Las láminas de la segunda y tercera deposición fueron tratadas a $500 ^\circ C$, $600 ^\circ C$, $700 ^\circ C$ y $800 ^\circ C$. Las láminas obtenidas resultaron ser quebradizas, con lo cual su manipulación resultó muy difícil. 
-Esta propiedad restringió considerablemente los estudios que sobre ellas podían realizarse, especialmente para aquellas de la tercera deposición. Dicha fragilidad es atribuible al alto contenido en $Zr$ que presenta la aleación. Esta propiedad también es reportada por Hee Young Kim en 2009\cite{HeeYoungKim2009}. \textcolor{violet}{Lo mando a discusión o lo dejó acá?}
-
+Para poder estudiar las microestructuras, fases presentes y su relación con la transformación martensítica, las láminas de la segunda y tercera deposición fueron encapsuladas en vacío, con el objetivo de cristalizarlas mediante tratamientos térmicos a $500 ^\circ C$, $600 ^\circ C$, $700 ^\circ C$ y $800 ^\circ C$ durante $60$ min. Es importante notar que las láminas de la segunda deposición tienen una composición ricas en $Ni$, y por el contrario las láminas de la tercera deposición tienen una composición pobre en $Ni$. Esto permitió realizar un estudio completo del efecto de los tratamientos térmicos en la láminas de $NiTiZr$. Como contrapartida, algunas dificultades en el proceso de encapsulado, produjeron algún grado de oxidación de las láminas en los tratamientos térmicos a mayor temperatura y además se observó que las láminas se frágilizaron luego de los tratamientos térmicos, por lo cual su manipulación posterior resultó muy difícultosa.
 
 \subsection{Deposición pobre en Ni}
 \subsubsection{Difracción de rayos X}
