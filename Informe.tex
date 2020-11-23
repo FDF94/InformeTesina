@@ -632,7 +632,7 @@ En el trabajo se utilizaron panes de aluminio de 5 mm de diámetro, dentro de lo
 Al cambiar un material su estructura atómica, lo normal es que muchas de sus propiedades se vean afectadas, entre ellas la resistividad. Si esta transformación sucede mientras circula una corriente eléctrica a través del material, se observará un cambio en la resistencia del material asociado a la transformación de fase. De esta manera, si se le aplica una corriente constante al material, midiendo la diferencia de potencial es posible determinar donde comienzan y terminan los cambios de fase.
 
 
-La medición de resistividad por cuatro punta consiste en aplicar una corriente \textcolor{violet}{constante} $I$ a través de dos contactos y medir  la caída de potencial $\delta V$ con otros dos contactos en la zona de circulación de la corriente. De estos cuatro contactos deriva el nombre del método. Un esquema de la disposición se muestra en la Figura \ref{4puntas}. La lámina es sujetada en una base de cobre, llamada dedo frío, mediante los cuatro contactos fabricados con alambre de Constatán, soldados a cuatro chapas elásticas de acero para asegurar un buen contacto eléctrico.
+La medición de resistividad por cuatro punta consiste en aplicar una corriente constante $I$ a través de dos contactos y medir  la caída de potencial $\delta V$ con otros dos contactos en la zona de circulación de la corriente. De estos cuatro contactos deriva el nombre del método. Un esquema de la disposición se muestra en la Figura \ref{4puntas}. La lámina es sujetada en una base de cobre, llamada dedo frío, mediante los cuatro contactos fabricados con alambre de Constatán, soldados a cuatro chapas elásticas de acero para asegurar un buen contacto eléctrico.
 
  \begin{figure}[H]
  	\centering
@@ -641,29 +641,28 @@ La medición de resistividad por cuatro punta consiste en aplicar una corriente 
 	\label{4puntas}
 \end{figure} 
 
-Toda esta estructura se encuentra dentro de un tubo de vidrio cerrado, lo cual permite que el sistema sea sumergido en nitrógeno líquido para trabajar con la muestra a bajas temperaturas. Por arriba, el tubo está cerrado con un tapón de teflón. Este tapón cuenta con un o'ring que garantiza el cierre hermético con las paredes del tubo y por cada contacto eléctrico un pequeño o'ring. Los contactos son ajustados por una única tapa superior ajustada por tres tornillos. Los cables que pasan a través del tapón son los siguientes:
+Toda esta estructura se encuentra dentro de un tubo de vidrio cerrado, lo cual permite que el sistema sea sumergido en nitrógeno líquido para trabajar con la muestra a bajas temperaturas. Por arriba, el tubo está cerrado con un tapón de teflón. Este tapón cuenta con un o'ring que garantiza el cierre hermético con las paredes del tubo y, además, por cada contacto eléctrico también hay un pequeño o'ring. Los contactos son ajustados por una única tapa superior ajustada por tres tornillos. Los cables que pasan a través del tapón son los siguientes:
 \begin{itemize}
-\item Dos contactos por los cuales circula la corriente 
-\item Dos contactos para medir la diferencia de potencial
-\item Un contacto para la termocupla de medición
-\item Un contacto para la tierra dentro del tubo \textcolor{violet}{No sería a tierra?}
-\item Dos contactos para conexión del controlador de temperatura
-\item Dos contactos para la termocupla del controlador de temperatura
+\item Dos contactos por los cuales circula la corriente.
+\item Dos contactos para medir la diferencia de potencial.
+\item Un contacto para la termocupla de medición.
+\item Un contacto a tierra dentro del tubo.
+\item Dos contactos para conexión del controlador de temperatura.
+\item Dos contactos para la termocupla del controlador de temperatura.
 \end{itemize}
 
 
-Dentro del dedo frío hay una resistencia eléctrica alimentada desde el controlador de temperatura novus 1200, calentando la muestra por efecto Joule y dos termocuplas tipo K. Una de ellas se utiliza para el controlador de temperatura, mientras que la otra termocupla mide la temperatura de la muestra a través de una punta fría y un multímetro Agilent 34401a. Al estar la muestra cubierta con lana de alúmina, esta intercambia calor unicamente con el dedo frío, por lo cual puede considerarse que tanto muestra como dedo frío están siempre a la misma temperatura.
+Dentro del dedo frío hay una resistencia eléctrica alimentada desde el controlador de temperatura Novus 1200, calentando la muestra por efecto Joule y dos termocuplas tipo K. Una de ellas se utiliza para el controlador de temperatura, mientras que la otra termocupla mide la temperatura de la muestra a través de una punta fría y un multímetro Agilent 34401a. Al estar la muestra cubierta con lana de alúmina, esta intercambia calor únicamente con el dedo frío, por lo cual puede considerarse que tanto muestra como dedo frío están siempre a la misma temperatura.
 
 En la parte superior del tubo hay dos aberturas laterales. Una de ellas está conectada a un acople T que conecta un tubo de Ar y otro de He. La otra abertura se conecta con una bomba de vacío.
 
 Al ser la muestra un material conductor, la diferencia de potencial medida es muy pequeña (orden de los $\mu V$), por lo cual el instrumento para llevar a cabo la medición debe ser de alta precisión y con filtros de ruido. El equipo usado para esta tarea fue un amplificador Lock-in modelo Sr-510 Stanford Research. En los contactos exteriores se aplicó una corriente de aproximadamente $10mA$, generada con un generador de señal operando a un 1 $kHz$ a través de una resistencia de 1$k\Omega$. El amplificador Lock-in y el multímetro Agilent se conectan a un sistema de adquisición de datos en una computadora. 
 
-Todas las mediciones se realizaron en una atmósfera de He a 660 Torr y un vacío base de 20 mTorr. Se trabajó en una atmósfera inerte para evitar que la condensación de la humedad ambiente a bajas temperaturas afectase la medición, y se eligió atmósfera de He en lugar de Ar ya que el último se condensa dentro del rango de temperaturas en el cual se trabajó (desde $\sim 120 ^\circ C$ hasta $-140 ^\circ C$). La velocidad de enfriamiento y calentamiento se mantuvo a $\sim10$ K min$^{-1}$.
+Todas las mediciones se realizaron en una atmósfera de He a 660 $Torr$ y un vacío base de 20 $mTorr$. Se trabajó en una atmósfera inerte para evitar que la condensación de la humedad ambiente a bajas temperaturas afectase la medición, y se eligió atmósfera de $He$ en lugar de $Ar$ ya que el último se condensa dentro del rango de temperaturas en el cual se trabajó (desde $\sim 120 ^\circ C$ hasta $-140 ^\circ C$). La velocidad de enfriamiento y calentamiento se mantuvo a $\sim10^\circ C min^{-1}$.
 
 \newpage
 \section{Resultados obtenidos}
 
-%Debido a que la tanda rica en $Ni$ presenta muchas diferencias con la tanda pobre en $Ni$, la organización de esta sección será de la siguiente manera: Primeramente, se mostrarán los datos que son similares para ambas deposiciones, esto es, los estudios sin tratamiento térmico de las láminas. Luego, se analizarán primero los resultados obtenidos de la deposición rica en $Ni$, para finalmente terminar con los resultados de la deposición pobre en $Ni$.%
 \subsection{Deposición de las láminas delgadas}
 
 Las láminas  delgadas de $NiTiZr$ analizadas en esta Tesina fueron obtenidas en dos deposiciones distintas. En la Tabla \ref{potencias} se muestran los valores para la potencia promedio de cada magnetrón en ambas deposiciones. Los errores corresponden a las variaciones observadas durante las deposiciones, que fueron mayores a las incertezas de los instrumentos. Debido a las fluctuaciones de la tensión de línea y el desgaste de los blancos, fue necesaria la estabilización de la potencia de los magnetrones a través de los autotransformadores variables (Variac) y cada 10 minutos fue registrada la potencia de cada magnetrón.
