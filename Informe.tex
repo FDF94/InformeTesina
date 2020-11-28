@@ -182,6 +182,7 @@ En el caso ideal, la transformación sucedería a la temperatura de equilibrio t
 Debido al trabajo de fricción y el proceso de acumulación de energía elástica, la transformación martensítica consiste en un proceso irreversible desde el punto de vista de la termodinámica, a pesar de que es un proceso mecánicamente reversible. Por lo anto, la diferencia de energía libre química entre ambas fases se relaciona con el trabajo de fircción ($W_{fric}$) y el trabajo elástico ($W_{elast}$) mediante la siguiente ecuación \footnote{Esta relación se deduce desde el primer y segundo principio de la termodinámica, tomando como convención de signos que el calor absorbido por el sistema y el trabajo realizado sobre el sistema son ambos positivos.}\todo{arreglar salto} \cite{Isola2020}:
 
 \begin{equation}
+\label{GibbsEnergyEquation}
 	- \Delta G_{q}^{A \leftrightarrow M} \geq W_{elast} + W_{fric}
 \end{equation}
 
@@ -989,11 +990,11 @@ Por otra parte, Malvasio en 2017 \cite{Malvasio}, en láminas delgadas obtenidas
 En el presente trabajo se determinó la energía de activación de láminas delgadas de $NiTiZr$ producidas por magnetrón sputtering para la composición rica en $Ni$ ($Ni_{50,4}Ti_{30,8}Zr_{18,9}$) y se obtuvieron valores de $E_c = 420 \pm 30$ kJ por el método de Kissinger y de $E_c = 410 \pm 30$ kJ por el método de Augis-Bennet. Si bien estos valores son levemente inferiores a los determinados por Xiaoyang Yi et al., son notoriamente mayores que los obtenidos en la aleación binaria. La leve diferencia entre los valores determinados en este trabajo con los valores obtenidos por Xiaoyang Yi et al. (\cite{XiaoyangYi2018_2} y \cite{XiaoyangYi2018}) puede ser entendida teniendo en cuenta las diferentes técnicas de producción. Estas diferencias en los valores de la energía de activación causado por los procesos de producción, ya fueron mostrados en la aleación binaria \cite{Chen1999}.
 
 \subsection{Fases halladas}
-
+Con el objetivo de conocer las fases presentes se realizaron los estudios de difracción por rayos X y se tomaron imágenes mediante TEM para todas las muestras. En las siguientes secciones se listan las fases halladas y los tamaños de grano para cada muestra, contrastando los resultados obtenidos con diversos estudios sobre aleaciones similares.
 \subsubsection{Pobre en $Ni$}
 \label{DPobreNi}
 
-Con el objetivo de conocer las fases presentes se realizaron los estudios de difracción por rayos X y se tomaron imágenes mediante TEM. En la Tabla \ref{PhasesNiPoor} se resumen las distintas fases halladas y los tamaños de grano vistos para cada una de las muestras sometidas a un tratamiento térmico.
+En la Tabla \ref{PhasesNiPoor} se resumen las distintas fases halladas y los tamaños de grano vistos para cada una de las muestras pobres en $Ni$ sometidas a un tratamiento térmico.
 
 \begin{table}[H]
 \centering
@@ -1041,26 +1042,34 @@ La presencia de la fase H es destacable, ya que esta fase fortalece la estructur
 
 \subsection{Transformación martensítica}
 \label{TransfomacionDiscusion}
+Con el objetivo de medir las temperaturas asociadas a la transformación martensítica ($M_s$, $A_s$, $M_f$ y $A_f$) para ambas tandas se midió la variación en el flujo de calor usando la técnica de calorimetría diferencial de barrido. En las muestras pobre en $Ni$ aparte pudo ser realizada la medición de la resistividad en función de la temperatura por el método de cuatro puntas. 
+
+Las temperaturas asociadas a la transformación pudieron ser determinadas para la muestra rica en $Ni$ tratada a $700^\circ C$. En el resto de las muestras no pudieron ser determinadas por ser mucho menores a la temperatura ambiente o, posiblemente, ni siquiera suceder en ciertos casos.
+
 
 \subsubsection{Pobre en $Ni$}
-Al no haberse realizado la medición de la resistividad en función de la temperatura por el método de cuatro puntas, solamente mediante la calorimetría diferencial de barrido es posible analizar las temperaturas de transformación. Para estas muestras, en ninguna se puede apreciar un cambio en el flujo de calor que permita determinar el principio y el final de los cambios de fase. Si bien en la muestra tratada a $800^\circ C$ se observa un cambio en el flujo entre $0^\circ C$ y $-100^\circ C$ asociable a dicha transformación en el enfriamiento, este cambio en el flujo debería también apreciarse en el calentamiento para ser tenida en cuenta.
+En esta tanda de muestras no es apreciable un cambio en el flujo de calor que permita determinar el principio y el final de los cambios de fase. Si bien en la muestra tratada a $800^\circ C$ se observa un cambio en el flujo entre $0^\circ C$ y $-100^\circ C$ asociable a dicha transformación en el enfriamiento, este cambio en el flujo debería también apreciarse en el calentamiento para ser tenida en cuenta.
 
-A pesar de esto, puede afirmarse que las temperaturas de transformación son menores a la temperatura ambiente, ya que mediante las imágenes de TEM y la difracción de rayos X, sabemos que las muestras se encuentran principalmente en fase B2 (Austenita). En el caso en que las temperaturas fuesen superiorers, se observaría principalmente la fase B19' o una combinación de ambas.
+A pesar de esto, puede afirmarse que las temperaturas de transformación son menores a la temperatura ambiente, ya que mediante las imágenes de TEM y la difracción de rayos X, sabemos que las muestras se encuentran principalmente en fase B2 (Austenita). En el caso en que las temperaturas fuesen superiores, se observaría principalmente la fase B19' o una combinación de ambas.
 
-El motivo de que las temperaturas de transformación sean tan bajas y que adicionalmente se extiendan en un rango tan amplio que no puede ser apreciado por el DSC se debe principalmente al bajo tamaño de grano presente. Que un tamaño de grano decreciente implique una tendencia decreciente de las temperaturas de transformación, específicamente de $M_s$, es informada por Wollants en 1993\cite{Wollants1993}. Así mismo, el bajo tamaño de grano
+El motivo de que la temperatura de equilibrio $T_0$ sea menor que la temperatura ambiente se debe principalmente a la composición. Es posible que la presencia de otras fases saquen $Zr$ de la fase matriz, evitando así que tenga el efecto de aumentar $T_0$ sobre la temperatura ambiente. Aparte de esto, la presencia de las fases $(Ti, Zr)_2 Ni$ y $(Ti, Zr)_4 N_2O$ sacan mayor contenido de $Ti$ y de $Zr$ que de $Ni$ de la fase matriz. Esto probablemente implique la fase matriz termina siendo rica en $Ni$, bajando las temperaturas de transformación.
 
-Similares conclusiones pueden hallarse por Waitz en 2007 y 2008 \cite{Waitz2007}\cite{Waitz2008}. En estos informes se marca incluso que la transformación se suprime completamente con tamaños de granos menores a 50 $nm$. Viendo las imágenes de la sección \ref{TemNiPoorResults}, se observa que todas las muestras tienen granos con tamaños menores a 50 $nm$, y particularmente en aquella muestra tratada a $500^\circ C$ no se observan granos superiores a dicho tamaño.
+Por otra parte, el motivo de que las temperaturas de transformación sean tan bajas se extiendan en un rango tan amplio que no puede ser apreciado por el DSC se debe principalmente al bajo tamaño de grano presente. Que un tamaño de grano decreciente implique una tendencia decreciente de las temperaturas de transformación, específicamente de $M_s$, es informada por Wollants en 1993\cite{Wollants1993}. Esto puede entenderse a partir de la Ecuación \ref{GibbsEnergyEquation}, ya que al aumentar el trabajo elástico, es necesario un mayor sobreenfriamiento para inducir la transformación.
 
-Otro motivo que explica las bajas temperaturas de transformación es la presencia de las fases $(Ti, Zr)_2 Ni$ y $(Ti, Zr)_4 N_2O$, las cuales sacan mayor contenido de $Ti$ y $Zr$ que de $Ni$, cómo así también la fase $NiZr$, que reduce el contenido de $Zr$ en la fase matriz \cite{HeeYoungKim2009}. Al ser $Zr$ el material responsable que aumenten las temperaturas de transformación, su escasez debido a que forma otras fases explica el motivo de que las temperaturas no aumentasen como era esperado. \textcolor{violet}{La presencia de dichas fases también afecta el rango de temperatura en el cual suceden las transformaciones. Si dichas fases también transforman en el rango de temperaturas en el cual se trabaja, mediante la técnica de calorimetría diferencial de barrido, los diferentes picos que se observarían en el flujo de calor de haber una sola fase se combinan, haciendo más difícil su diferenciación.}\todo{No estoy muy seguro de esto}
+Similares conclusiones pueden hallarse por Waitz en 2007 y 2008 \cite{Waitz2007}\cite{Waitz2008}. En estos informes se marca incluso que la transformación se suprime completamente con tamaños de granos menores a 50 $nm$. Viendo las imágenes de la sección \ref{TemNiPoorResults}, se observa que todas las muestras tienen granos con tamaños menores a 50 $nm$, y particularmente en aquella muestra tratada a $500^\circ C$ no se observan granos superiores a dicho tamaño. Esto explicaría porque en esta muestra no se observa transformación a pesar de que en los rayos X y en las imágenes obtenidas por TEM la fase mayoritaria es la B2.
+
+Por último, es destacable que incluso si las fases adicionales no afectasen los valores de ninguna de las temperaturas asociadas a la transformación, su mera presencia disminuye el tamaño de los picos característicos de DSC, ya que disminuye el porcentaje de la muestra que sí transforma.
+
 
 \subsubsection{Rica en $Ni$}
 
 El análisis de esta tanda de muestras es similar al análisis de las muestras pobres en $Ni$, con el agregado que en este caso se realizó la medición de resistividad por el método de cuatro puntas.
 
-En este caso, sólo en la muestra tratada a $700 ^\circ C$ se observa una transformación de fase, medida únicamente en resistividad y no en DSC. Las temperaturas de transformación halladas en este caso, son coincidentes con el hecho que esta es la única muestra que presenta fase B19' a temperatura ambiente. En cuanto a porque en la calorimetría diferencial de barrido no se aprecia la transformación, los motivos que lo explicarían son la presencia de muchas otras fases y el bajo tamaño de grano, al igual que fue detallado en la sección anterior.
+En este caso, en la muestra tratada a $700 ^\circ C$ puede observarse una transformación de fase, apreciable únicamente en la medición de la resistividad y no en aquella de DSC. Las temperaturas de transformación halladas en este caso ($M_s = 56 ^\circ C$, $M_f = 0 ^\circ C$, $A_s = 18 ^\circ C$, $A_f = 86 ^\circ C$) , son coincidentes con el hecho que esta es la única muestra de la tanda rica en $Ni$ que presenta la fase B19' a temperatura ambiente. La transformación martensítica se produce en un rango de casi $50 ^\circ C$, mientras que la austenítica en un rango de casi $70^\circ C$. La causa de esta amplitud es atribuible al bajo tamaño de grano, que aumenta el término perteneciente al trabajo elástico en la Ecuación\ref{GibbsEnergyEquation}. Justamente son este amplio rango, junto con la presencia de otras fases que no transforman, los causantes de que este cambio de fase no pueda ser apreciado en la calorimetría diferencial de barrido.
+
 En cuanto a las otras muestras, en temperaturas entre $0 ^\circ C$ y $-100 ^\circ C$ se observan cambios en la resistividad, que son asociables a la transformación martensítica y su inversa, pero es difícil por la cantidad de ruido presente determinar con precisión sus temperaturas de inicio y final.
 
-Falta un análisis de DSC de la muestra tratada a $800 ^\circ C$, medición que no pudo ser hecha debido a la pandemia de COVID-19. Sin embargo, en vista que en ninguna de las otras muestras se apreció un cambio de fase en el flujo de calor ni tampoco se vio para esta muestra un cambio en la resistividad, es poco probable que dicha medición de ser realizada arrojase nueva información.
+Queda pendiente realizar un análisis de DSC de la muestra tratada a $800 ^\circ C$, medición que no pudo ser hecha debido a la pandemia de COVID-19. Sin embargo, en vista que en ninguna de las otras muestras se apreció un cambio de fase en el flujo de calor ni tampoco se vio para esta muestra un cambio en la resistividad, es poco probable que dicha medición de ser realizada arrojase nueva información.
 
 \newpage
 \section{Conclusión}
