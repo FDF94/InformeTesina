@@ -291,10 +291,9 @@ La deposición física por sputtering es una deposición física de vapor usada 
  
 Para generar llevar el gas inerte al estado de plasma es necesario alto vacío $\approx 1 mTorr$ y un voltaje DC de al menos 500 V. Para aumentar la velocidad de deposición, se aplica un campo magnético alrededor de los blancos. Eso provoca que los electrones orbiten dentro del plasma, ahora concentrado sobre los blancos, y aumenten la cantidad de choques por unidad de tiempo. Es este campo lo que le da el nombre de \textit{Magnetrón sputtering}\cite{Malvasio}\cite{ThinFilm}. En la Figura \ref{sputter} puede verse esquemáticamente cómo es la disposición experimental del proceso.
 
-\todo{Buscar otra figura}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=1]{img/diagram-dc-magnatron.png}
+	\includegraphics[scale=0.5]{img/SchemaDeposition.png}
 	\caption{Esquema del magnetrón sputtering.}
 	\label{sputter}
 \end{figure}
@@ -772,14 +771,14 @@ Con un ajuste lineal realizado por mínimos cuadrados se obtuvo el valor de $E_c
 
 \begin{figure}[H]
  	\centering
-	\includegraphics[scale=0.4]{img/Kissinger.png}
+	\includegraphics[scale=0.6]{img/Kissinger.png}
  	\caption{Regresión lineal realizada para la relación de Kissinger. Los valores obtenidos para el ajuste fueron: $m=(-2,0\pm0,1)\cdot10^{-5}; h=(-1,08\pm0,02)\cdot10^{-3}$}
 	\label{Kiss}
 \end{figure} 
 
  \begin{figure}[H]
  	\centering
-	\includegraphics[scale=0.4]{img/Augis_bennet.png}
+	\includegraphics[scale=0.6]{img/Augis_bennet.png}
  	\caption{Regresión lineal realizada para la relación de Augis-Bennet.Los valores obtenidos para el ajuste fueron: $m=(-2,0\pm0,1)\cdot10^{-5}; h=(-1,234\pm0,004)\cdot10^{-3}$}
 	\label{AugBen}
 \end{figure} 
@@ -860,7 +859,7 @@ En la Figura \ref{RXNiRich} se muestran los difractogramas de las láminas ricas
 \begin{figure}[H]
 \subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_500.png}}
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_600.png}} \\
-\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_700.png}} 
+\subfloat[Muestra a $700 ^\circ C$]{\includegraphics[scale=0.152]{img/RX/NiRich_700.png}} 
 \subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.2]{img/RX/NiRich_800.png}} 
 \caption{Patrones de difracción de rayos X para las muestras ricas en $Ni$.}
 \label{RXNiRich}
@@ -928,7 +927,7 @@ En las otras muestras, no fue posible definir dichas temperaturas. En la Figura 
 \subfloat[Muestra a $500 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_500.png}} \\
 \subfloat[Muestra a $600 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_600.png}}\\
 \subfloat[Muestra a $800 ^\circ C$]{\includegraphics[scale=0.3]{img/Resistance_800.png}} 
-\caption{Curvas medidas por el método de resistividad de 4 puntas en las cuales no fue posible hallar en forma precisa las temperatura de transformación \textcolor{violet}{Personalmente, mantendría separada la medición de 700 del resto.}}
+\caption{Curvas medidas por el método de resistividad de 4 puntas en las cuales no fue posible hallar en forma precisa las temperatura de transformación.}
 \label{Failures}
 \end{figure}
 
@@ -954,13 +953,14 @@ En la Figura \ref{DSCNiRich} se muestran las mediciones realizadas con el DSC lu
 \newpage
 
 \section{Discusión}
-En esta sección se procedera a hacer un análisis de los resultados obtenidos, tanto individualmente como en su conjunto.
+En esta sección se procederá a hacer un análisis de los resultados obtenidos, tanto individualmente como en su conjunto.
 
 Primeramente se analizara la energía de activación de las láminas, contrastando los resultados obtenidos con estudios hechos en láminas de similares composiciones y métodos alternativos de producción.
 
 Luego se analizarán los resultados de la difracción por rayos X y las imágenes de TEM para un análisis de cuales fueron las fases obtenidas para cada muestra.
 
 Hechos estos análisis, finalmente se estudiara la influencia de estos factores en la transformación martensítica.
+
 \subsection{Energía de activación}
 
 Xiaoyang Yi et al \cite{XiaoyangYi2018} en 2018 determinaron la energía de activación, a través del método de Kissinger, para diversas composiciones de $NiTiZr$ en cintas producidas a través del método de solidificación rápida. Estos valores son reproducidos en la tabla \ref{XiaoyangYiValues}.
@@ -1045,26 +1045,46 @@ Las temperaturas asociadas a la transformación pudieron ser determinadas para l
 
 
 \subsubsection{Pobre en $Ni$}
-En esta tanda de muestras no es apreciable un cambio en el flujo de calor que permita determinar el principio y el final de los cambios de fase. Si bien en la muestra tratada a $800^\circ C$ se observa un cambio en el flujo entre $0^\circ C$ y $-100^\circ C$ asociable a dicha transformación en el enfriamiento, este cambio en el flujo debería también apreciarse en el calentamiento para ser tenida en cuenta.
+En las muestras de esta deposición no es apreciable un cambio en el flujo de calor que permita determinar el principio y el final de los cambios de fase. Si bien en la muestra tratada a $800^\circ C$ se observa un cambio en el flujo entre $0^\circ C$ y $-100^\circ C$ asociable a dicha transformación en el enfriamiento, este cambio en el flujo debería también apreciarse en el calentamiento para ser tenida en cuenta.
 
-A pesar de esto, puede afirmarse que las temperaturas de transformación son menores a la temperatura ambiente, ya que mediante las imágenes de TEM y la difracción de rayos X, sabemos que las muestras se encuentran principalmente en fase B2 (Austenita). En el caso en que las temperaturas fuesen superiores, se observaría principalmente la fase B19' o una combinación de ambas.
+A pesar de esto, puede afirmarse que las temperaturas de transformación son menores a la temperatura ambiente, ya que mediante las imágenes de TEM y la difracción de rayos X, sabemos que las muestras se encuentran principalmente en fase B2 (Austenita). La excepción es la muestra tratada a $700^\circ C$, ya que en ella se observan tanto la fase B2 como la B19'. A partir de este hecho, se puede concluir que para esta muestra las temperaturas de transformación son cercanas a la temperatura ambiente, como sucede en el caso de la muestra rica en Ni que recibió este mismo tratamiento térmico. En el caso en que todas las temperaturas fuesen superiores a la ambiente, se observaría exclusivamente la fase B19'.
 
-El motivo de que la temperatura de equilibrio $T_0$ sea menor que la temperatura ambiente se debe principalmente a la composición. Es posible que la presencia de otras fases saquen $Zr$ de la fase matriz, evitando así que tenga el efecto de aumentar $T_0$ sobre la temperatura ambiente. Aparte de esto, la presencia de las fases $(Ti, Zr)_2 Ni$ y $(Ti, Zr)_4 N_2O$ sacan mayor contenido de $Ti$ y de $Zr$ que de $Ni$ de la fase matriz. Esto probablemente implique la fase matriz termina siendo rica en $Ni$, bajando las temperaturas de transformación.
+El motivo de que la temperatura de equilibrio $T_0$ sea menor que la temperatura ambiente se debe principalmente a la composición. Es posible que la presencia de otras fases remuevan parcialmente $Zr$ de la fase matriz, evitando así que tenga el efecto de aumentar $T_0$ sobre la temperatura ambiente, dicho efecto se muestra en la Figura \ref{ZrDependence}. Aparte de esto, la presencia de las fases $(Ti, Zr)_2 Ni$ y $(Ti, Zr)_4 N_2O$ sacan mayor contenido de $Ti$ y de $Zr$ que de $Ni$ de la fase matriz. Esto probablemente implique la fase matriz termina siendo rica en $Ni$, bajando las temperaturas de transformación, ya que como se muestra en la Figura \ref{NiDependence}, a mayor porcentaje de $Ni$, menores temperaturas de transformación.
 
-Por otra parte, el motivo de que las temperaturas de transformación sean tan bajas se extiendan en un rango tan amplio que no puede ser apreciado por el DSC se debe principalmente al bajo tamaño de grano presente. Que un tamaño de grano decreciente implique una tendencia decreciente de las temperaturas de transformación, específicamente de $M_s$, es informada por Wollants en 1993\cite{Wollants1993}. Esto puede entenderse a partir de la Ecuación \ref{GibbsEnergyEquation}, ya que al aumentar el trabajo elástico, es necesario un mayor sobreenfriamiento para inducir la transformación.
+\begin{figure}[H]
+ 	\centering
+	\includegraphics[scale=0.7]{img/MsZrDependence.jpeg}
+ 	\caption{Efecto del porcentaje de $Zr$ en las temperaturas de transformación en la aleación $NiTiZr$. }
+	\label{ZrDependence}
+\end{figure}
+
+\begin{figure}[H]
+ 	\centering
+	\includegraphics[scale=0.7]{img/MsNiDependence.png}
+ 	\caption{Efecto del porcentaje de $Ni$ en las temperaturas de transformación en la aleación $NiTi$.}
+	\label{NiDependence}
+\end{figure}
+
+
+Por otra parte, el motivo de que las temperaturas de transformación se extiendan en un rango tan amplio que no puede ser apreciado por el DSC se debe principalmente al bajo tamaño de grano presente. La tendencia decreciente de las temperaturas de transformación al decrecer el tamaño de grano, específicamente de $M_s$, es informado por Wollants en 1993\cite{Wollants1993}. Esto puede entenderse a partir de la Ecuación \ref{GibbsEnergyEquation}:
+\begin{equation*}
+	- \Delta G_{q}^{A \leftrightarrow M} \geq W_{elast} + W_{fric}
+\end{equation*} 
+ya que al aumentar el trabajo elástico, es necesario un mayor sobreenfriamiento para inducir la transformación.
+\todo{Acá ver bien lo de Energía de Gibbs}
 
 Similares conclusiones pueden hallarse por Waitz en 2007 y 2008 \cite{Waitz2007}\cite{Waitz2008}. En estos informes se marca incluso que la transformación se suprime completamente con tamaños de granos menores a 50 $nm$. Viendo las imágenes de la sección \ref{TemNiPoorResults}, se observa que todas las muestras tienen granos con tamaños menores a 50 $nm$, y particularmente en aquella muestra tratada a $500^\circ C$ no se observan granos superiores a dicho tamaño. Esto explicaría porque en esta muestra no se observa transformación a pesar de que en los rayos X y en las imágenes obtenidas por TEM la fase mayoritaria es la B2.
 
-Por último, es destacable que incluso si las fases adicionales no afectasen los valores de ninguna de las temperaturas asociadas a la transformación, su mera presencia disminuye el tamaño de los picos característicos de DSC, ya que disminuye el porcentaje de la muestra que sí transforma.
+Por último, es destacable que incluso si las fases adicionales no afectasen los valores de ninguna de las temperaturas asociadas a la transformación, su mera presencia disminuye el porcentaje de las fases B2 y B19', fases que sí transforman. Al ser menor el porcentaje de fase que transforma, los picos observables en las mediciones de calorimetría diferencial de barrido son más chicos, y por lo tanto, más difíciles de apreciar. Por esta causa y por el bajo tamaño de grano es que no pudieron ser apreciadas las temperaturas de transformación en la muestra tratada a $700^\circ C$, a pesar de saber que se trabajó en un rango de temperaturas en el cual la transformación sucede.
 
 
 \subsubsection{Rica en $Ni$}
 
-El análisis de esta tanda de muestras es similar al análisis de las muestras pobres en $Ni$, con el agregado que en este caso se realizó la medición de resistividad por el método de cuatro puntas.
+El análisis de las muestras de esta deposición es similar al análisis de las muestras pobres en $Ni$, con el agregado que en este caso se realizó la medición de resistividad por el método de cuatro puntas.
 
 En este caso, en la muestra tratada a $700 ^\circ C$ puede observarse una transformación de fase, apreciable únicamente en la medición de la resistividad y no en aquella de DSC. Las temperaturas de transformación halladas en este caso ($M_s = 56 ^\circ C$, $M_f = 0 ^\circ C$, $A_s = 18 ^\circ C$, $A_f = 86 ^\circ C$) , son coincidentes con el hecho que esta es la única muestra de la tanda rica en $Ni$ que presenta la fase B19' a temperatura ambiente. La transformación martensítica se produce en un rango de casi $50 ^\circ C$, mientras que la austenítica en un rango de casi $70^\circ C$. La causa de esta amplitud es atribuible al bajo tamaño de grano, que aumenta el término perteneciente al trabajo elástico en la Ecuación\ref{GibbsEnergyEquation}. Justamente son este amplio rango, junto con la presencia de otras fases que no transforman, los causantes de que este cambio de fase no pueda ser apreciado en la calorimetría diferencial de barrido.
 
-En cuanto a las otras muestras, en temperaturas entre $0 ^\circ C$ y $-100 ^\circ C$ se observan cambios en la resistividad, que son asociables a la transformación martensítica y su inversa, pero es difícil por la cantidad de ruido presente determinar con precisión sus temperaturas de inicio y final.
+En cuanto a las otras muestras, en temperaturas entre $0 ^\circ C$ y $-100 ^\circ C$ se observan cambios en la resistividad asociables a la transformación martensítica y a su inversa, pero es difícil por la cantidad de ruido presente determinar con precisión las temperaturas de inicio y final para ambas transformacion
 
 Queda pendiente realizar un análisis de DSC de la muestra tratada a $800 ^\circ C$, medición que no pudo ser hecha debido a la pandemia de COVID-19. Sin embargo, en vista que en ninguna de las otras muestras se apreció un cambio de fase en el flujo de calor ni tampoco se vio para esta muestra un cambio en la resistividad, es poco probable que dicha medición de ser realizada arrojase nueva información.
 
