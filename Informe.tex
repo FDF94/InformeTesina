@@ -1103,7 +1103,7 @@ Para determinar las fases presentes y los tamaños de grano, las muestras tratad
 
 Con el objectivo de medir la las propiedades de la transformación de fase,  se realizaron las mediciones de calorimetría diferencial de barrido y para las muestras ricas en $Ni$ también resistividad por el método de cuatro puntas. Para la muestra rica en $Ni$ tratada a $700^\circ C$ las temperaturas asociadas a la transformación martensítica y a la transformación austenítica fueron determinadas de la siguiente manera $M_s=56^\circ C$, $M_f=0^\circ C$, $A_s=18^\circ C$, $A_f=85^\circ C$, en todos los casos con $2^\circ C$ de incerteza. Para el resto de las muestras, se sabe que la transformación sucede a temperaturas menores a la ambiente, ya que contienen una presencia mayoritara de fase B2, la única excepción es la muestra pobre en $Ni$ tratada a $700^\circ C$, que también presenta fase B19' implicando que su transformación de fase sucede a temperaturas cercanas a la ambiente.
 
-Con perspectiva a futuro \todo{Escucho sugerencias}, debería hallarse alguna forma de fabricar las láminas en las cuales se evite su fragilidad para facilitar los estudios apuntas a caracterizar la transformación de fase. Algunas otras caracterizaciones que podrían realizarse son el estudio del porcentaje de fases y el coeficiente de Avrami.
+En base a lo visto en este informe, en futuros estudios lo propuesto es optimizar los tratamientos térmicos para minimizar la presencia de fases adicionales a la B2/B19', que son las fases que transforman martensíticamente. Se sugiere para esto último seguir trabajando con láminas ricas en $Ni$ ya que la presencia de fase H endurece la fase matriz, facilitando trabajar con las láminas y al ser una superestructura de la fase B2, no inhibe la transformación. Estudios adicionales que podrían realizarse sobre estos materiales son el porcentaje de las fases presentes y junto con la energía de activación, podría estudiarse el coeficiente de Avrami.
 
 
 % You can choose a citation style, 'plain' is the default
@@ -1121,20 +1121,21 @@ Con perspectiva a futuro \todo{Escucho sugerencias}, debería hallarse alguna fo
 \subsection{Restado de la línea base en las mediciones de DSC}
 \label{BaseLineAppendix}
 
-Para analizar las curvas de DSC, estas primero fueron divididas entre enfriamiento y calentamiento, para luego restarles la línea base. Para realizar las restas, tanto la línea base como las mediciones fueron unidas por splines lineales, permitiendo interpolar y que ambas curvas tengan exactamente los mismos puntos en el eje x. No se considera que esto haya introducido un error apreciable, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí.
+Para correctamente analizar las curvas obtenidas en el DSC, era necesario a las mediciones sustraerles la medición de la línea base. Para realizar esto, primero cada curva fue dividida en su parte de enfriamiento y su parte de calentamiento. Lo mismo fue hecho con la medición de la línea base. Para realizar la resta una vez hecha esta división, era necesario que ambas curvas tuvieran exactamente los mismos puntos en el eje de la temperatura. Para que esto suceda, todas las mediciones fueron unidas por splines lineales
+y luego se procedió a una interpolación. No se considera que esto haya introducido un error apreciable, ya que la medición presenta poco ruido y los puntos originales son muy cercanos entre sí.
 
 En la Figura \ref{MeasureExample} se muestra como ejemplo una medición obtenida en DSC y en la Figura \ref{BaseLine} la medición de la línea base correspondiente.
 
 \begin{figure}[H]
 	\centering	
-	\includegraphics[scale=0.1]{img/500NiPoorExample}
+	\includegraphics[scale=0.3]{img/500NiPoorExample}
 	\caption{Medición de DSC para la muestra pobre en $Ni$ tratada a 500 $^\circ C$.}
 	\label{MeasureExample}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.1]{img/BaseLine}
+	\includegraphics[scale=0.3]{img/BaseLine}
 	\caption{Medición de DSC para la línea de base.}
 	\label{BaseLine}
 \end{figure}
@@ -1149,7 +1150,7 @@ En la Figura \ref{Comparison} se muestran la medición original, la línea base 
 \end{figure}
 
 
-Para realizar este proceso, se escribió un código en Python, usando las librerías \textit{SciPy} y \textit{Numpy}.
+Todo este proceso fue reaizado en Python 3.7, usando las librerías \textit{SciPy} y \textit{Numpy}.
 
 \subsection{Obtención de picos para energía de activación}
 
