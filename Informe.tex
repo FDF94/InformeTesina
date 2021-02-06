@@ -20,6 +20,7 @@
 \usepackage{textcomp}           % para poder escribir °
 \usepackage{hyperref}           % page numbers and '\ref's become clickable
 \usepackage[nottoc,numbib]{tocbibind}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SET TITLE PAGE VALUES HERE %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,7 +30,6 @@
 
 \def\thesistitle{Crecimiento y caracterización de láminas delgadas con memoria de
 forma de alta temperatura Ni-Ti-Zr mediante sputtering.}
-\def\thesissubtitle{Algún día aquí habrá un abstract.}
 \def\thesisauthorfirst{\textbf{Fernando Andres Del Fedele}}
 \def\thesisauthorsecond{Duck}
 \def\thesissupervisorfirst{Dr. Lucio Manuel Isola}
@@ -85,7 +85,6 @@ forma de alta temperatura Ni-Ti-Zr mediante sputtering.}
 	
 	\HRule \\[0.4cm]
 	{ \huge \bfseries \thesistitle}\\[0.1cm]
-	\textsc{\thesissubtitle}\\
 	\HRule \\[.5cm]
 	\textsc{\large Tesina presentada para optar al grado de licenciado en física}\\[.5cm]
 	
@@ -104,6 +103,17 @@ forma de alta temperatura Ni-Ti-Zr mediante sputtering.}
 	\clearpage
 \end{titlepage}
 
+\newpage
+\begin{abstract}
+
+El objetivo de esta tesina es estudiar láminas delgadas de la aleación $NiTiZr$. Esta aleación es elegida ya que el agregado de $Zr$ a la aleación $NiTi$ hace que pase de ser un material con memoria de forma a uno con memoria de forma de alta temperatura, esto es, uno que presente el efecto de memoria de forma en temperaturas mayores a 100$^\circ C$.
+
+Para dicho estudio, se realizaron dos deposiciones de láminas delgadas por la técnica de deposición por medio de magnetrón sputtering. Una deposición rica en $Ni$ y la otra pobre en $Ni$. Las láminas obtenidas presentaron un estado amorfo a temperatura ambiente, por lo cual se estudió su cristalización utilizando los modelos teóricos de Kissinger y de Augis-Bennet. A través del primer método el valor obtenido para la energía de activación fue de $(420 \pm 30) kJ$ mientras que por el segundo, de $(410 \pm 30) kJ$.
+Posteriormente, se avanzó en el estudio de los efectos de los tratamientos de cristalización a distintas temperaturas sobre la microestructura de las láminas y su relación con las temperaturas de transformación. Se analizaron las distintas fases presentes, su tamaño de grano, y finalmente, las temperaturas asociadas a la transformación martensítica, determinándose que
+todas ellas se encontraban por debajo de la temperatura ambiente, con excepción de una muestra rica en $Ni$ tratada a 700$^\circ C$ 
+\end{abstract}
+
+\newpage
 \tableofcontents
 
 \newpage
@@ -1106,9 +1116,9 @@ Para determinar las fases presentes y los tamaños de grano, las muestras tratad
 
 Con el objetivo de medir las propiedades de la transformación de fase, se realizaron las mediciones de calorimetría diferencial de barrido y resistividad por el método de cuatro puntas, pudiéndose implementar esta última sólo para las muestras ricas en $Ni$. En particular, en la muestra con composición rica en $Ni$ tratada a $700^\circ C$, fue posible determinar las temperaturas asociadas a la transformación martensítica mediante la técnica de resistividad ($M_s=56^\circ C$, $M_f=0^\circ C$, $A_s=18^\circ C$, $A_f=85^\circ C$, en todos los casos con una incerteza de $2^\circ C$). Mientras que en la muestra con composición pobre en $Ni$ tratada a $700^\circ C$ solamente se pudo determinar que su transformación de fase sucede a temperaturas cercanas a la ambiente, indicado por la presencia de la fase B19'. En el resto de las muestras, se pudo determinar que la transformación, si sucede, lo hace a temperaturas menores a la ambiente, ya que contienen una presencia mayoritaria de fase B2 a dicha temperatura.
 
-Los corrimientos de las temperaturas de transformación hacia valores menores, pudo ser entendido por el descenso de la temperatura de equilibrio $T_0$, ocasionado por la pérdida de $Zr$ y $Ti$ en la fase matriz, debido a la presencia de las fases $(Ti,Zr)_2 Ni$, $\lambda$ y $NiZr$ para las muestras con composición pobres en $Ni$, mientras que el mismo razonamiento puede ser aplicado para las muestras ricas en $Ni$, debido a la presencia de las fases $(Ti,Zr)_2 Ni$, H y $NiZr$. A esta causa, se le suma la presencia de microestucturas caracterizadas por granos del orden de cien nanómetros, generando la necesidad de un sobreenfriamiento mayor. Dicho sobreenfriamento era necesario para poder obtener la energía libre de Gibbs suficiente para que el sistema pueda realizar el trabajo elástico necesario para inducir la transformación martensítica. Siguiendo la misma línea de pensamiento, estas microestructuras de granos muy pequeños produjeron que la transformación esté extendida en un rango de temperatura amplio y con la caída del porcentaje de masa que transforma dentro de las muestras, debido a la presencia de otras fase, ocasionaron la imposibilidad de detectar la transformación por calorimetría diferencial de barrido.
+Los corrimientos de las temperaturas de transformación hacia valores menores, pudo ser entendido por el descenso de la temperatura de equilibrio $T_0$, ocasionado por la pérdida de $Zr$ y $Ti$ en la fase matriz, debido a la presencia de las fases $(Ti,Zr)_2 Ni$, $\lambda$ y $NiZr$ para las muestras con composición pobres en $Ni$, mientras que el mismo razonamiento puede ser aplicado para las muestras ricas en $Ni$, debido a la presencia de las fases $(Ti,Zr)_2 Ni$, H y $NiZr$. A esta causa, se le suma la presencia de microestructuras caracterizadas por granos del orden de cien nanómetros, generando la necesidad de un sobreenfriamiento mayor. Dicho sobreenfriamento era necesario para poder obtener la energía libre de Gibbs suficiente para que el sistema pueda realizar el trabajo elástico necesario para inducir la transformación martensítica. Siguiendo la misma línea de pensamiento, estas microestructuras de granos muy pequeños produjeron que la transformación esté extendida en un rango de temperatura amplio. Este hecho junto con la caída del porcentaje de masa que transforma dentro de las muestras, debido a la presencia de otras fases, ocasionaron la imposibilidad de detectar la transformación por el método de calorimetría diferencial de barrido.
 
-En base a lo visto en este trabajo, se propone en futuros estudios la optimización de los tratamientos térmicos para seleccionar la microestructura con precipitados nanométricos en el interior de los granos de la fase matriz, de modo de enducrecerla sin cambiar drásticamente su estequiometría. Se sugiere, en particular, continuar con el estudio de las láminas ricas en $Ni$, ya que está demostrado la eficiencia de la fase H para endurece la fase matriz en las aleaciones producidas por métodos convencionales, pero sin embargo no hay estudios en láminas delgadas de dicha composición en la bibliografía.
+En base a lo visto en este trabajo, se propone en futuros estudios la optimización de los tratamientos térmicos para seleccionar la microestructura con precipitados nanométricos en el interior de los granos de la fase matriz, de modo de endurecerla sin cambiar drásticamente su estequiometría. Se sugiere, en particular, continuar con el estudio de las láminas ricas en $Ni$, ya que está demostrado la eficiencia de la fase H para endurecer la fase matriz en las aleaciones producidas por métodos convencionales, sin embargo no hay estudios en láminas delgadas de dicha composición en la bibliografía.
 
 
 % You can choose a citation style, 'plain' is the default
